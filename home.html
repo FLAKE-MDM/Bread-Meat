@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хлеб и мясо</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body_home">
+    <div class="wrap" id="wrap">
+        <!-- fixed-info -->
+        <div class="fixed-info collapse show" id="fixed-info">
+            <div class="container">
+                <div class="fixed-info__inside d-sm-flex align-items-center">
+                    <div class="text_size-md">Мы защищаем персональные данные пользователей, а также обрабатываем файлы cookie для персонализации сервисов. Запретить обработку cookie можно в настройках браузера. Пожалуйста, ознакомьтесь с <a href="#" class="link_underline">политикой конфиденциальности</a>.</div>
+                    <a href="#fixed-info" data-bs-toggle="collapse" class="btn btn_dark fixed-info__btn">Понятно</a>
+                </div>
+            </div>
+        </div>
+        <!-- /fixed-info -->
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+                <div class="d-flex pos-rel header__wrapper">
+                    <a href="/" class="logo header__logo">
+                        <img src="img/logo.svg" alt="" class="img-fluid d-none d-lg-block">
+                        <img src="img/logo-m.svg" alt="" class="img-fluid d-lg-none">
+                    </a>
+                    <div class="header__content">
+                        <div class="header__contacts d-flex text_size-md align-items-center">
+                            <div class="header__address d-none d-xl-block">Москва,проспект Вернадского, д. 41, стр. 1</div>
+                            <div class="header__phone d-flex">
+                                <a href="tel:+79259411991" class="text_semibold header__phone-link nowrap">+7 (925) 941-19-91</a>
+                                <a href="tel:+74952801156" class="text_semibold header__phone-link nowrap d-none d-lg-block">+7 (495) 280-11-56</a>
+                            </div>
+                            <div class="header__work-time text_size-sm nowrap d-none d-lg-block">9:00 - 20:00</div>
+                            <a href="#callback" data-bs-toggle="modal" class="btn btn_light btn_size-xs d-none d-lg-inline-flex">Заказать звонок</a>
+                            <ul class="social-list header__social-list d-none d-lg-flex">
+                                <li class="social-list__item"><a href="#" class="social-list__link icon icon-vk"></a></li>
+                                <li class="social-list__item"><a href="#" class="social-list__link icon icon-whatsapp"></a></li>
+                                <li class="social-list__item"><a href="#" class="social-list__link icon icon-tg"></a></li>
+                            </ul>
+                            <button class="btn-menu d-lg-none collapsed">
+                                <span class="icon icon-menu"></span>
+                            </button>
+                        </div>
+                        <div class="header__pane d-flex">
+                            <div class="header__catalogue">
+                                <a href="#catalogue-nav" data-bs-toggle="collapse" class="btn btn_dark btn_catalogue collapsed d-none d-lg-inline-flex">
+                                    <span class="icon icon-menu-inversion btn__icon"></span>
+                                    Каталог
+                                </a>
+                                <div class="collapse catalogue-dropdown" id="catalogue-nav">
+                                    <div class="catalogue-dropdown__body d-flex justify-content-between align-items-start">
+                                        <a href="#" class="catalogue-dropdown__close icon icon-close catalogue-link d-lg-none"></a>
+                                        <div class="catalogue-dropdown__category-nav">
+                                            <div class="title title_size-md">Категории продуктов</div>
+                                            <div class="category-nav category-nav_dropdown">
+                                                <a href="category.html" class="btn btn_light category-link">
+                                                    <div class="category-link__title text_size-md">Баранина</div>
+                                                    <div class="category-link__image"><img src="img/content/category-1.png" alt="Баранина" class="img-fluid"></div>
+                                                </a>
+                                                <a href="category.html" class="btn btn_light category-link">
+                                                    <div class="category-link__title text_size-md">Говядина</div>
+                                                    <div class="category-link__image"><img src="img/content/category-2.png" alt="Говядина" class="img-fluid"></div>
+                                                </a>
+                                                <a href="category.html" class="btn btn_light category-link">
+                                                    <div class="category-link__title text_size-md">Курица</div>
+                                                    <div class="category-link__image"><img src="img/content/category-7.png" alt="Курица" class="img-fluid"></div>
+                                                </a>
+                                                <a href="category.html" class="btn btn_light category-link">
+                                                    <div class="category-link__title text_size-md">Готовая еда</div>
+                                                    <div class="category-link__image"><img src="img/content/category-3.png" alt="Готовая еда" class="img-fluid"></div>
+                                                </a>
+                                                <a href="category.html" class="btn btn_light category-link">
+                                                    <div class="category-link__title text_size-md">Индейка</div>
+                                                    <div class="category-link__image"><img src="img/content/category-4.png" alt="Индейка" class="img-fluid"></div>
+                                                </a>
+                                                <a href="category.html" class="btn btn_light category-link">
+                                                    <div class="category-link__title text_size-md">Полу-<wbr>фабрикаты</div>
+                                                    <div class="category-link__image"><img src="img/content/category-8.png" alt="Полу-фабрикаты" class="img-fluid"></div>
+                                                </a>
+                                                <a href="category.html" class="btn btn_light category-link">
+                                                    <div class="category-link__title text_size-md">Конина</div>
+                                                    <div class="category-link__image"><img src="img/content/category-5.png" alt="Конина" class="img-fluid"></div>
+                                                </a>
+                                                <a href="category.html" class="btn btn_light category-link">
+                                                    <div class="category-link__title text_size-md">Кролик</div>
+                                                    <div class="category-link__image"><img src="img/content/category-6.png" alt="Кролик" class="img-fluid"></div>
+                                                </a>
+                                                <a href="category.html" class="btn btn_light category-link">
+                                                    <div class="category-link__title text_size-md">Хлеб</div>
+                                                    <div class="category-link__image"><img src="img/content/category-9.png" alt="Хлеб" class="img-fluid"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="catalogue-dropdown__sub-nav d-none d-lg-flex">
+                                            <div class="title title_size-md">Популярное</div>
+                                            <ul class="sub-nav text_semibold text_size-md">
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Каре ягнёнка</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Шея</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Корейка</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Голень</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Охлаждённая</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Фермерская</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Для запекания</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Халяль</a></li>
+                                            </ul>
+                                            <ul class="sub-nav text_semibold text_size-md">
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Каре ягнёнка</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Шея</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Корейка</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Голень</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Охлаждённая</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Фермерская</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Для запекания</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Халяль</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search collapse" id="search">
+                                <div class="search__inside">
+                                    <form action="#">
+                                        <input type="text" class="search__input" placeholder="Я хочу найти...">
+                                        <button class="search__btn icon icon-search"></button>
+                                    </form>
+                                </div>
+                            </div>
+                            <ul class="pane-nav d-flex">
+                                <li class="pane-nav__item d-lg-none">
+                                    <a href="#" class="pane-nav__link collapsed catalogue-link">
+                                        <span class="pane-nav__icon icon icon-catalogue"></span>
+                                        Каталог
+                                    </a>
+                                </li>
+                                <li class="pane-nav__item d-lg-none">
+                                    <a href="#search" class="pane-nav__link collapsed" data-bs-toggle="collapse">
+                                        <span class="pane-nav__icon icon icon-search"></span>
+                                        Поиск
+                                    </a>
+                                </li>
+                                <li class="pane-nav__item order-lg-1">
+                                    <a href="#" class="pane-nav__link collapsed">
+                                        <span class="pane-nav__icon icon icon-heart"></span>
+                                        Избранное
+                                    </a>
+                                </li>
+                                <li class="pane-nav__item">
+                                    <a href="#" class="pane-nav__link collapsed">
+                                        <span class="pane-nav__icon icon icon-user"></span>
+                                        Войти
+                                    </a>
+                                </li>
+                                <li class="pane-nav__item order-md-2">
+                                    <a href="#" class="pane-nav__link collapsed">
+                                        <span class="pane-nav__icon icon icon-basket"></span>
+                                        Корзина
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navbar">
+                    <ul class="nav-list d-lg-flex">
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Акции</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Доставка</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Оплата</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Блог</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Контакты</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Качество</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">О компании</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Промокоды</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Отзывы</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Рецепты</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Помощь</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Поставщики</a></li>
+                    </ul>
+                    <div class="navbar__contacts d-lg-none">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="contact-item px-0">
+                                    <a href="tel:+74952801156" class="title title_size-md">+7 (495) 280-11-56</a>
+                                    <div class="text_size-md">Телефон в Москве</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="contact-item px-0">
+                                    <a href="tel:+79259411991" class="title title_size-md">+7 (925) 941-19-91</a>
+                                    <div class="text_size-md">WhatsApp, Telegram</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="contact-item px-0">
+                                    <a href="mailto:EmaiL@example.com" class="title title_size-md">EmaiL@example.com</a>
+                                    <div class="text_size-md">Электронная почта</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="contact-item px-0">
+                                    <ul class="social-list navbar__social-list d-flex">
+                                        <li class="social-list__item"><a href="#" class="social-list__link icon icon-vk-dark"></a></li>
+                                        <li class="social-list__item"><a href="#" class="social-list__link icon icon-whatsapp-dark"></a></li>
+                                        <li class="social-list__item"><a href="#" class="social-list__link icon icon-tg-dark"></a></li>
+                                    </ul>
+                                    <div class="text_size-md">Мы в соцсетях</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- /header -->
+        <div class="container">
+            <!-- home-slider -->
+            <div class="home-slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide home-slider__slide">
+                        <img src="img/content/home-slide.jpg" alt="" class="img-fluid d-none d-lg-block w-100">
+                        <img src="img/content/home-slide-m.jpg" alt="" class="img-fluid d-lg-none w-100">
+                        <div class="home-slider__text text_inversion">
+                            <h1 class="title title_size-xl">Новая поставка халяльного мяса</h1>
+                            <p class="text_size-md">Свежая говядина из  породистых кавказских коров, выращенных на натуральных кормах.</p>
+                            <p><a href="#" class="btn btn_inversion">Подробнее</a></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide home-slider__slide">
+                        <img src="img/content/home-slide.jpg" alt="" class="img-fluid d-none d-lg-block w-100">
+                        <img src="img/content/home-slide-m.jpg" alt="" class="img-fluid d-lg-none w-100">
+                        <div class="home-slider__text text_inversion">
+                            <div class="title title_size-xl">Новая поставка халяльного мяса</div>
+                            <p class="text_size-md">Свежая говядина из  породистых кавказских коров, выращенных на натуральных кормах.</p>
+                            <p><a href="#" class="btn btn_inversion">Подробнее</a></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide home-slider__slide">
+                        <img src="img/content/home-slide.jpg" alt="" class="img-fluid d-none d-lg-block w-100">
+                        <img src="img/content/home-slide-m.jpg" alt="" class="img-fluid d-lg-none w-100">
+                        <div class="home-slider__text text_inversion">
+                            <div class="title title_size-xl">Новая поставка халяльного мяса</div>
+                            <p class="text_size-md">Свежая говядина из  породистых кавказских коров, выращенных на натуральных кормах.</p>
+                            <p><a href="#" class="btn btn_inversion">Подробнее</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /home-slider -->
+            <!-- advantages-section -->
+            <section class="advantages-section section">
+                <h2 class="mb_lg">Почему клиенты выбирают нас?</h2>
+                <div class="advantages-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="advantages-item text_size-md">
+                                <div class="advantages-item__icon"><img src="img/icons/advantages-1.svg" alt="" class="img-fluid"></div>
+                                <div class="title title_size-sm mb_xs">Уникальный ассортимент</div>
+                                <p class="text_dark">Более 9 лет мы ответственно работаем вместе с несколькими тщательно отобранными фермерскими хозяйствами центральной части России и вместе производим по-настоящему лучшее мясо для наших покупателей по доступной цене.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="advantages-item text_size-md">
+                                <div class="advantages-item__icon"><img src="img/icons/advantages-2.svg" alt="" class="img-fluid"></div>
+                                <div class="title title_size-sm mb_xs">Гарантия качества</div>
+                                <p class="text_dark">Мы хотим быть уверены, в том, что вы остались довольны каждой покупкой. Если вдруг вы остались неудовлетворены товаром, просто верните его в течение 14 дней в любом виде. Мы гарантируем немедленную 100% компенсацию.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="advantages-item text_size-md">
+                                <div class="advantages-item__icon"><img src="img/icons/advantages-3.svg" alt="" class="img-fluid"></div>
+                                <div class="title title_size-sm mb_xs">Первоклассный сервис</div>
+                                <p class="text_dark">Мы доставляем свежее охлаждённое мясо по Москве и Московской области на следующий день после заказа, ежедневно c 9.30 до 21.00 (кроме 1, 2 и 3 января). Так же Вы можете воспользоваться услугой "Экспресс-доставка в день заказа".</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            <!-- /advantages-section -->
+            <!-- production-section -->
+            <section class="section">
+                <h2 class="mb_sm">Наша продукция</h2>
+                <div class="row">
+                    <div class="col-6 col-lg-6">
+                        <a href="#" class="zoom-link production-item">
+                            <img src="img/content/production-1.jpg" alt="" class="d-none d-lg-block">
+                            <img src="img/content/production-1-m.jpg" alt="" class="d-lg-none">
+                            <div class="production-item__title title text_inversion title_size-md">Баранина</div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <a href="#" class="zoom-link production-item">
+                            <img src="img/content/production-2.jpg" alt="">
+                            <div class="production-item__title title text_inversion title_size-md">Говядина</div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <a href="#" class="zoom-link production-item">
+                            <img src="img/content/production-3.jpg" alt="">
+                            <div class="production-item__title title text_inversion title_size-md">Готовая еда</div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <a href="#" class="zoom-link production-item">
+                            <img src="img/content/production-4.jpg" alt="">
+                            <div class="production-item__title title text_inversion title_size-md">Индейка</div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <a href="#" class="zoom-link production-item">
+                            <img src="img/content/production-5.jpg" alt="">
+                            <div class="production-item__title title text_inversion title_size-md">Конина</div>
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" class="zoom-link production-item">
+                            <img src="img/content/production-6.jpg" alt="" class="d-none d-lg-block">
+                            <img src="img/content/production-6-m.jpg" alt="" class="d-lg-none">
+                            <div class="production-item__title title text_inversion title_size-md">Кролик</div>
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" class="zoom-link production-item">
+                            <img src="img/content/production-7.jpg" alt="" class="d-none d-lg-block">
+                            <img src="img/content/production-7-m.jpg" alt="" class="d-lg-none">
+                            <div class="production-item__title title text_inversion title_size-md">Курица</div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <a href="#" class="zoom-link production-item">
+                            <img src="img/content/production-8.jpg" alt="">
+                            <div class="production-item__title title text_inversion title_size-md">Полуфабрикаты</div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <a href="#" class="zoom-link production-item">
+                            <img src="img/content/production-9.jpg" alt="" class="d-none d-lg-block">
+                            <img src="img/content/production-9-m.jpg" alt="" class="d-lg-none">
+                            <div class="production-item__title title text_inversion title_size-md">Хлеб</div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- /production-section -->
+            <!-- reviews-section -->
+            <section class="section">
+                <div class="d-md-flex align-items-center justify-content-between">
+                    <h2>Отзывы о нас</h2>
+                    <a href="#" class="text_dark text_size-md d-inline-flex align-items-center more-link text_semibold">Смотреть все<span class="icon icon-arrow-right more-link__icon"></span></a>
+                </div>
+                <div class="slider-wrapper">
+                    <a href="#" class="review-next swiper-prev swiper-btn btn_light"><span class="icon icon-prev"></span></a>
+                    <a href="#" class="review-prev swiper-next swiper-btn btn_light"><span class="icon icon-next"></span></a>
+                    <div class="swiper reviews-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="review-item review-item_bordered">
+                                    <div class="review-item__header">
+                                        <div class="d-flex align-items-center">
+                                            <div class="review-item__image"><img src="img/content/user-1.png" alt=""></div>
+                                            <div class="review-item__text d-md-flex align-items-center flex-grow-1 justify-content-between">
+                                                <div class="review-item__info">
+                                                    <div class="review-item__date text_dark text_size-sm">09 января 2023</div>
+                                                    <div class="review-item__name text_semibold">Елизавета</div>
+                                                </div>
+                                                <div class="rating review-item__rating">
+                                                    <div class="rating__active" style="width:100%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review-item__body text_size-md">
+                                        <p>Особо хочется отметить профессионализм сотрудников компании. Они всегда готовы помочь и ответить на любые вопросы, связанные с выбором мяса или его приготовлением. К тому же, мясо всегда упаковано качественно и надежно, что гарантирует сохранность продукта</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review-item review-item_bordered">
+                                    <div class="review-item__header">
+                                        <div class="d-flex align-items-center">
+                                            <div class="review-item__image"><img src="img/content/user-2.png" alt=""></div>
+                                            <div class="review-item__text d-md-flex align-items-center flex-grow-1 justify-content-between">
+                                                <div class="review-item__info">
+                                                    <div class="review-item__date text_dark text_size-sm">09 января 2023</div>
+                                                    <div class="review-item__name text_semibold">Александр</div>
+                                                </div>
+                                                <div class="rating review-item__rating">
+                                                    <div class="rating__active" style="width:100%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review-item__body text_size-md">
+                                        <p>В целом, я очень доволен покупками в данной компании и рекомендую ее всем, кто ищет качественное мясо по приемлемым ценам</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review-item review-item_bordered">
+                                    <div class="review-item__header">
+                                        <div class="d-flex align-items-center">
+                                            <div class="review-item__image"><img src="img/content/user-1.png" alt=""></div>
+                                            <div class="review-item__text d-md-flex align-items-center flex-grow-1 justify-content-between">
+                                                <div class="review-item__info">
+                                                    <div class="review-item__date text_dark text_size-sm">09 января 2023</div>
+                                                    <div class="review-item__name text_semibold">Елизавета</div>
+                                                </div>
+                                                <div class="rating review-item__rating">
+                                                    <div class="rating__active" style="width:100%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review-item__body text_size-md">
+                                        <p>Особо хочется отметить профессионализм сотрудников компании. Они всегда готовы помочь и ответить на любые вопросы, связанные с выбором мяса или его приготовлением. К тому же, мясо всегда упаковано качественно и надежно, что гарантирует сохранность продукта</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination d-md-none"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- /reviews-section -->
+            <!-- info-section -->
+            <section class="info-section text_inversion d-flex section">
+                <div class="info-section__text">
+                    <div class="title title_size-lg info-section__title">Новинки весеннего сезона</div>
+                    <p>У нас появились новые виды мяса, которые станут прекрасным дополнением к вашему столу во время майских праздников. Мы гарантируем свежесть и вкус каждого кусочка.</p>
+                    <a href="#" class="btn btn_inversion">Смотреть каталог</a>
+                </div>
+                <div class="info-section__image">
+                    <img src="img/info.png" alt="" class="img-fluid d-none d-lg-block">
+                    <img src="img/info-m.png" alt="" class="img-fluid d-lg-none">
+                </div>
+            </section>
+            <!-- /info-section -->
+            <!-- popular -->
+            <section class="section">
+                <h2 class="mb_lg">Популярные мясные продукты</h2>
+                <div class="slider-wrapper">
+                    <a href="#" class="popular-next swiper-prev swiper-btn swiper-btn_top btn_light"><span class="icon icon-prev"></span></a>
+                    <a href="#" class="popular-prev swiper-next swiper-btn swiper-btn_top btn_light"><span class="icon icon-next"></span></a>
+                    <div class="popular-slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="catalogue-item">
+                                    <div class="catalogue-item">
+                                        <a href="#" class="catalogue-item__image">
+                                            <img src="img/content/catalogue-1.jpg" alt="img-fluid">
+                                            <div class="catalogue-item__tags">
+                                                <div class="catalogue-item__tag">Запекать</div>
+                                                <div class="catalogue-item__tag">Тушить</div>
+                                            </div>
+                                            <div class="catalogue-item__hidden text_center text_size-md">Быстрый просмотр</div>
+                                        </a>
+                                        <div class="d-flex align-items-center">
+                                            <div class="rating catalogue-item__rating rating_md">
+                                                <div class="rating__active" style="width:100%"></div>
+                                            </div>
+                                            <div class="mark mark_success">Новинка</div>
+                                        </div>
+                                        <div class="catalogue-item__price d-flex align-items-center">
+                                            <div class="price text_styling">1 330 Р/<span class="text_size-lg">кг</span></div>
+                                            <del class="price_old text_light text_styling">1 330 р</del>
+                                            <div class="discount text_danger text_styling text_bold">-15%</div>
+                                        </div>
+                                        <a href="item.html" class="catalogue-item__name text_size-md">Антрекот из говядины</a>
+                                        <div class="d-flex align-items-center">
+                                            <div class="btn-wrapper">
+                                                <a href="#" class="btn btn_outline btn-add btn_size-md">
+                                                    <span class="icon icon-basket btn__icon"></span>В корзину
+                                                </a>
+                                                <div class="input-number fake-btn collapse">
+                                                    <div class="input-number__down input-number__minus btn_light">
+                                                        <span class="icon icon-minus"></span>
+                                                    </div>
+                                                    <input class="input-number__input" type="text" pattern="^[0-9]+$" value="1" readonly="">
+                                                    <div class="input-number__up input-number__plus btn_light">
+                                                        <span class="icon icon-plus"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="stock text_success text_size-sm text_semibold">В наличии</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="catalogue-item">
+                                    <div class="catalogue-item">
+                                        <a href="#" class="catalogue-item__image">
+                                            <img src="img/content/catalogue-2.jpg" alt="img-fluid">
+                                            <div class="catalogue-item__tags">
+                                                <div class="catalogue-item__tag">Запекать</div>
+                                                <div class="catalogue-item__tag">Тушить</div>
+                                            </div>
+                                            <div class="catalogue-item__hidden text_center text_size-md">Быстрый просмотр</div>
+                                        </a>
+                                        <div class="d-flex align-items-center">
+                                            <div class="rating catalogue-item__rating rating_md">
+                                                <div class="rating__active" style="width:100%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="catalogue-item__price d-flex align-items-center">
+                                            <div class="price text_styling">840 Р/<span class="text_size-lg">кг</span></div>
+                                            <del class="price_old text_light text_styling">1 330 р</del>
+                                            <div class="discount text_danger text_styling text_bold">-15%</div>
+                                        </div>
+                                        <a href="item.html" class="catalogue-item__name text_size-md">Голяжка говяжья для запекания</a>
+                                        <div class="d-flex align-items-center">
+                                            <div class="btn-wrapper">
+                                                <a href="#" class="btn btn_outline btn-add btn_size-md">
+                                                    <span class="icon icon-basket btn__icon"></span>В корзину
+                                                </a>
+                                                <div class="input-number fake-btn collapse">
+                                                    <div class="input-number__down input-number__minus btn_light">
+                                                        <span class="icon icon-minus"></span>
+                                                    </div>
+                                                    <input class="input-number__input" type="text" pattern="^[0-9]+$" value="1" readonly="">
+                                                    <div class="input-number__up input-number__plus btn_light">
+                                                        <span class="icon icon-plus"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="stock text_success text_size-sm text_semibold">В наличии</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="catalogue-item">
+                                    <div class="catalogue-item">
+                                        <a href="#" class="catalogue-item__image">
+                                            <img src="img/content/catalogue-3.jpg" alt="img-fluid">
+                                            <div class="catalogue-item__tags">
+                                                <div class="catalogue-item__tag">Запекать</div>
+                                                <div class="catalogue-item__tag">Тушить</div>
+                                            </div>
+                                            <div class="catalogue-item__hidden text_center text_size-md">Быстрый просмотр</div>
+                                        </a>
+                                        <div class="d-flex align-items-center">
+                                            <div class="rating catalogue-item__rating rating_md">
+                                                <div class="rating__active" style="width:100%"></div>
+                                            </div>
+                                            <div class="mark mark_success">Новинка</div>
+                                        </div>
+                                        <div class="catalogue-item__price d-flex align-items-center">
+                                            <div class="price text_styling">1 330 Р/<span class="text_size-lg">кг</span></div>
+                                        </div>
+                                        <a href="item.html" class="catalogue-item__name text_size-md">Грудинка говяжья бескостная</a>
+                                        <div class="d-flex align-items-center">
+                                            <div class="btn-wrapper">
+                                                <a href="#" class="btn btn_outline btn-add btn_size-md">
+                                                    <span class="icon icon-basket btn__icon"></span>В корзину
+                                                </a>
+                                                <div class="input-number fake-btn collapse">
+                                                    <div class="input-number__down input-number__minus btn_light">
+                                                        <span class="icon icon-minus"></span>
+                                                    </div>
+                                                    <input class="input-number__input" type="text" pattern="^[0-9]+$" value="1" readonly="">
+                                                    <div class="input-number__up input-number__plus btn_light">
+                                                        <span class="icon icon-plus"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="stock text_success text_size-sm text_semibold">В наличии</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="catalogue-item">
+                                    <div class="catalogue-item">
+                                        <a href="#" class="catalogue-item__image">
+                                            <img src="img/content/catalogue-4.jpg" alt="img-fluid">
+                                            <div class="catalogue-item__tags">
+                                                <div class="catalogue-item__tag">Запекать</div>
+                                                <div class="catalogue-item__tag">Тушить</div>
+                                            </div>
+                                            <div class="catalogue-item__hidden text_center text_size-md">Быстрый просмотр</div>
+                                        </a>
+                                        <div class="d-flex align-items-center">
+                                            <div class="rating catalogue-item__rating rating_md">
+                                                <div class="rating__active" style="width:100%"></div>
+                                            </div>
+                                            <div class="mark mark_success">Новинка</div>
+                                        </div>
+                                        <div class="catalogue-item__price d-flex align-items-center">
+                                            <div class="price text_styling">1 330 Р/<span class="text_size-lg">кг</span></div>
+                                            <del class="price_old text_light text_styling">1 330 р</del>
+                                            <div class="discount text_danger text_styling text_bold">-15%</div>
+                                        </div>
+                                        <a href="item.html" class="catalogue-item__name text_size-md">Гуляш говяжий</a>
+                                        <div class="d-flex align-items-center">
+                                            <div class="btn-wrapper">
+                                                <a href="#" class="btn btn_outline btn-add btn_size-md">
+                                                    <span class="icon icon-basket btn__icon"></span>В корзину
+                                                </a>
+                                                <div class="input-number fake-btn collapse">
+                                                    <div class="input-number__down input-number__minus btn_light">
+                                                        <span class="icon icon-minus"></span>
+                                                    </div>
+                                                    <input class="input-number__input" type="text" pattern="^[0-9]+$" value="1" readonly="">
+                                                    <div class="input-number__up input-number__plus btn_light">
+                                                        <span class="icon icon-plus"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="stock text_success text_size-sm text_semibold">В наличии</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /popular -->
+            <!-- about -->
+            <section class="section about-section d-flex justify-content-between">
+                <div class="about-section__text">
+                    <h2 class="mb_sm">О магазине</h2>
+                    <div class="about-section__image d-md-none"><img src="img/about-m.jpg" alt="" class="img-fluid"></div>
+                    <p>Мы работаем только с проверенными фермерами, которые выращивают животных на своих фермах, кормят их натуральными кормами и обеспечивают им комфортные условия содержания. Мы также следим за тем, чтобы наша продукция соответствовала всем необходимым стандартам качества и безопасности.</p>
+                    <p>У нас вы найдете широкий ассортимент мясных продуктов - от свинины и говядины до баранины и птицы. Мы предлагаем не только свежее мясо, но и различные виды колбасных изделий, ветчин, сосисок и мясных деликатесов.</p>
+                    <p>Спасибо за то, что выбираете нашу компанию!</p>
+                    <div class="about-section__info d-flex">
+                        <div class="info-item">
+                            <div class="info-item__num text_styling">60+</div>
+                            <p class="text_size-sm">Наименований</p>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-item__num text_styling">5 000 кг</div>
+                            <p class="text_size-sm">Мяса продаем в месяц</p>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-item__num text_styling">1 000</div>
+                            <p class="text_size-sm">Довольных клиентов</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-section__image d-none d-md-block"><img src="img/about.jpg" alt="" class="img-fluid"></div>
+            </section>
+            <!-- /about -->
+            <!-- steps -->
+            <section class="section">
+                <h2 class="mb_xs">Сделать заказ на сайте легко и просто</h2>
+                <p>Мы сделали процесс максимально удобным для наших клиентов</p>
+                <div class="swiper steps-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="step-item">
+                                <div class="step-item__icon"><img src="img/icons/basket-lg.svg" alt="" class="img-fluid"></div>
+                                <div class="title title_size-sm">Добавляете товар в корзину</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="step-item">
+                                <div class="step-item__icon"><img src="img/icons/delivery.svg" alt="" class="img-fluid"></div>
+                                <div class="title title_size-sm">Выбираете способ доставки</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="step-item">
+                                <div class="step-item__icon"><img src="img/icons/wallet.svg" alt="" class="img-fluid"></div>
+                                <div class="title title_size-sm">Выбираете способ оплаты</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="step-item">
+                                <div class="step-item__icon"><img src="img/icons/recipient.svg" alt="" class="img-fluid"></div>
+                                <div class="title title_size-sm">Указываете получателя</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /steps -->
+            <!-- recipes -->
+            <section class="section">
+                <h2 class="mb_md">Вкусные рецепты из мяса</h2>
+                <div class="swiper recipes-slider">
+                    <div class="swiper-wrapper recipes-slider__wrapper">
+                        <div class="swiper-slide">
+                            <div class="blog-item">
+                                <a href="#" class="zoom-link blog-item__image"><img src="img/content/blog-1.jpg" alt="" class="img-fluid"></a>
+                                <div class="blog-item__body text_size-sm">
+                                    <h4 class="blog-item__title">Жаркое по-деревенски</h4>
+                                    <p>Простое, но очень ароматное и вкусное блюдо для семейного обеда или ужина</p>
+                                    <a href="#" class="text_medium-light">Читать далее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="blog-item d-xl-flex blog-item_row">
+                                <a href="#" class="zoom-link blog-item__image"><img src="img/content/blog-2.jpg" alt="" class="img-fluid"></a>
+                                <div class="blog-item__body text_size-sm">
+                                    <h5 class="blog-item__title">Свинина, тушенная с грибами, в сметанном соусе</h5>
+                                    <p>Обжаренная до румяной корочки, а затем тушенная в сметане</p>
+                                    <a href="#" class="text_medium-light">Читать далее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="blog-item d-xl-flex blog-item_row">
+                                <a href="#" class="zoom-link blog-item__image"><img src="img/content/blog-3.jpg" alt="" class="img-fluid"></a>
+                                <div class="blog-item__body text_size-sm">
+                                    <h5 class="blog-item__title">Бефстроганов классический</h5>
+                                    <p>Приготовление классического бефстроганова не вызывает сложностей, но результат всегда потрясающий</p>
+                                    <a href="#" class="text_medium-light">Читать далее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="blog-item d-xl-flex blog-item_row">
+                                <a href="#" class="zoom-link blog-item__image"><img src="img/content/blog-4.jpg" alt="" class="img-fluid"></a>
+                                <div class="blog-item__body text_size-sm">
+                                    <h5 class="blog-item__title">Куриные рулетики с сыром</h5>
+                                    <p>Рулетики из куриного филе - с хрустящей корочкой, нежные и сочные внутри!</p>
+                                    <a href="#" class="text_medium-light">Читать далее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /recipes -->
+            <!-- faq -->
+            <section class="section">
+                <h2 class="mb_sm">Ответы на частые вопросы</h2>
+                <div class="faq-group">
+                    <div class="faq-item">
+                        <a href="#faq-1" data-bs-toggle="collapse" class="faq-item__link text_semibold collapsed d-flex align-items-center justify-content-between">Какой выбрать кусочек... Скажем, для тушения?<span class="icon icon-caret"></span></a>
+                        <div class="collapse" id="faq-1">
+                            <div class="faq-item__body text_dark text_size-md">С каждым годом дичь становится всё популярнее и многие позиции очень быстро заканчиваются. Тогда как наши информационные рассылки о поступлении и новинках отправляются всего раз в неделю.Чтобы не пропустить появление желанной вкуснятины, подпишитесь непосредственно на товар. В таком случае, как только желанный товар появится на складе, на вашу электронную почту придет уведомление о поступлении.</div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <a href="#faq-2" data-bs-toggle="collapse" class="faq-item__link text_semibold collapsed d-flex align-items-center justify-content-between">У меня кафе и я хочу с вами сотрудничать. Возможны для меня особые условия?<span class="icon icon-caret"></span></a>
+                        <div class="collapse" id="faq-2">
+                            <div class="faq-item__body text_dark text_size-md">С каждым годом дичь становится всё популярнее и многие позиции очень быстро заканчиваются. Тогда как наши информационные рассылки о поступлении и новинках отправляются всего раз в неделю.Чтобы не пропустить появление желанной вкуснятины, подпишитесь непосредственно на товар. В таком случае, как только желанный товар появится на складе, на вашу электронную почту придет уведомление о поступлении.</div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <a href="#faq-3" aria-expanded="true" data-bs-toggle="collapse" class="faq-item__link text_semibold d-flex align-items-center justify-content-between">Товара, который мне нужен, нет в наличии. Как мне узнать когда его привезут?<span class="icon icon-caret"></span></a>
+                        <div class="collapse show" id="faq-3">
+                            <div class="faq-item__body text_dark text_size-md">С каждым годом дичь становится всё популярнее и многие позиции очень быстро заканчиваются. Тогда как наши информационные рассылки о поступлении и новинках отправляются всего раз в неделю.Чтобы не пропустить появление желанной вкуснятины, подпишитесь непосредственно на товар. В таком случае, как только желанный товар появится на складе, на вашу электронную почту придет уведомление о поступлении.</div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <a href="#faq-4" data-bs-toggle="collapse" class="faq-item__link text_semibold collapsed d-flex align-items-center justify-content-between">А сколько у dас есть? А если мне нужно больше, я могу оставить предзаказ?<span class="icon icon-caret"></span></a>
+                        <div class="collapse" id="faq-4">
+                            <div class="faq-item__body text_dark text_size-md">С каждым годом дичь становится всё популярнее и многие позиции очень быстро заканчиваются. Тогда как наши информационные рассылки о поступлении и новинках отправляются всего раз в неделю.Чтобы не пропустить появление желанной вкуснятины, подпишитесь непосредственно на товар. В таком случае, как только желанный товар появится на складе, на вашу электронную почту придет уведомление о поступлении.</div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <a href="#faq-5" data-bs-toggle="collapse" class="faq-item__link text_semibold collapsed d-flex align-items-center justify-content-between">Как оформить заказ, если я еще не был клиентом на сайте?<span class="icon icon-caret"></span></a>
+                        <div class="collapse" id="faq-5">
+                            <div class="faq-item__body text_dark text_size-md">С каждым годом дичь становится всё популярнее и многие позиции очень быстро заканчиваются. Тогда как наши информационные рассылки о поступлении и новинках отправляются всего раз в неделю.Чтобы не пропустить появление желанной вкуснятины, подпишитесь непосредственно на товар. В таком случае, как только желанный товар появится на складе, на вашу электронную почту придет уведомление о поступлении.</div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <a href="#faq-6" data-bs-toggle="collapse" class="faq-item__link text_semibold collapsed d-flex align-items-center justify-content-between">Окорок? Корейка? Это где? Как выбирать-то?<span class="icon icon-caret"></span></a>
+                        <div class="collapse" id="faq-6">
+                            <div class="faq-item__body text_dark text_size-md">С каждым годом дичь становится всё популярнее и многие позиции очень быстро заканчиваются. Тогда как наши информационные рассылки о поступлении и новинках отправляются всего раз в неделю.Чтобы не пропустить появление желанной вкуснятины, подпишитесь непосредственно на товар. В таком случае, как только желанный товар появится на складе, на вашу электронную почту придет уведомление о поступлении.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /faq -->
+            <!-- trust -->
+            <section class="section">
+                <h2 class="mb_sm pb-1">Нам доверяют</h2>
+                <div class="col-lg-9">
+                    <p>Клиенты выбирают наше мясо благодаря его высокому качеству, сертификации, удобству покупки и конкурентоспособной цене.</p>
+                </div>
+                <div class="logos-row">
+                    <a href="#" class="logo-link"><img src="img/icons/logo-1.svg" alt="" class="img-fluid"></a>
+                    <a href="#" class="logo-link"><img src="img/icons/logo-2.svg" alt="" class="img-fluid"></a>
+                    <a href="#" class="logo-link"><img src="img/icons/logo-3.svg" alt="" class="img-fluid"></a>
+                    <a href="#" class="logo-link"><img src="img/icons/logo-4.svg" alt="" class="img-fluid"></a>
+                    <a href="#" class="logo-link"><img src="img/icons/logo-5.svg" alt="" class="img-fluid"></a>
+                    <a href="#" class="logo-link"><img src="img/icons/logo-6.svg" alt="" class="img-fluid"></a>
+                </div>
+            </section>
+            <!-- /trust -->
+        </div>
+        <!-- contacts -->
+        <section class="section">
+            <div class="container">
+                <h2 class="mb_md">Наши контакты</h2>
+                <div class="contacts-row d-flex text_size-md align-items-center">
+                    <div class="header__phone d-flex">
+                        <a href="tel:+79259411991" class="text_semibold header__phone-link title title_size-md nowrap">+7 (925) 941-19-91</a>
+                        <a href="tel:+78009411991" class="text_semibold header__phone-link title title_size-md nowrap">+7 (800) 941-19-91</a>
+                    </div>
+                    <div class="contacts-row__work-time text_size-sm nowrap">9:00 - 20:00</div>
+                    <a href="#" class="btn btn_light btn_size-xs contacts-row__btn">Заказать звонок</a>
+                    <div class="contacts-row__address">Москва, проспект Вернадского, д. 41, стр. 1</div>
+                    <ul class="social-list contacts-row__social-list d-flex">
+                        <li class="social-list__item"><a href="#" class="social-list__link icon icon-vk"></a></li>
+                        <li class="social-list__item"><a href="#" class="social-list__link icon icon-whatsapp"></a></li>
+                        <li class="social-list__item"><a href="#" class="social-list__link icon icon-tg"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="map" class="map"></div>
+        </section>
+        <!-- /contacts -->
+        <!-- seo-text -->
+        <section class="section_last">
+            <div class="container">
+                <h2 class="mb_sm">Тут будет SEO текст</h2>
+                <p>Мы работаем только с проверенными фермерами, которые выращивают животных на своих фермах, кормят их натуральными кормами и обеспечивают им комфортные условия содержания. Мы также следим за тем, чтобы наша продукция соответствовала всем необходимым стандартам качества и безопасности.</p>
+                <p>У нас вы найдете широкий ассортимент мясных продуктов - от свинины и говядины до баранины и птицы. Мы предлагаем не только свежее мясо, но и различные виды колбасных изделий, ветчин, сосисок и мясных деликатесов.</p>
+                <p>Спасибо за то, что выбираете нашу компанию!</p>
+                <div class="row mt_md">
+                    <div class="col-md-6 col-xl-5">
+                        <ol class="num-list">
+                            <li class="num-list__item">Как выбрать мясо</li>
+                            <li class="num-list__item">Что было не так с мясом из магазина</li>
+                            <li class="num-list__item">Почему мы больше не покупаем мясо на рынке</li>
+                            <li class="num-list__item">Фермерский интернет-магазин</li>
+                        </ol>
+                    </div>
+                    <div class="col-md-6 ps-xl-0">
+                        <ul class="dots-list">
+                            <li class="dots-list__item">Как выбрать мясо</li>
+                            <li class="dots-list__item">Что было не так с мясом из магазина</li>
+                            <li class="dots-list__item">Почему мы больше не покупаем мясо на рынке</li>
+                            <li class="dots-list__item">Фермерский интернет-магазин</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /seo-text -->
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                <a href="#wrap" class="up-link btn btn_light text_size-md d-none d-md-flex">
+                    <span class="icon icon-up"></span>
+                    Наверх
+                </a>
+                <div class="d-flex">
+                    <a href="/" class="logo footer__logo"><img src="img/logo-inversion.svg" alt="" class="img-fluid"></a>
+                    <div class="footer__content">
+                        <div class="footer__contacts d-flex text_size-md">
+                            <div class="contact-item">
+                                <div class="contact-item__icon icon icon-phone"></div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p><a href="tel:+79259411991" class="text_inversion text_semibold nowrap">+7 (925) 941-19-91</a></p>
+                                        <p class="text_size-sm">Телефон в Москве</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p><a href="tel:+78009411991" class="text_inversion text_semibold nowrap">+7 (800) 941-19-91</a></p>
+                                        <p class="text_size-sm">Бесплатно по РФ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-item col-md-6 col-xl-auto">
+                                <div class="contact-item__icon icon icon-map"></div>
+                                <p class="text_semibold">Москва, пр. Вернадского 41, стр. 1</p>
+                                <p class="text_size-sm">Пункт выдачи заказов работает 9:00 - 20:00</p>
+                            </div>
+                            <div class="contact-item col-md-6 col-xl-auto">
+                                <div class="contact-item__icon icon icon-email"></div>
+                                <p><a href="mailto:info@breadmeatmarket.ru" class="text_inversion text_semibold">info@breadmeatmarket.ru</a></p>
+                                <p class="text_size-sm">Email для связи</p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between flex-column flex-xl-row">
+                            <ul class="footer-nav d-flex align-content-center text_size-md">
+                                <li class="footer-nav__item"><a href="#callback" data-bs-toggle="modal" class="text_inversion text_size-sm text_semibold">Заказать звонок</a></li>
+                                <li class="footer-nav__item"><a href="#" class="text_inversion">Условия и соглашения</a></li>
+                                <li class="footer-nav__item"><a href="#" class="text_inversion">Обмен и возврат</a></li>
+                                <li class="footer-nav__item"><a href="#" class="text_inversion">Сертификаты</a></li>
+                            </ul>
+                            <ul class="social-list footer__social-list d-flex">
+                                <li class="social-list__item"><a href="#" class="social-list__link icon icon-vk-inversion"></a></li>
+                                <li class="social-list__item"><a href="#" class="social-list__link icon icon-whatsapp-inversion"></a></li>
+                                <li class="social-list__item"><a href="#" class="social-list__link icon icon-tg-inversion"></a></li>
+                                <li class="social-list__item"><a href="#" class="social-list__link icon icon-ins-inversion"></a></li>
+                                <li class="social-list__item"><a href="#" class="social-list__link icon icon-youtube-inversion"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom text_size-xs">
+                <div class="container">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
+                        <ul class="footer__payment-list payment-list order-xl-2 d-flex">
+                            <li class="payment-list__item icon icon-visa"></li>
+                            <li class="payment-list__item icon icon-mastercard"></li>
+                            <li class="payment-list__item icon icon-mir"></li>
+                            <li class="payment-list__item icon icon-sbp"></li>
+                        </ul>
+                        <div class="copyright">ООО «Хлеб и Мясо» © 2015–2023. Копирование любых материалов запрещено.</div>
+                        <div class="producer">Разработка и продвижение сайта <a href="#" class="text_warning">Ozhgibesov Agency</a></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+
+    </div>
+
+    <!-- callback -->
+    <div class="modal fade" id="callback" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog_sm">
+            <div class="modal-content text_inversion">
+                <button type="button" class="icon modal__close icon-close-inversion" data-bs-dismiss="modal"></button>
+                <div class="title title_size-lg modal__title">Заказать звонок</div>
+                <p>Оставьте свои данные и мы свяжемся с вами в течение рабочего дня</p>
+                <form action="#">
+                    <div class="d-md-flex modal__row">
+                        <div class="flex-grow-1 modal__col">
+                            <div class="input form-group pos-rel">
+                                <input class="input__field form-control" type="text" id="phone">
+                                <label class="input__label input__label--juro" for="phone">
+                                    <span class="input__label-content input__label-content--juro">Номер телефона</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group modal__col">
+                            <button class="btn btn_transparent w-100 modal__btn" data-bs-toggle="modal" data-bs-target="#success">
+                                <span class="icon btn__icon icon icon-phone"></span>
+                                Заказать звонок
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- /callback -->
+    <!-- success -->
+    <div class="modal fade" id="success" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog_xs">
+            <div class="modal-content text_center text_inversion">
+                <button type="button" class="icon modal__close icon-close-inversion" data-bs-dismiss="modal"></button>
+                <div class="modal__icon"><img src="img/icons/check-succsess.svg" alt=""></div>
+                <div class="title title_size-lg mb_sm pb-1">Заявка принята</div>
+                <div class="form-group">
+                    <button class="btn btn_transparent" data-bs-dismiss="modal">Закрыть окно</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /success -->
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiIonNI8Lg81sQ_2zkvMTcIUmQn5KikzA&callback=initMap" async defer></script>
+    <script src="js/classie.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

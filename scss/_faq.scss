@@ -1,0 +1,15 @@
+.faq{
+  &-group{
+    padding-top: 1.1rem;
+  }
+  &-item{
+    border-bottom: 1px solid $black;
+    padding: 0.72rem 0;
+    &__link{
+      padding: 1rem 0;
+    }
+    &__body{
+      padding:0 5% 1.1rem 0;
+    }
+  }
+}

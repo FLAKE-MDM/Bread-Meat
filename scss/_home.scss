@@ -1,0 +1,355 @@
+.home-slider{
+  margin: 1.5rem 0 6.6rem;
+  @include bp(xxl-up){
+    margin-left: -6.4%;
+    margin-right: -6.4%;
+    padding: 0 6.4%;
+  }
+  @include bp(md){
+    margin: 0 0 2.8rem;
+  }
+  &__slide{
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    @include bp(md){
+      border-radius: 10px;
+    }
+  }
+  &__text{
+    position: absolute;
+    top: 16%;
+    left: 0;
+    width: 47%;
+    padding: 0 6.5%;
+    @include bp(xl){
+      width: 62%;
+    }
+    @include bp(lg){
+      top: 2rem;
+      padding: 0 3rem;
+    }
+    @include bp(md){
+      width: 80%;
+      padding: 0 2rem;
+      top: 1.6rem;
+    }
+    .title{
+      margin-bottom: 2.3rem;
+      @include bp(md){
+        margin-bottom: 0.9rem;
+      }
+    }
+    p{
+      margin-bottom: 3.8rem;
+      @include bp(lg){
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}
+
+// advantages
+.advantages{
+  &-slider{
+    .swiper-slide{
+      height: auto;
+      display: flex;
+    }
+  }
+  &-item{
+    border: 1px solid $black;
+    padding: 2.9rem 2.9rem 2rem;
+    border-radius: 20px;
+    @include bp(md){
+      padding: 1.4rem 1.4rem 0.6rem;
+    }
+    &__icon{
+      margin-bottom: 2.8rem;
+      @include bp(md){
+        width: 5rem;
+        margin-bottom: 0.9rem;
+      }
+    }
+  }
+}
+
+// production
+.production-item{
+  position: relative;
+  margin-top: 2rem;
+  border-radius: 20px;
+  @include bp(md){
+    border-radius: 10px;
+    margin: 0 0 1rem;
+  }
+  &__title{
+    position: absolute;
+    top: 2.7rem;
+    left: 3rem;
+    @include bp(lg){
+      top: 2rem;
+      left: 2rem;
+    }
+    @include bp(sm){
+      top: 1.3rem;
+      left: 1.5rem;
+    }
+  }
+}
+.zoom-link{
+  display: block;
+  overflow: hidden;
+  @include bp(hv){
+    &:hover{
+      img{
+        transform: scale(1.1);
+      }
+    }
+  }
+  img{
+    width: 100%;
+    display: block;
+    transition: all 0.5s ease-out;
+  }
+}
+
+// info
+.info-section{
+  background: #373737 url(../img/pattern.png) 0 0 repeat;
+  position: relative;
+  border-radius: 20px;
+  margin-top: 8rem;
+  z-index: 1;
+  @include bp(md){
+    margin-top: 3rem;
+    border-radius: 10px;
+  }
+  &__text{
+    width: 58%;
+    padding: 5.5rem 6rem;
+    @include bp(lg){
+      width: 72%;
+      padding: 2rem 3rem;
+    }
+    @include bp(md){
+      padding: 1.3rem 1.5rem 2rem;
+      font-size: 1.2rem;
+      line-height: 2rem;
+      width: 100%;
+    }
+  }
+  &__image{
+    margin-bottom: 0.2rem;
+    @include bp(md){
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+      img{
+        height: 100%;
+      }
+    }
+  }
+  &__title{
+    margin-bottom: 2rem;
+    @include bp(md){
+      margin-bottom: 0.7rem;
+    }
+  }
+  p{
+    margin-bottom: 3rem;
+    @include bp(md){
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+// about
+.about-section{
+  &__text{
+    width: 56%;
+    padding-right: 2.2rem;
+  }
+  &__image{
+    margin-top: 0.5rem;
+    img{
+      border-radius: 20px;
+    }
+  }
+  &__info{
+    margin-top: 3rem;
+    @include bp(xl-up){
+      padding-right: 5%;
+    }
+  }
+}
+.info-item{
+  border: 1px solid $black;
+  border-radius: 20px;
+  padding: 1.3rem 1.85rem 1.1rem 2rem;
+  @include bp(lg){
+    padding: 1.3rem 1.5rem 1.1rem;
+  }
+  &:not(:last-child){
+    margin-right: 2rem;
+    @include bp(lg){
+      margin-right: 1rem;
+    }
+  }
+  &__num{
+    font-size: 4rem;
+    line-height: 4.8rem;
+    margin-bottom: 1.1rem;
+  }
+}
+
+// steps
+.steps-slider{
+  margin: 5.2rem -1rem 0;
+}
+.step-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding: 1rem;
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 12.1rem;
+    height: 0.1rem;
+    background: $black;
+  }
+  .swiper-slide:first-child &{
+    &:before{
+      left: 1rem;
+    }
+    &:after{
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0.8rem;
+      top: 11.9rem;
+      height: 0.5rem;
+      width: 0.5rem;
+      border-radius: 50%;
+      background: $black;
+    }
+  }
+  .swiper-slide:last-child &{
+    &:before{
+      right: 1.2rem;
+    }
+    &:after{
+      content: '';
+      display: block;
+      position: absolute;
+      right: 0.7rem;
+      top: 11.7rem;
+      height: 0;
+      border: 4px solid transparent;
+      border-left-color: $black;
+    }
+  }
+  &__icon{
+    position: relative;
+    margin-bottom: 8.2rem;
+    &:after, &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      border-radius: 50%;
+      bottom: -5.4rem;
+    }
+    &:before{
+      width: 2.4rem;
+      height: 2.4rem;
+      border: 1px solid $black;
+      background: #fff;
+    }
+    &:after{
+      width: 1rem;
+      height: 1rem;
+      margin-bottom: 0.7rem;
+      background: $black;
+    }
+  }
+}
+
+// recipes
+.recipes-slider{
+  @include bp(xl-up){
+    overflow: visible;
+  }
+  .swiper-slide{
+    height: auto;
+    display: flex;
+  }
+  &__wrapper{
+    @include bp(xl-up){
+      display: grid;
+      grid-template-columns: 57.7% 40.8%;
+      grid-template-rows: repeat(3, 1fr);
+      grid-gap: 1.7rem 2rem;
+      .swiper-slide:first-child{
+        grid-row: span 3;
+      }
+    }
+  }
+}
+
+// trust
+.logos-row{
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  margin-top: 4rem;
+  justify-content: space-between;
+  @include bp(lg){
+    grid-gap: 1rem 2rem;
+  }
+}
+.logo-link{
+  display: inline-flex;
+  align-items: center;
+}
+
+// conatcs
+.map{
+  height: 57.3rem;
+}
+.contacts{
+  &-row{
+    margin-bottom: 3.1rem;
+    @include bp(lg){
+      flex-wrap: wrap;
+    }
+    &__social-list{
+      margin: 1.2rem -1.25rem 0 0;
+    }
+    &__address{
+      margin: 1rem auto 0;
+      @include bp(lg){
+        order: 2;
+        margin: 1rem 0 0;
+      }
+    }
+    &__work-time{
+      margin: 0.8rem 2.5rem 0 0.2rem;
+    }
+    .btn{
+      margin: 0.7rem 1.2rem 0 0;
+    }
+  }
+}
+.pane-nav, .fixed-info{
+  display: none!important;
+}

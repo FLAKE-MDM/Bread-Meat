@@ -1,0 +1,257 @@
+a{
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+    color: $black;
+    @include bp(hv){
+        &:hover{
+            color: $dark;
+        }
+        &.text_dark:hover, &.text_medium-light:hover{
+            color: #000;
+        }
+        &.text_inversion:hover{
+            color: #fff;
+            opacity: 0.7;
+        }
+        &.text_danger:hover{
+            color: $danger-b;
+        }
+        &.text_success:hover{
+            color: $success-b;
+        }
+        &.text_primary:hover{
+            color: $primary-b;
+        }
+        &.text_warning:hover{
+            color: $warning-b;
+        }
+    }
+}
+.link_underline{
+    text-decoration: underline;
+    @include bp(hv){
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
+p{
+    margin-bottom: 0.8rem;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+h1{
+    font-size: 5.6rem;
+    line-height: 6.4rem;
+    @include bp(md){
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+    }
+}
+h2{
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+    @include bp(md){
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+    }
+}
+h3{
+    font-size: 4rem;
+    line-height: 4.8rem;
+}
+h4{
+    font-size: 3.2rem;
+    line-height: 4rem;
+    @include bp(md){
+        font-size: 2rem;
+        line-height: 2.8rem;
+    }
+}
+h5{
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    @include bp(md){
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+    }
+}
+h6{
+    font-size: 2rem;
+    line-height: 2.8rem;
+}
+.title{
+    font: 400 4.8rem/5.6rem 'Bebas Neue', sans-serif;
+    text-transform: uppercase;
+    @include bp(md){
+      font-size: 2.4rem;
+      line-height: 3.2rem;
+    }
+    &_size{
+        &-xs{
+            font-size: 2rem;
+            line-height: 2.8rem;
+            @include bp(md){
+
+            }
+        }
+        &-sm{
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+            @include bp(md){
+                font-size: 1.8rem;
+                line-height: 1.8rem;
+            }
+        }
+        &-md{
+            font-size: 3.2rem;
+            line-height: 4rem;
+            @include bp(md){
+                font-size: 2rem;
+                line-height: 2.8rem;
+            }
+        }
+        &-lg{
+            font-size: 5.6rem;
+            line-height: 6.4rem;
+            @include bp(md){
+                font-size: 2.4rem;
+                line-height: 3.2rem;
+            }
+        }
+        &-xl{
+            font-size: 7rem;
+            line-height: 6.4rem;
+            @include bp(md){
+                font-size: 3.2rem;
+                line-height: 4rem;
+            }
+        }
+    }
+}
+.mb{
+    &_xs{
+        margin-bottom: 1.3rem;
+        @include bp(md){
+            margin-bottom: 1.1rem;
+        }
+    }
+    &_sm{
+        margin-bottom: 2.5rem;
+        @include bp(md){
+            margin-bottom: 1.2rem;
+        }
+    }
+    &_md{
+        margin-bottom: 4.1rem;
+    }
+    &_lg{
+        margin-bottom: 4.5rem;
+        @include bp(md){
+            margin-bottom: 1.2rem;
+        }
+    }
+}
+.mt{
+    &_xs{
+
+    }
+    &_sm{
+        
+    }
+    &_md{
+        margin-top: 3rem;
+    }
+    &_lg{
+
+    }
+}
+.text{
+    &_upper{
+        text-transform: uppercase;
+    }
+    &_styling{
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    // size
+    &_size{
+        &-xs{
+            font-size: 1.2rem;
+            line-height: 2rem;
+        }
+        &-sm{
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+            @include bp(sm){
+                font-size: 1.2rem;
+                line-height: 2rem;
+            }
+        }
+        &-md{
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            @include bp(sm){
+                font-size: 1.2rem;
+                line-height: 2rem;
+            }
+        }
+        &-lg{
+            font-size: 2rem;
+            line-height: 2.8rem;
+        }
+        &-xl{
+            
+        }
+    }
+    // colors
+    &_inversion{
+        color: #fff;
+    }
+    &_light{
+        color: $light;
+    }
+    &_medium-light{
+        color: $medium-light;
+    }
+    &_dark{
+        color: $dark;
+    }
+    &_danger{
+        color: $danger;
+    }
+    &_success{
+        color: $success;
+    }
+    &_primary{
+        color: $primary;
+    }
+    &_warning{
+        color: $warning;
+    }
+    // weight
+    &_semibold{
+        font-weight: 600;
+    }
+    &_bold{
+        font-weight: 700;
+    }
+    // alignment
+    &_center{
+        text-align: center;
+        &_sm{
+            @include bp(sm){
+                text-align: center;
+            }
+        }
+    }
+    &_left{
+        text-align: left!important;
+    }
+    &_right{
+        text-align: right!important;
+    }
+}
+

@@ -1,0 +1,326 @@
+.icon{
+    background-repeat: no-repeat;
+    background-size: contain!important;
+    background-position: 0 0;
+    display: inline-block;
+    flex-shrink: 0;
+    width: 2.4rem;
+    height: 2.4rem;
+}
+.icon-search{
+    background-image: url(../img/icons/search.svg);
+}
+.icon-user{
+    background-image: url(../img/icons/user.svg);
+}
+.icon-heart{
+    background-image: url(../img/icons/heart.svg);
+}
+.icon-basket{
+    background-image: url(../img/icons/basket.svg);
+}
+.icon-catalogue{
+    background-image: url(../img/icons/catalogue.svg);
+}
+.icon-vk-dark{
+    background-image: url(../img/icons/vk-dark.svg);
+}
+.icon-whatsapp-dark{
+    background-image: url(../img/icons/whatsapp-dark.svg);
+}
+.icon-tg-dark{
+    background-image: url(../img/icons/tg-dark.svg);
+}
+.icon-vk{
+    position: relative;
+    @include bp(hv){
+        &:hover{
+            &:before{opacity: 0;}
+            &:after{opacity: 1;}
+        }
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/vk.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/vk-dark.svg);
+    }
+}
+.icon-whatsapp{
+    position: relative;
+    @include bp(hv){
+        &:hover{
+            &:before{opacity: 0;}
+            &:after{opacity: 1;}
+        }
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/whatsapp.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/whatsapp-dark.svg);
+    }
+}
+.icon-tg{
+    position: relative;
+    @include bp(hv){
+        &:hover{
+            &:before{opacity: 0;}
+            &:after{opacity: 1;}
+        }
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/tg.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/tg-dark.svg);
+    }
+}
+.icon-arrow-right{
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    @include bp(hv){
+        &:hover{
+            &:before{opacity: 0;}
+            &:after{opacity: 1;}
+        }
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/arrow-right.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/arrow-right-dark.svg);
+    }
+}
+a:hover>.icon-arrow-right{
+    @include bp(hv){
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+}
+.icon-prev{
+    background-image: url(../img/icons/prev.svg);
+}
+.icon-next{
+    background-image: url(../img/icons/next.svg);
+}
+.icon-minus{
+    background-image: url(../img/icons/minus.svg);
+}
+.icon-plus{
+    background-image: url(../img/icons/plus.svg);
+}
+.icon-caret{
+    background-image: url(../img/icons/caret.svg);
+    transition: all 0.3s ease-out;
+    transform: rotate(180deg);
+    margin-left: 2rem;
+    .collapsed &{transform: none;}
+}
+.icon-phone{
+    background-image: url(../img/icons/phone.svg);
+}
+.icon-map{
+    background-image: url(../img/icons/map.svg);
+}
+.icon-email{
+    background-image: url(../img/icons/email.svg);
+}
+.icon-vk-inversion{
+    background-image: url(../img/icons/vk-inversion.svg);
+}
+.icon-whatsapp-inversion{
+    background-image: url(../img/icons/whatsapp-inversion.svg);
+}
+.icon-tg-inversion{
+    background-image: url(../img/icons/tg-inversion.svg);
+}
+.icon-ins-inversion{
+    background-image: url(../img/icons/ins-inversion.svg);
+}
+.icon-youtube-inversion{
+    background-image: url(../img/icons/youtube-inversion.svg);
+}
+.icon-visa{
+    background-image: url(../img/icons/visa.svg);
+}
+.icon-mastercard{
+    background-image: url(../img/icons/mastercard.svg);
+}
+.icon-mir{
+    background-image: url(../img/icons/mir.svg);
+}
+.icon-sbp{
+    background-image: url(../img/icons/sbp.svg);
+}
+.icon-up{
+    background-image: url(../img/icons/up.svg);
+}
+.icon-menu-inversion{
+    position: relative;
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/close-inversion.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/menu-inversion.svg);
+    }
+    .collapsed &{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+}
+.icon-menu{
+    position: relative;
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/close.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/menu.svg);
+    }
+    .collapsed &{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+}
+.icon-close{
+    background-image: url(../img/icons/close.svg);
+}
+.icon-close-inversion{
+    background-image: url(../img/icons/close-inversion.svg);
+}
+.icon-{
+    background-image: url(../img/icons/.svg);
+}
+.icon-{
+    background-image: url(../img/icons/.svg);
+}
+.icon-{
+    background-image: url(../img/icons/.svg);
+}
+
+
+
+
+
+
+
+
+
+.icon-{
+    background-image: url(../img/icons/.svg);
+}
+.icon-{
+    width: rem;
+    height: rem;
+    position: relative;
+    @include bp(hv){
+        &:hover{
+            &:before{opacity: 0;}
+            &:after{opacity: 1;}
+        }
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/.svg);
+    }
+}
+a:hover>.icon-,  .active>.icon-{
+    @include bp(hv){
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+}

@@ -1,0 +1,101 @@
+.btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 1.6rem 2.35rem 1.4rem;
+    line-height: 2.4rem;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    position: relative;
+    border: 1px solid $black;
+    flex-shrink: 0;
+    &:disabled, &.disabled{
+        cursor: default;
+        pointer-events: none;
+        background: gray;
+        color: #000;
+    }
+    @include bp(hv){
+        color: #fff;
+        background: $black;
+    }
+    @include bp(md){
+      font-size: 1.2rem;
+      line-height: 2rem;
+      padding: 0.7rem 1.55rem;
+    }
+    &__icon{
+        margin: -0.7rem 0.8rem -0.5rem 0;
+    }
+    &_inversion{
+        transition: none;
+        background: #fff;
+        color: $black;
+        border-color: transparent;
+        @include bp(hv){
+            &:hover{
+                background: #f7f7f8;
+                color: $black;
+            }
+        }
+    }
+    &_dark{
+        background: $black;
+        color: #fff;
+        &:hover{
+            background: #000;
+            color: #fff;
+        }
+    }
+    &_light{
+        background: #f7f7f8;
+        border-color: transparent;
+        color: $black;
+        @include bp(hv){
+            &:hover{
+                background: #e0dfe3;
+                color: $black;
+            }
+        }
+    }
+    &_outline{
+        border: 1px solid $black;
+        background: #fff;
+        color: $black;
+        @include bp(hv){
+            &:hover{
+                background: #f7f7f8;
+                border: 1px solid #e0dfe3;
+            }
+        }
+    }
+    &_transparent{
+        border: 1px solid #fff;
+        background: none;
+        @include bp(hv){
+            &:hover{
+                background: rgba(255,255,255,0.2);
+            }
+        }
+    }
+    &_size{
+        &-xs{
+            padding: 0.5rem 1.1rem;
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+        }
+        &-sm{
+            // padding: 0.9rem 1.6rem;
+        }
+        &-md{
+            padding: 1.2rem 2.35rem 1rem;
+        }
+    }
+}
+
+
