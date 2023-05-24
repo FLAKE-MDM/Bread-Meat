@@ -19,6 +19,9 @@
 .icon-basket{
     background-image: url(../img/icons/basket.svg);
 }
+.icon-basket-inversion{
+    background-image: url(../img/icons/basket-inversion.svg);
+}
 .icon-catalogue{
     background-image: url(../img/icons/catalogue.svg);
 }
@@ -167,7 +170,7 @@ a:hover>.icon-arrow-right{
     background-image: url(../img/icons/caret.svg);
     transition: all 0.3s ease-out;
     transform: rotate(180deg);
-    margin-left: 2rem;
+    margin-left: 1rem;
     .collapsed &{transform: none;}
 }
 .icon-phone{
@@ -267,8 +270,17 @@ a:hover>.icon-arrow-right{
 .icon-close-inversion{
     background-image: url(../img/icons/close-inversion.svg);
 }
-.icon-{
-    background-image: url(../img/icons/.svg);
+.icon-cooled{
+    background-image: url(../img/icons/cooled.svg);
+}
+.icon-halal{
+    background-image: url(../img/icons/halal.svg);
+}
+.icon-frying{
+    background-image: url(../img/icons/frying.svg);
+}
+.icon-soups{
+    background-image: url(../img/icons/soups.svg);
 }
 .icon-{
     background-image: url(../img/icons/.svg);
@@ -276,7 +288,6 @@ a:hover>.icon-arrow-right{
 .icon-{
     background-image: url(../img/icons/.svg);
 }
-
 
 
 

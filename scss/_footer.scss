@@ -17,6 +17,11 @@
         @include bp(lg){
             width: auto;
         }
+        @include bp(md){
+            margin: 0.6rem auto 3rem;
+            width: 14.3rem;
+            display: block;
+        }
     }
     &__content{
         flex-grow: 1;
@@ -28,22 +33,53 @@
         @include bp(lg){
             flex-wrap: wrap;
         }
+        @include bp(sm){
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+            padding-bottom: 1.3rem;
+            margin-bottom: 2.9rem;
+        }
+    }
+    &__phone{
+        @include bp(sm){
+            padding-left: 0.8rem;
+        }
     }
     &-nav{
-        margin-left: 1.2rem;
-        padding-top: 0.1rem;
+        margin-top: -0.7rem;
         @include bp(lg){
             margin: 0 auto 2rem;
         }
+        @include bp(md){
+            margin: 0 -1rem 1.5rem;
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+        }
+        @include bp(sm){
+            flex-direction: column;
+            justify-content: center;
+        }
         &__item{
             margin-right: 3.1rem;
-            &:first-child{
-                margin-right: 4.2rem;
-            }
             @include bp(lg){
-                &, &:first-child{
-                    margin: 0 1.5rem;
+                margin: 0 1.5rem;
+            }
+            @include bp(md){
+                margin: 0 1rem 1.5rem;
+            }
+        }
+        .btn{
+            background: rgba(47, 43, 67, 0.04);
+            @include bp(hv){
+                &:hover{
+                    background: rgba(255, 255, 2255, 0.1);
                 }
+            }
+            @include bp(md){
+                background: rgba(255, 255, 255, 0.05);
+                font-size: 1.4rem;
+                line-height: 2.2rem;
+                margin-top: 0.5rem;
             }
         }
     }
@@ -62,6 +98,16 @@
         border-top: 1px solid rgba(255, 255, 255, 0.1);
         padding: 0.9rem 0 1rem;
         margin-top: 2.6rem;
+        @include bp(md){
+            text-align: center;
+            justify-content: center;
+        }
+        @include bp(sm){
+            margin: 2.4rem 1rem 0;
+            .container{
+                padding: 0;
+            }
+        }
     }
     &__payment-list{
         margin-right: -0.6rem;
@@ -69,6 +115,9 @@
             margin: 0 auto 1rem;
             width: 100%;
             justify-content: center;
+        }
+        @include bp(md){
+            margin: 1rem auto 2rem;
         }
     }
 }
@@ -85,6 +134,9 @@
         @include bp(xl){
             margin-right: 2rem;
         }
+        @include bp(sm){
+            margin: 0 0 1.3rem 0;
+        }
     }
     &__icon{
         top: 0;
@@ -92,9 +144,16 @@
         left: 0;
         position: absolute;
         margin: auto 0;
+        @include bp(sm){
+            bottom: 0.1rem;
+            left: 0.1rem;
+        }
     }
     p{
         margin-bottom: 0.5rem;
+        @include bp(sm){
+            margin-bottom: 0.2rem;
+        }
     }
 }
 .payment-list{
@@ -127,5 +186,9 @@
 .producer{
     @include bp(xl-up){
         padding-left: 0.3rem;
+    }
+    @include bp(md){
+        margin-top: 2rem;
+        padding: 0;
     }
 }

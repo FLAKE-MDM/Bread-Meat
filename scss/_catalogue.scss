@@ -1,7 +1,10 @@
 .popular-slider{
   @include bp(md){
-      margin-right: -1rem;
-      padding-right: 1.5rem;
+    margin-right: -1rem;
+    padding-right: 1.5rem;
+    &_margin{
+      margin-bottom: -0.7rem;
+    }
   }
 }
 .catalogue{
@@ -21,6 +24,7 @@
       display: block;
       @include bp(md){
         border-radius: 10px;
+        margin-bottom: 0.9rem;
       }
       @include bp(hv){
         &:hover{
@@ -31,6 +35,15 @@
       }
       img{
         display: block;
+      }
+      .mark{
+        position: absolute;
+        left: 1rem;
+        bottom: 1rem;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        padding: 0.2rem 0.8rem;
+        border-radius: 5px;
       }
     }
     &__tags{
@@ -69,10 +82,16 @@
     }
     &__price{
       margin: 1.2rem 0 1rem;
+      @include bp(md){
+        margin: 0.2rem 0 0.3rem;
+      }
     }
     &__name{
       display: inline-block;
       margin-bottom: 1.9rem;
+      @include bp(md){
+        margin-bottom: 1rem;
+      }
     }
     &__rating{
       margin: 0.5rem 2.6rem 0.5rem 0;
@@ -84,10 +103,17 @@
   @include bp(xl){
     margin-left: 1rem;
   }
+  @include bp(md){
+    margin: 0.8rem 0 0;
+  }
 }
 .price{
   font-size: 3.2rem;
   line-height: 4rem;
+  @include bp(md){
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+  }
 }
 .price_old{
   font-size: 2.4rem;
@@ -95,22 +121,34 @@
   text-decoration: none;
   position: relative;
   margin: 0 1.5rem;
+  @include bp(md){
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    margin: 0 1.3rem 0 0.7rem;
+  }
   &:before{
     content: '';
     display: block;
     position: absolute;
     top: 0.5rem;
     bottom: 0;
-    left: 0;
-    right: 0;
+    left: -0.2rem;
+    right: -0.2rem;
     margin: auto 0;
     height: 0.1rem;
     background: $danger;
+    @include bp(md){
+      right: -0.5rem;
+    }
   }
 }
 .discount{
   font-size: 2.4rem;
   line-height: 3.2rem;
+  @include bp(md){
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
 }
 .mark{
   font-size: 1.4rem;

@@ -147,6 +147,9 @@ h6{
     }
     &_md{
         margin-bottom: 4.1rem;
+        @include bp(md){
+            margin-bottom: 1.2rem;
+        }
     }
     &_lg{
         margin-bottom: 4.5rem;
@@ -164,6 +167,9 @@ h6{
     }
     &_md{
         margin-top: 3rem;
+        @include bp(sm){
+            margin-top: 2rem;
+        }
     }
     &_lg{
 
@@ -201,9 +207,10 @@ h6{
         &-lg{
             font-size: 2rem;
             line-height: 2.8rem;
-        }
-        &-xl{
-            
+            @include bp(md){
+                font-size: 1.2rem;
+                line-height: 1.4rem;
+            }
         }
     }
     // colors

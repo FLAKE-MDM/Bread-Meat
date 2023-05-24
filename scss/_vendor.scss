@@ -2,6 +2,10 @@
 .collapse:not(.show) {
   display: none;
 }
+.fake-btn:not(.collapse){
+  display: flex;
+  align-items: center;
+}
 .collapsing {
   height: 0;
   overflow: hidden;
@@ -42,14 +46,9 @@
     @include bp(hv){
       &:hover{opacity: 0.5;}
     }
-    @include bp(sm){
-      &.icon-close{
-        width: 1.6rem;
-        height: 1.6rem;
-        background-image: url(../img/icons/close-black.svg);
-        top: 1.6rem;
-        right: 2.3rem;
-      }
+    @include bp(md){
+      top: 1rem;
+      right: 1rem;
     }
   }
   &__title{
@@ -71,6 +70,8 @@
 .modal-dialog {
   position: relative;
   pointer-events: none;
+  width: 32rem;
+  margin: 3rem auto;
   @include bp(md-up){
     width: 60.6rem;
     margin: 5rem auto;
@@ -86,11 +87,21 @@
     }
   }
   &_lg{
+    @include bp(md-up){
+      width: 75rem;
+    }
     @include bp(lg-up){
-
+      width: 92rem;
+    }
+    @include bp(xl-up){
+      width: 110rem;
     }
     @include bp(xxl-up){
       width: 119.6rem;
+    }
+    @include bp(sm){
+      width: 100%;
+      margin: 0;
     }
   }
   &_xl{
@@ -126,10 +137,14 @@
   padding: 3.4rem 4rem 2.6rem;
   border-radius: 20px;
   @include bp(md){
-    
+    padding: 2rem;
   }
-  @include bp(sm){
-    
+  &_inversion{
+    background: #fff;
+    @include bp(sm){
+      padding-top: 4rem;
+      border-radius: 0;
+    }
   }
 }
 

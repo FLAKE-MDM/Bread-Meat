@@ -89,11 +89,8 @@ $('.btn-add').click(function (e) {
 })
 
 new Swiper(".steps-slider", {
-  slidesPerView: 1,
+  slidesPerView: 2,
   breakpoints: {
-    768: {
-      slidesPerView: 2,
-    },
     992: {
       slidesPerView: 4,
     },
@@ -171,7 +168,10 @@ $('.catalogue-link').click(function(e){
   $('body').toggleClass('overflow-none');
 })
 
-
+$('.toggler').click(function(e){
+  e.preventDefault();
+  $(this).toggleClass('active');
+})
 
 // new Swiper(".product-slider", {
 //   slidesPerView: 1,

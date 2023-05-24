@@ -29,6 +29,13 @@
       line-height: 2rem;
       padding: 0.7rem 1.55rem;
     }
+    &.flex-column{
+        padding: 0.6rem 4rem;
+        .text_size-xs{
+            font-weight: 500;
+            margin: -0.1rem 0;
+        }
+    }
     &__icon{
         margin: -0.7rem 0.8rem -0.5rem 0;
     }
@@ -77,10 +84,28 @@
     &_transparent{
         border: 1px solid #fff;
         background: none;
+        color: #fff;
         @include bp(hv){
             &:hover{
                 background: rgba(255,255,255,0.2);
             }
+        }
+    }
+    &_success{
+        background: $success;
+        border-color: $success;
+        color: #fff;
+        @include bp(hv){
+            &:hover{
+                color: #fff;
+                background: $success-b;
+                border-color: $success-b;
+            }
+        }
+    }
+    &_form{
+        @include bp(md){
+            min-height: 5.6rem;
         }
     }
     &_size{
@@ -94,6 +119,20 @@
         }
         &-md{
             padding: 1.2rem 2.35rem 1rem;
+            @include bp(md){
+                padding: 0.7rem 1.4rem;
+                .btn__icon {
+                    margin: -0.2rem 0.7rem -0.5rem 0;
+                    width: 2.2rem;
+                    height: 2.2rem;
+                }
+            }
+        }
+        &-lg{
+            min-width: 27rem;
+            @include bp(md){
+                padding: 1.5rem 1.55rem;
+              }
         }
     }
 }

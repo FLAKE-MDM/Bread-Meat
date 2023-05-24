@@ -159,8 +159,8 @@
         height: 1.6rem;
         background-image: url(../img/icons/rating_md.svg);
         @include bp(md){
-            // width: 9.3rem;
-            // height: 1.6rem;
+            width: 8rem;
+            height: 1.2rem;
         }
         .rating__active{
             background-image: url(../img/icons/rating-active_md.svg);

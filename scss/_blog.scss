@@ -5,13 +5,22 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    @include bp(md){
+      border-radius: 10px;
+    }
     &__body{
       padding: 1.6rem 2.9rem 2.3rem;
       display: flex;
       flex-direction: column;
       flex-grow: 1;
+      @include bp(md){
+        padding: 1.3rem 1.4rem 1.4rem;
+      }
       p{
         margin-bottom: 2rem;
+        @include bp(md){
+          margin-bottom: 1rem;
+        }
       }
       a{
         margin-top: auto;
@@ -22,6 +31,21 @@
       @include bp(lg){
         font-size: 2.4rem;
         line-height: 3.2rem;
+        margin-bottom: 0.7rem;
+      }
+      @include bp(md){
+        font-size: 2rem;
+        line-height: 2.8rem;
+      }
+    }
+    &__image{
+      @include bp(md){
+        min-height: 16.9rem;
+        img{
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
       }
     }
     &_row{
@@ -39,6 +63,7 @@
         .blog-item__image{
           flex-shrink: 0;
           border-right: 1px solid $black;
+          height: 100%;
           min-height: 16.8rem;
           width: 17rem;
           img{

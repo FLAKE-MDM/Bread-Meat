@@ -222,8 +222,8 @@
             <div class="home-slider swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide home-slider__slide">
-                        <img src="img/content/home-slide.jpg" alt="" class="img-fluid d-none d-lg-block w-100">
-                        <img src="img/content/home-slide-m.jpg" alt="" class="img-fluid d-lg-none w-100">
+                        <img src="img/content/home-slide.jpg" alt="" class="img-fluid d-none d-md-block w-100">
+                        <img src="img/content/home-slide-m.jpg" alt="" class="img-fluid d-md-none w-100">
                         <div class="home-slider__text text_inversion">
                             <h1 class="title title_size-xl">Новая поставка халяльного мяса</h1>
                             <p class="text_size-md">Свежая говядина из  породистых кавказских коров, выращенных на натуральных кормах.</p>
@@ -231,8 +231,8 @@
                         </div>
                     </div>
                     <div class="swiper-slide home-slider__slide">
-                        <img src="img/content/home-slide.jpg" alt="" class="img-fluid d-none d-lg-block w-100">
-                        <img src="img/content/home-slide-m.jpg" alt="" class="img-fluid d-lg-none w-100">
+                        <img src="img/content/home-slide.jpg" alt="" class="img-fluid d-none d-md-block w-100">
+                        <img src="img/content/home-slide-m.jpg" alt="" class="img-fluid d-md-none w-100">
                         <div class="home-slider__text text_inversion">
                             <div class="title title_size-xl">Новая поставка халяльного мяса</div>
                             <p class="text_size-md">Свежая говядина из  породистых кавказских коров, выращенных на натуральных кормах.</p>
@@ -240,8 +240,8 @@
                         </div>
                     </div>
                     <div class="swiper-slide home-slider__slide">
-                        <img src="img/content/home-slide.jpg" alt="" class="img-fluid d-none d-lg-block w-100">
-                        <img src="img/content/home-slide-m.jpg" alt="" class="img-fluid d-lg-none w-100">
+                        <img src="img/content/home-slide.jpg" alt="" class="img-fluid d-none d-md-block w-100">
+                        <img src="img/content/home-slide-m.jpg" alt="" class="img-fluid d-md-none w-100">
                         <div class="home-slider__text text_inversion">
                             <div class="title title_size-xl">Новая поставка халяльного мяса</div>
                             <p class="text_size-md">Свежая говядина из  породистых кавказских коров, выращенных на натуральных кормах.</p>
@@ -446,24 +446,25 @@
                 <div class="slider-wrapper">
                     <a href="#" class="popular-next swiper-prev swiper-btn swiper-btn_top btn_light"><span class="icon icon-prev"></span></a>
                     <a href="#" class="popular-prev swiper-next swiper-btn swiper-btn_top btn_light"><span class="icon icon-next"></span></a>
-                    <div class="popular-slider swiper">
+                    <div class="popular-slider popular-slider_margin swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="catalogue-item">
                                     <div class="catalogue-item">
-                                        <a href="#" class="catalogue-item__image">
-                                            <img src="img/content/catalogue-1.jpg" alt="img-fluid">
+                                        <a href="#card-modal" data-bs-toggle="modal" class="catalogue-item__image">
+                                            <img src="img/content/catalogue-1.jpg" class="img-fluid" alt="">
                                             <div class="catalogue-item__tags">
                                                 <div class="catalogue-item__tag">Запекать</div>
                                                 <div class="catalogue-item__tag">Тушить</div>
                                             </div>
                                             <div class="catalogue-item__hidden text_center text_size-md">Быстрый просмотр</div>
+                                            <div class="mark mark_success d-md-none">Новинка</div>
                                         </a>
                                         <div class="d-flex align-items-center">
                                             <div class="rating catalogue-item__rating rating_md">
                                                 <div class="rating__active" style="width:100%"></div>
                                             </div>
-                                            <div class="mark mark_success">Новинка</div>
+                                            <div class="mark mark_success d-none d-md-inline-flex">Новинка</div>
                                         </div>
                                         <div class="catalogue-item__price d-flex align-items-center">
                                             <div class="price text_styling">1 330 Р/<span class="text_size-lg">кг</span></div>
@@ -471,7 +472,7 @@
                                             <div class="discount text_danger text_styling text_bold">-15%</div>
                                         </div>
                                         <a href="item.html" class="catalogue-item__name text_size-md">Антрекот из говядины</a>
-                                        <div class="d-flex align-items-center">
+                                        <div class="d-md-flex align-items-center">
                                             <div class="btn-wrapper">
                                                 <a href="#" class="btn btn_outline btn-add btn_size-md">
                                                     <span class="icon icon-basket btn__icon"></span>В корзину
@@ -494,8 +495,8 @@
                             <div class="swiper-slide">
                                 <div class="catalogue-item">
                                     <div class="catalogue-item">
-                                        <a href="#" class="catalogue-item__image">
-                                            <img src="img/content/catalogue-2.jpg" alt="img-fluid">
+                                        <a href="#card-modal" data-bs-toggle="modal" class="catalogue-item__image">
+                                            <img src="img/content/catalogue-2.jpg" class="img-fluid" alt="">
                                             <div class="catalogue-item__tags">
                                                 <div class="catalogue-item__tag">Запекать</div>
                                                 <div class="catalogue-item__tag">Тушить</div>
@@ -513,7 +514,7 @@
                                             <div class="discount text_danger text_styling text_bold">-15%</div>
                                         </div>
                                         <a href="item.html" class="catalogue-item__name text_size-md">Голяжка говяжья для запекания</a>
-                                        <div class="d-flex align-items-center">
+                                        <div class="d-md-flex align-items-center">
                                             <div class="btn-wrapper">
                                                 <a href="#" class="btn btn_outline btn-add btn_size-md">
                                                     <span class="icon icon-basket btn__icon"></span>В корзину
@@ -536,8 +537,8 @@
                             <div class="swiper-slide">
                                 <div class="catalogue-item">
                                     <div class="catalogue-item">
-                                        <a href="#" class="catalogue-item__image">
-                                            <img src="img/content/catalogue-3.jpg" alt="img-fluid">
+                                        <a href="#card-modal" data-bs-toggle="modal" class="catalogue-item__image">
+                                            <img src="img/content/catalogue-3.jpg" class="img-fluid" alt="">
                                             <div class="catalogue-item__tags">
                                                 <div class="catalogue-item__tag">Запекать</div>
                                                 <div class="catalogue-item__tag">Тушить</div>
@@ -554,7 +555,7 @@
                                             <div class="price text_styling">1 330 Р/<span class="text_size-lg">кг</span></div>
                                         </div>
                                         <a href="item.html" class="catalogue-item__name text_size-md">Грудинка говяжья бескостная</a>
-                                        <div class="d-flex align-items-center">
+                                        <div class="d-md-flex align-items-center">
                                             <div class="btn-wrapper">
                                                 <a href="#" class="btn btn_outline btn-add btn_size-md">
                                                     <span class="icon icon-basket btn__icon"></span>В корзину
@@ -577,8 +578,8 @@
                             <div class="swiper-slide">
                                 <div class="catalogue-item">
                                     <div class="catalogue-item">
-                                        <a href="#" class="catalogue-item__image">
-                                            <img src="img/content/catalogue-4.jpg" alt="img-fluid">
+                                        <a href="#card-modal" data-bs-toggle="modal" class="catalogue-item__image">
+                                            <img src="img/content/catalogue-4.jpg" class="img-fluid" alt="">
                                             <div class="catalogue-item__tags">
                                                 <div class="catalogue-item__tag">Запекать</div>
                                                 <div class="catalogue-item__tag">Тушить</div>
@@ -597,7 +598,7 @@
                                             <div class="discount text_danger text_styling text_bold">-15%</div>
                                         </div>
                                         <a href="item.html" class="catalogue-item__name text_size-md">Гуляш говяжий</a>
-                                        <div class="d-flex align-items-center">
+                                        <div class="d-md-flex align-items-center">
                                             <div class="btn-wrapper">
                                                 <a href="#" class="btn btn_outline btn-add btn_size-md">
                                                     <span class="icon icon-basket btn__icon"></span>В корзину
@@ -626,14 +627,14 @@
             <section class="section about-section d-flex justify-content-between">
                 <div class="about-section__text">
                     <h2 class="mb_sm">О магазине</h2>
-                    <div class="about-section__image d-md-none"><img src="img/about-m.jpg" alt="" class="img-fluid"></div>
+                    <div class="about-section__image d-lg-none"><img src="img/about-m.jpg" alt="" class="w-100"></div>
                     <p>Мы работаем только с проверенными фермерами, которые выращивают животных на своих фермах, кормят их натуральными кормами и обеспечивают им комфортные условия содержания. Мы также следим за тем, чтобы наша продукция соответствовала всем необходимым стандартам качества и безопасности.</p>
                     <p>У нас вы найдете широкий ассортимент мясных продуктов - от свинины и говядины до баранины и птицы. Мы предлагаем не только свежее мясо, но и различные виды колбасных изделий, ветчин, сосисок и мясных деликатесов.</p>
                     <p>Спасибо за то, что выбираете нашу компанию!</p>
                     <div class="about-section__info d-flex">
                         <div class="info-item">
                             <div class="info-item__num text_styling">60+</div>
-                            <p class="text_size-sm">Наименований</p>
+                            <p class="text_size-sm">Наимено<wbr>ваний</p>
                         </div>
                         <div class="info-item">
                             <div class="info-item__num text_styling">5 000 кг</div>
@@ -645,12 +646,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="about-section__image d-none d-md-block"><img src="img/about.jpg" alt="" class="img-fluid"></div>
+                <div class="about-section__image d-none d-lg-block"><img src="img/about.jpg" alt="" class="img-fluid"></div>
             </section>
             <!-- /about -->
             <!-- steps -->
-            <section class="section">
-                <h2 class="mb_xs">Сделать заказ на сайте легко и просто</h2>
+            <section class="section steps-section">
+                <h2 class="mb_xs steps-section__title">Сделать заказ на сайте легко и просто</h2>
                 <p>Мы сделали процесс максимально удобным для наших клиентов</p>
                 <div class="swiper steps-slider">
                     <div class="swiper-wrapper">
@@ -775,8 +776,8 @@
             </section>
             <!-- /faq -->
             <!-- trust -->
-            <section class="section">
-                <h2 class="mb_sm pb-1">Нам доверяют</h2>
+            <section class="section trust-section">
+                <h2 class="mb_sm pb-md-1">Нам доверяют</h2>
                 <div class="col-lg-9">
                     <p>Клиенты выбирают наше мясо благодаря его высокому качеству, сертификации, удобству покупки и конкурентоспособной цене.</p>
                 </div>
@@ -800,9 +801,14 @@
                         <a href="tel:+79259411991" class="text_semibold header__phone-link title title_size-md nowrap">+7 (925) 941-19-91</a>
                         <a href="tel:+78009411991" class="text_semibold header__phone-link title title_size-md nowrap">+7 (800) 941-19-91</a>
                     </div>
-                    <div class="contacts-row__work-time text_size-sm nowrap">9:00 - 20:00</div>
-                    <a href="#" class="btn btn_light btn_size-xs contacts-row__btn">Заказать звонок</a>
-                    <div class="contacts-row__address">Москва, проспект Вернадского, д. 41, стр. 1</div>
+                    <div class="contacts-row__col d-md-flex align-items-center">
+                        <div class="contacts-row__work-time text_size-sm nowrap">9:00 - 20:00</div>
+                        <a href="#" class="btn btn_light btn_size-xs contacts-row__btn">Заказать звонок</a>
+                    </div>
+                    <div class="contacts-row__address">
+                        <p class="text_dark d-md-none">Пункт выдачи заказов</p>
+                        Москва, проспект Вернадского, д. 41, стр. 1
+                    </div>
                     <ul class="social-list contacts-row__social-list d-flex">
                         <li class="social-list__item"><a href="#" class="social-list__link icon icon-vk"></a></li>
                         <li class="social-list__item"><a href="#" class="social-list__link icon icon-whatsapp"></a></li>
@@ -818,8 +824,10 @@
             <div class="container">
                 <h2 class="mb_sm">Тут будет SEO текст</h2>
                 <p>Мы работаем только с проверенными фермерами, которые выращивают животных на своих фермах, кормят их натуральными кормами и обеспечивают им комфортные условия содержания. Мы также следим за тем, чтобы наша продукция соответствовала всем необходимым стандартам качества и безопасности.</p>
-                <p>У нас вы найдете широкий ассортимент мясных продуктов - от свинины и говядины до баранины и птицы. Мы предлагаем не только свежее мясо, но и различные виды колбасных изделий, ветчин, сосисок и мясных деликатесов.</p>
-                <p>Спасибо за то, что выбираете нашу компанию!</p>
+                <div class="d-none d-md-block">
+                    <p>У нас вы найдете широкий ассортимент мясных продуктов - от свинины и говядины до баранины и птицы. Мы предлагаем не только свежее мясо, но и различные виды колбасных изделий, ветчин, сосисок и мясных деликатесов.</p>
+                    <p>Спасибо за то, что выбираете нашу компанию!</p>
+                </div>
                 <div class="row mt_md">
                     <div class="col-md-6 col-xl-5">
                         <ol class="num-list">
@@ -848,7 +856,7 @@
                     <span class="icon icon-up"></span>
                     Наверх
                 </a>
-                <div class="d-flex">
+                <div class="d-lg-flex">
                     <a href="/" class="logo footer__logo"><img src="img/logo-inversion.svg" alt="" class="img-fluid"></a>
                     <div class="footer__content">
                         <div class="footer__contacts d-flex text_size-md">
@@ -859,29 +867,29 @@
                                         <p><a href="tel:+79259411991" class="text_inversion text_semibold nowrap">+7 (925) 941-19-91</a></p>
                                         <p class="text_size-sm">Телефон в Москве</p>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-6 footer__phone">
                                         <p><a href="tel:+78009411991" class="text_inversion text_semibold nowrap">+7 (800) 941-19-91</a></p>
                                         <p class="text_size-sm">Бесплатно по РФ</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="contact-item col-md-6 col-xl-auto">
+                            <div class="contact-item col-lg-6 col-xl-auto">
                                 <div class="contact-item__icon icon icon-map"></div>
                                 <p class="text_semibold">Москва, пр. Вернадского 41, стр. 1</p>
                                 <p class="text_size-sm">Пункт выдачи заказов работает 9:00 - 20:00</p>
                             </div>
-                            <div class="contact-item col-md-6 col-xl-auto">
+                            <div class="contact-item col-lg-6 col-xl-auto">
                                 <div class="contact-item__icon icon icon-email"></div>
                                 <p><a href="mailto:info@breadmeatmarket.ru" class="text_inversion text_semibold">info@breadmeatmarket.ru</a></p>
                                 <p class="text_size-sm">Email для связи</p>
                             </div>
                         </div>
                         <div class="d-flex justify-content-between flex-column flex-xl-row">
-                            <ul class="footer-nav d-flex align-content-center text_size-md">
-                                <li class="footer-nav__item"><a href="#callback" data-bs-toggle="modal" class="text_inversion text_size-sm text_semibold">Заказать звонок</a></li>
-                                <li class="footer-nav__item"><a href="#" class="text_inversion">Условия и соглашения</a></li>
-                                <li class="footer-nav__item"><a href="#" class="text_inversion">Обмен и возврат</a></li>
-                                <li class="footer-nav__item"><a href="#" class="text_inversion">Сертификаты</a></li>
+                            <ul class="footer-nav d-flex justify-content-center justify-content-md-between text_size-md align-items-center">
+                                <li class="footer-nav__item order-lg-1"><a href="#" class="text_inversion">Условия и соглашения</a></li>
+                                <li class="footer-nav__item order-lg-1"><a href="#" class="text_inversion">Обмен и возврат</a></li>
+                                <li class="footer-nav__item order-lg-1"><a href="#" class="text_inversion">Сертификаты</a></li>
+                                <li class="footer-nav__item"><a href="#callback" data-bs-toggle="modal" class="text_inversion text_size-sm text_semibold btn btn_size-xs">Заказать звонок</a></li>
                             </ul>
                             <ul class="social-list footer__social-list d-flex">
                                 <li class="social-list__item"><a href="#" class="social-list__link icon icon-vk-inversion"></a></li>
@@ -896,7 +904,7 @@
             </div>
             <div class="footer__bottom text_size-xs">
                 <div class="container">
-                    <div class="d-flex justify-content-between align-items-center flex-wrap">
+                    <div class="d-flex justify-content-center justify-content-lg-between align-items-center flex-wrap">
                         <ul class="footer__payment-list payment-list order-xl-2 d-flex">
                             <li class="payment-list__item icon icon-visa"></li>
                             <li class="payment-list__item icon icon-mastercard"></li>
@@ -904,7 +912,7 @@
                             <li class="payment-list__item icon icon-sbp"></li>
                         </ul>
                         <div class="copyright">ООО «Хлеб и Мясо» © 2015–2023. Копирование любых материалов запрещено.</div>
-                        <div class="producer">Разработка и продвижение сайта <a href="#" class="text_warning">Ozhgibesov Agency</a></div>
+                        <div class="producer">Разработка и продвижение сайта <a href="#" class="text_warning d-block d-md-inline">Ozhgibesov Agency</a></div>
                     </div>
                 </div>
             </div>
@@ -931,7 +939,7 @@
                             </div>
                         </div>
                         <div class="form-group modal__col">
-                            <button class="btn btn_transparent w-100 modal__btn" data-bs-toggle="modal" data-bs-target="#success">
+                            <button class="btn btn_transparent w-100 btn_form" data-bs-toggle="modal" data-bs-target="#success">
                                 <span class="icon btn__icon icon icon-phone"></span>
                                 Заказать звонок
                             </button>
@@ -956,7 +964,77 @@
         </div>
     </div>
     <!-- /success -->
-
+    <!-- card-modal -->
+    <div class="modal fade" id="card-modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog_lg">
+            <div class="modal-content modal-content_inversion">
+                <button type="button" class="icon modal__close icon-close d-md-none" data-bs-dismiss="modal"></button>
+                <div class="card d-md-flex">
+                    <div class="card__image card__image_modal"><img src="img/content/card.jpg" alt="" class="w-100"></div>
+                    <div class="card__info">
+                        <div class="title title_size-lg mb_sm">Грудинка говяжья <br class="d-none d-lg-block">на кости</div>
+                        <div class="d-flex align-items-center flex-wrap">
+                            <div class="text_dark card__code text_size-sm order-md-1 w-100_sm">Арт. 12345678</div>
+                            <div class="rating card__ratind">
+                                <div class="rating__active" style="width: 100%;"></div>
+                            </div>
+                            <div class="stock card__stock text_success text_size-sm text_semibold">В наличии</div>
+                        </div>
+                        <div class="card__description text_size-md">
+                            <p>Грудинка говяжья на кости лучший отруб для приготовления наваристого говяжьего бульона с насыщенным ароматом и супов на его основе. Требует длительной варки.</p>
+                        </div>
+                        <div class="card__price d-flex align-items-center">
+                            <div class="price text_styling">999 Р<span class="text_size-lg">/кг</span></div>
+                            <del class="price_old text_light text_styling">1 330 р</del>
+                            <div class="discount text_danger text_styling text_bold">-15%</div>
+                        </div>
+                        <div class="d-md-flex pos-rel">
+                            <div class="btn-wrapper">
+                                <a href="#" class="btn btn_dark btn-add btn_size-lg w-100_sm">
+                                    <span class="icon icon-basket-inversion btn__icon"></span>В корзину
+                                </a>
+                                <div class="card__fake-btn fake-btn collapse">
+                                    <a href="basket.html" class="btn btn_success flex-column">
+                                        В корзине
+                                        <span class="text_size-xs">Перейти</span>
+                                    </a>
+                                    <div class="input-number card__input-number">
+                                        <div class="input-number__down input-number__minus btn_light">
+                                            <span class="icon icon-minus"></span>
+                                        </div>
+                                        <input class="input-number__input" type="text" pattern="^[0-9]+$" value="1" readonly="">
+                                        <div class="input-number__up input-number__plus btn_light">
+                                            <span class="icon icon-plus"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="favorite-link favorite-link_modal toggler"><span class="icon icon-heart"></span></a>
+                        </div>
+                        <div class="card-list d-flex text_size-sm">
+                            <div class="card-item text_center">
+                                <div class="card-item__icon icon icon-cooled"></div>
+                                Охлаждённый
+                            </div>
+                            <div class="card-item text_center">
+                                <div class="card-item__icon icon icon-halal"></div>
+                                Халяль
+                            </div>
+                            <div class="card-item text_center">
+                                <div class="card-item__icon icon icon-frying"></div>
+                                Для жарки
+                            </div>
+                            <div class="card-item text_center">
+                                <div class="card-item__icon icon icon-soups"></div>
+                                Для супов
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /card-modal -->
 
 
     <script src="js/jquery-3.6.0.min.js"></script>

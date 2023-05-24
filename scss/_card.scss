@@ -1,0 +1,129 @@
+.card{
+  &__info{
+    width: 52rem;
+    max-width: 50%;
+    flex-shrink: 0;
+    @include bp(sm){
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  &__image{
+    flex-grow: 1;
+    margin: 0.6rem 5rem 0 0;
+    &_modal{
+      margin-right: 4rem;
+      @include bp(md){
+        margin-right: 2rem;
+      }
+      @include bp(sm){
+        margin: 0 0 1rem;
+      }
+    }
+    img{
+      border-radius: 20px;
+      @include bp(md){
+        border-radius: 10px;
+      }
+    }
+  }
+  &__stock{
+    margin: 0.1rem 2.6rem 0 1.3rem;
+  }
+  &__description{
+    margin: 2.6rem 0 2.5rem;
+  }
+  &__price{
+    margin-bottom: 2.8rem;
+    .price{
+      @include bp(lg-up){
+        font-size: 4.2rem;
+        .text_size-lg{
+          font-size: 2.4rem;
+        }
+      }
+    }
+  }
+  &__input-number{
+    margin-left: 1.5rem;
+    @include bp(lg-up){
+      .input-number__plus, .input-number__minus{
+        width: 5.6rem;
+        height: 5.6rem;
+      }
+      .input-number__input{
+        width: 6rem;
+      }
+    }
+  }
+  &__fake-btn{
+    @include bp(md-up){
+      padding-bottom: 3rem;
+    }
+  }
+  &-list{
+    margin-top: 5rem;
+    @include bp(sm){
+      margin-top: 2rem;
+      display: grid!important;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem;
+    }
+  }
+  &-item{
+    margin-bottom: 1.4rem;
+    &:not(:last-child){
+      margin-right: 3.6rem;
+      @include bp(lg){
+        margin-right: 3rem;
+      }
+    }
+    @include bp(sm){
+      display: flex;
+      align-items: center;
+      &:not(:last-child){
+        margin-right: 0;
+      }
+    }
+    &__icon{
+      width: 3.2rem;
+      height: 3.2rem;
+      margin: 0 auto 1rem;
+      display: block;
+      @include bp(sm){
+        margin: 0 1rem 0 0;
+      }
+    }
+  }
+}
+.favorite-link{
+  width: 5.6rem;
+  height: 5.6rem;
+  flex-shrink: 0;
+  border: 1px solid $black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1.5rem;
+  &.active{
+    .icon-heart{
+      background-image: url(../img/icons/heart-fill.svg);
+    }
+  }
+  @include bp(hv){
+    &:hover{
+      background: #f7f7f8;
+    }
+  }
+  @include bp(md){
+    width: 5.2rem;
+    height: 5.2rem;
+    &_modal{
+      position: absolute;
+      right: 0;
+      bottom: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+}

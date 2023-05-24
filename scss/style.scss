@@ -49,11 +49,14 @@ body{
 }
 .section{
     margin-bottom: 7.5rem;
-    &_last{
-        margin-bottom: 6rem;
-    }
     @include bp(md){
         margin-bottom: 2.8rem;
+    }
+    &_last{
+        margin-bottom: 6rem;
+        @include bp(sm){
+            margin-bottom: 3rem;
+        }
     }
 }
 .pos-rel{
@@ -165,6 +168,10 @@ body{
         position: relative;
         padding-left: 3.9rem;
         margin-bottom: 1rem;
+        @include bp(sm){
+            padding-left: 2.8rem;
+            margin-bottom: 2rem;
+        }
         &:before{
             content: counter(list);
             display: flex;
@@ -180,6 +187,12 @@ body{
             left: 0;
             font-size: 1.6rem;
             line-height: 2.4rem;
+            @include bp(sm){
+                width: 1.8rem;
+                height: 1.8rem;
+                font-size: 1.2rem;
+                line-height: 2rem;
+            }
         }
     }
 }
@@ -189,6 +202,9 @@ body{
         position: relative;
         padding-left: 2.7rem;
         margin-bottom: 1rem;
+        @include bp(sm){
+            padding-left: 1.8rem;
+        }
         &:before{
             content: '';
             display: flex;
@@ -199,6 +215,11 @@ body{
             position: absolute;
             top: 0.9rem;
             left: 0;
+            @include bp(sm){
+                width: 0.8rem;
+                height: 0.8rem;
+                top: 0.7rem;
+            }
         }
     }
 }
@@ -214,6 +235,7 @@ body{
 @import 'blog';
 @import 'faq';
 @import 'footer';
+@import 'card';
 
 
 
