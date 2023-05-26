@@ -133,7 +133,6 @@
 .modal-content{
   flex-grow: 1;
   pointer-events: auto;
-  background: #373737 url(../img/pattern.png) 0 0 repeat;
   padding: 3.4rem 4rem 2.6rem;
   border-radius: 20px;
   @include bp(md){

@@ -59,6 +59,9 @@ body{
         }
     }
 }
+.bg_pattern{
+    background: url(../img/pattern.png), linear-gradient(99.75deg, #252525 9.11%, #373737 78.91%);
+}
 .pos-rel{
     position: relative;
 }
@@ -224,8 +227,82 @@ body{
     }
 }
 
+// breadcrumb
+.breadcrumb{
+    margin: 1rem 0 0.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    color: $light;
+    @include bp(md){
+        margin: 1.7rem 0 0.5rem;
+    }
+    &_margin{
+        @include bp(lg-up){
+            margin-bottom: 2.2rem;
+        }
+    }
+    &__item{
+        margin-bottom: 1rem;
+    }
+    &__item+&__item{
+        &:before{
+            content: '/';
+            display: inline-block;
+            margin: 0 1.1rem;
+            @include bp(md){
+                margin: 0 0.55rem;
+            }
+        }
+    }
+}
 
-
+// pagination
+.pagination{
+    margin: 6.1rem 0 7.4rem;
+    @include bp(xl-up){
+        padding-right: 39%;
+    }
+    @include bp(md){
+        margin: 3.1rem 0 3.9rem;
+    }
+    &__item{
+        margin: 0 0.75rem;
+    }
+    &__link{
+        border: 1px solid rgba(47, 43, 67, 0.15);;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        width: 4.8rem;
+        height: 4.8rem;
+        color: rgba(47, 43, 67, 0.5);
+        &.active{
+            border-color: $black;
+            color: $black;
+        }
+        @include bp(hv){
+            &:hover{
+                border-color: $black;
+                color: $black;
+            }
+        }
+        &.disabled{
+            border-color: transparent;
+            background: rgba(47, 43, 67, 0.04);
+            pointer-events: none;
+            .icon-prev-inversion{
+                background-image: url(../img/icons/prev-disabled.svg);
+            }
+            .icon-next-inversion{
+                background-image: url(../img/icons/next-disabled.svg);
+            }
+        }
+        .icon{
+            margin-top: -0.2rem;
+        }
+    }
+}
 
 @import 'form';
 @import 'header';

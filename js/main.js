@@ -114,15 +114,18 @@ if(window.innerWidth < 1200){
   });
 }
 
-function initMap() {
-  const map = new google.maps.Map(document.getElementById("map"), {
-    center: {lat: 55.7558, lng: 37.6176},
-    zoom: 12,
-    styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"administrative","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"administrative.country","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.country","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.country","elementType":"labels.text","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.locality","elementType":"all","stylers":[{"visibility":"simplified"},{"saturation":"-100"},{"lightness":"30"}]},{"featureType":"administrative.neighborhood","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.land_parcel","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"visibility":"simplified"},{"gamma":"0.00"},{"lightness":"74"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"lightness":"3"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
-  });
+if(document.getElementById("map")){
+  function initMap() {
+    const map = new google.maps.Map(document.getElementById("map"), {
+      center: {lat: 55.7558, lng: 37.6176},
+      zoom: 12,
+      styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"administrative","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"administrative.country","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.country","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.country","elementType":"labels.text","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.locality","elementType":"all","stylers":[{"visibility":"simplified"},{"saturation":"-100"},{"lightness":"30"}]},{"featureType":"administrative.neighborhood","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.land_parcel","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"visibility":"simplified"},{"gamma":"0.00"},{"lightness":"74"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"lightness":"3"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
+    });
+  }
+
+  window.initMap = initMap;
 }
 
-window.initMap = initMap;
 
 (function() {
   if (!String.prototype.trim) {
@@ -172,6 +175,146 @@ $('.toggler').click(function(e){
   e.preventDefault();
   $(this).toggleClass('active');
 })
+
+// catalogue
+new Swiper(".nav-slider", {
+  freeMode: true,
+  breakpoints: {
+    "@0.00": {
+      slidesPerView: 3,
+      spaceBetween: 1,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 15,
+    },
+    993: {
+      slidesPerView: 6,
+      spaceBetween: 15,
+    },
+    1200: {
+      slidesPerView: 8,
+      spaceBetween: 15,
+    },
+  },
+});
+
+let block = document.getElementById('filter');
+let timeoutId;
+$('#filter').click(function(e){
+  if(e.target.tagName === 'LABEL' || e.target.tagName === 'INPUT'){
+    blockRect = block.getBoundingClientRect();
+    let offsetY = e.clientY - blockRect.top - 10;
+    $('.filter__footer').css('top', offsetY);
+    $('.filter__footer').addClass('show');
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(function(){
+      $('.filter__footer').removeClass('show');
+    }, 2000);
+  }
+});
+
+$('.dropdown-select__link').click(function(e){
+  e.preventDefault();
+  $('.dropdown-select__link').removeClass('active');
+  $(this).addClass('active');
+  $(this).parents().find('.catalogue-selected').html(this.innerHTML);
+});
+
+new Swiper(".recommend-slider", {
+  slidesPerView: 2,
+  spaceBetween: 5,
+  loop: true,
+  breakpoints: {
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+  },
+  navigation: {
+    nextEl: ".recommend-next",
+    prevEl: ".recommend-prev",
+  },
+});
+
+new Swiper(".additionally-slider", {
+  slidesPerView: 2,
+  spaceBetween: 5,
+  loop: true,
+  breakpoints: {
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+  },
+  navigation: {
+    nextEl: ".additionally-next",
+    prevEl: ".additionally-prev",
+  },
+});
+new Swiper(".watched-slider", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  loop: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+  },
+});
+
+if(document.getElementById("map-area")){
+  function initMapArea() {
+    const map = new google.maps.Map(document.getElementById("map-area"), {
+      center: {lat: 55.7558, lng: 37.6176},
+      zoom: 12,
+      styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"administrative","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"administrative.country","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.country","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.country","elementType":"labels.text","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.locality","elementType":"all","stylers":[{"visibility":"simplified"},{"saturation":"-100"},{"lightness":"30"}]},{"featureType":"administrative.neighborhood","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.land_parcel","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"visibility":"simplified"},{"gamma":"0.00"},{"lightness":"74"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"lightness":"3"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
+    });
+
+    const polygon = new google.maps.Polygon({
+      paths: [
+        {lat: 55.760, lng: 37.580},
+        {lat: 55.770, lng: 37.650},
+        {lat: 55.740, lng: 37.670},
+        {lat: 55.720, lng: 37.540},
+      ],
+      strokeWeight: 0,
+      fillColor: "#ffffff",
+      fillOpacity: 0.22,
+      map: map
+    });
+  }
+
+  window.initMap = initMapArea;
+}
+
+
+
+
+// fake-select
+// $('.fake-select__item').click(function(){
+//   $(this).parents(".fake-select").find('.fake-select__item').removeClass('fake-select__item_active active');
+//   $(this).addClass('fake-select__item_active');
+//   $(this).parents('.fake-select').find('.fake-select__value').html(this.innerHTML)
+//   $(this).parents('.fake-select').find('.fake-select__link').addClass('active');
+// });
 
 // new Swiper(".product-slider", {
 //   slidesPerView: 1,
@@ -377,13 +520,7 @@ $('.toggler').click(function(e){
 // });
 
 // // calculator
-// // fake-select
-// $('.fake-select__item').click(function(){
-//   $(this).parents(".fake-select").find('.fake-select__item').removeClass('fake-select__item_active active');
-//   $(this).addClass('fake-select__item_active');
-//   $(this).parents('.fake-select').find('.fake-select__value').html(this.innerHTML)
-//   $(this).parents('.fake-select').find('.fake-select__link').addClass('active');
-// });
+
 
 // $( function() {
 //   $( "#weight-range" ).slider({

@@ -116,7 +116,6 @@
 
 // info
 .info-section{
-  background: #373737 url(../img/pattern.png) 0 0 repeat;
   position: relative;
   border-radius: 20px;
   margin-top: 8rem;
@@ -132,7 +131,7 @@
   }
   &__text{
     width: 58%;
-    padding: 5.5rem 6rem;
+    padding: 5.3rem 6rem;
     @include bp(lg){
       width: 72%;
       padding: 2rem 3rem;
@@ -167,7 +166,7 @@
     }
   }
   &__title{
-    margin-bottom: 2rem;
+    margin-bottom: 2.2rem;
     @include bp(md){
       margin-bottom: 0.7rem;
     }
@@ -260,7 +259,7 @@
     }
   }
   &-slider{
-    margin: 5.2rem -1rem 0;
+    margin: 5rem -1rem 0;
     @include bp(md){
       margin-top: 1rem;
     }
@@ -539,7 +538,4 @@
       }
     }
   }
-}
-.pane-nav, .fixed-info{
-  display: none!important;
 }

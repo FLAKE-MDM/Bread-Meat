@@ -25,12 +25,12 @@
         margin: 0 3rem 0 0.5rem;
     }
     &__phone{
-        margin-right: 0.9rem;
+        margin-right: 0.4rem;
         @include bp(md){
             margin-left: auto;
         }
         &-link{
-            margin-right: 1.6rem;
+            margin-right: 2.1rem;
             @include bp(md){
                 font-size: 1.4rem;
                 line-height: 2.2rem;
