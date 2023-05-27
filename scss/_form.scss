@@ -46,6 +46,9 @@
         cursor: pointer;
         transition: all 0.3s ease-out;
         position: relative;
+        @include bp(sm){
+            margin-bottom: 0;
+        }
         &:checked{
             background: $black;
             border-color: $black;
@@ -251,18 +254,70 @@
     padding: 4.4rem 5rem 5.6rem 32.8%;
     border-radius: 20px;
     margin-top: 10rem;
+    @include bp(lg){
+        padding-left: 29%;
+    }
+    @include bp(md){
+        padding: 1.5rem 1.5rem 1.5rem 29%;
+        margin-top: 4rem;
+    }
+    @include bp(sm){
+        padding: 1.3rem 1.5rem 0.6rem;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+    &__text{
+        @include bp(sm){
+            width: 48%;
+        }
+        @include bp(xs){
+            width: 45%;
+        }
+        @include bp(xxs){
+            width: 52%;
+        }
+    }
     &__title{
-        margin-bottom: 2.2rem;
+        margin-bottom: 0.7rem;
+        @include bp(lg-up){
+            margin-bottom: 2.2rem;
+        }
     }
     &__image{
         position: absolute;
         bottom: 0;
         width: 30%;
         left: 3.8rem;
+        @include bp(lg){
+            left: 0;
+        }
+        @include bp(sm){
+            width: 20.8rem;
+            top: -3.6rem;
+            right: -3rem;
+            left: auto;
+        }
     }
     &__row{
         width: 52.5rem;
         max-width: 100%;
         margin-top: 3.5rem;
+        @include bp(md){
+            margin: 1.8rem 0 0;
+            & > *{
+                padding: 0;
+            }
+        }
+        @include bp(sm){
+            & > *{
+                padding: 0;
+            }
+        }
+        .form-control{
+            @include bp(sm){
+                margin-bottom: 1.5rem;
+            }
+        }
     }
 }

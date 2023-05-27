@@ -209,12 +209,12 @@
         <!-- /header -->
         <div class="container">
             <!-- breadcrumb -->
-            <ul class="breadcrumb text_size-sm">
+            <ul class="breadcrumb text_size-sm d-none d-md-flex">
                 <li class="breadcrumb__item"><a href="#" class="breadcrumb__link text_light">Главная</a></li>
                 <li class="breadcrumb__item">Каталог</li>
             </ul>
             <!-- /breadcrumb -->
-            <h1 class="mb_sm">Каталог продукции</h1>
+            <h1 class="mb_sm title_heading">Каталог продукции</h1>
             <div class="category-nav">
                 <a href="category.html" class="btn btn_light category-link">
                     <div class="category-link__title">Баранина</div>
@@ -270,14 +270,11 @@
             <div class="d-flex">
                 <!-- filter -->
                 <div class="filter" id="filter">
-                    <a href="#" class="filter__link filte__close icon icon-close d-lg-none"></a>
+                    <a href="#" class="filter__link filter__close icon icon-close d-lg-none"></a>
                     <form action="#">
-                        <div class="filter__group filter__group_bordered">
-                            <a href="#filter-1" data-bs-toggle="collapse" class="filter__title d-flex justify-content-between title" aria-expanded="true">
-                                Раздел
-                                <span class="icon icon-caret d-lg-none"></span>
-                            </a>
-                            <div class="collapse filter__collapse show" id="filter-1">
+                        <div class="filter__content">
+                            <div class="filter__group filter__group_bordered">
+                                <div class="filter__title d-flex justify-content-between title"> Раздел</div>
                                 <div class="filter__body">
                                     <ul class="input-list">
                                         <li class="input-list__item">
@@ -337,290 +334,293 @@
                                     </ul>
                                 </div>
                             </div>
-                        </div>
-                        <div class="filter__group filter__group_bordered">
-                            <a href="#filter-2" data-bs-toggle="collapse" class="filter__title d-flex justify-content-between title collapsed">
-                                Способ приготовления
-                                <span class="icon icon-caret d-lg-none"></span>
-                            </a>
-                            <div class="collapse filter__collapse" id="filter-2">
-                                <div class="filter__body">
-                                    <ul class="input-list">
-                                        <li class="input-list__item">
-                                            <label class="d-flex align-items-center">
-                                                <input type="checkbox" class="form-check-input">
-                                                Для варки
-                                            </label>
-                                        </li>
-                                        <li class="input-list__item">
-                                            <label class="d-flex align-items-center">
-                                                <input type="checkbox" class="form-check-input">
-                                                Для жарки
-                                            </label>
-                                        </li>
-                                        <li class="input-list__item">
-                                            <label class="d-flex align-items-center">
-                                                <input type="checkbox" class="form-check-input">
-                                                Для запекания
-                                            </label>
-                                        </li>
-                                        <li class="input-list__item">
-                                            <label class="d-flex align-items-center">
-                                                <input type="checkbox" class="form-check-input">
-                                                Для копчения
-                                            </label>
-                                        </li>
-                                        <li class="input-list__item">
-                                            <label class="d-flex align-items-center">
-                                                <input type="checkbox" class="form-check-input">
-                                                Для тушения
-                                            </label>
-                                        </li>
-                                        <li class="input-list__item">
-                                            <label class="d-flex align-items-center">
-                                                <input type="checkbox" class="form-check-input">
-                                                На гриле
-                                            </label>
-                                        </li>
-                                        <li class="input-list__item">
-                                            <label class="d-flex align-items-center">
-                                                <input type="checkbox" class="form-check-input">
-                                                На мангале
-                                            </label>
-                                        </li>
-                                        <li class="input-list__item">
-                                            <label class="d-flex align-items-center">
-                                                <input type="checkbox" class="form-check-input">
-                                                На сковороде
-                                            </label>
-                                        </li>
-                                    </ul>
+                            <div class="filter__group filter__group_bordered">
+                                <a href="#filter-2" data-bs-toggle="collapse" class="filter__title d-flex justify-content-between title collapsed align-items-center collapsed">
+                                    Способ приготовления
+                                    <span class="icon icon-caret d-lg-none"></span>
+                                </a>
+                                <div class="collapse filter__collapse" id="filter-2">
+                                    <div class="filter__body">
+                                        <ul class="input-list">
+                                            <li class="input-list__item">
+                                                <label class="d-flex align-items-center">
+                                                    <input type="checkbox" class="form-check-input">
+                                                    Для варки
+                                                </label>
+                                            </li>
+                                            <li class="input-list__item">
+                                                <label class="d-flex align-items-center">
+                                                    <input type="checkbox" class="form-check-input">
+                                                    Для жарки
+                                                </label>
+                                            </li>
+                                            <li class="input-list__item">
+                                                <label class="d-flex align-items-center">
+                                                    <input type="checkbox" class="form-check-input">
+                                                    Для запекания
+                                                </label>
+                                            </li>
+                                            <li class="input-list__item">
+                                                <label class="d-flex align-items-center">
+                                                    <input type="checkbox" class="form-check-input">
+                                                    Для копчения
+                                                </label>
+                                            </li>
+                                            <li class="input-list__item">
+                                                <label class="d-flex align-items-center">
+                                                    <input type="checkbox" class="form-check-input">
+                                                    Для тушения
+                                                </label>
+                                            </li>
+                                            <li class="input-list__item">
+                                                <label class="d-flex align-items-center">
+                                                    <input type="checkbox" class="form-check-input">
+                                                    На гриле
+                                                </label>
+                                            </li>
+                                            <li class="input-list__item">
+                                                <label class="d-flex align-items-center">
+                                                    <input type="checkbox" class="form-check-input">
+                                                    На мангале
+                                                </label>
+                                            </li>
+                                            <li class="input-list__item">
+                                                <label class="d-flex align-items-center">
+                                                    <input type="checkbox" class="form-check-input">
+                                                    На сковороде
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="filter__group">
-                            <a href="#filter-3" data-bs-toggle="collapse" class="filter__title d-flex justify-content-between title collapsed">
-                                Происхождение
-                                <span class="icon icon-caret d-lg-none"></span>
-                            </a>
-                            <div class="collapse filter__collapse" id="filter-3">
-                                <div class="filter__body">
-                                    <ul class="input-list">
-                                        <li class="input-list__item">
-                                            <label class="d-flex align-items-center">
-                                                <input type="checkbox" class="form-check-input">
-                                                Карачаево-Черкессия
-                                            </label>
-                                        </li>
-                                        <li class="input-list__item">
-                                            <label class="d-flex align-items-center">
-                                                <input type="checkbox" class="form-check-input">
-                                                Дагестан
-                                            </label>
-                                        </li>
-                                        <li class="input-list__item">
-                                            <label class="d-flex align-items-center">
-                                                <input type="checkbox" class="form-check-input">
-                                                Чеченская республика
-                                            </label>
-                                        </li>
-                                    </ul>
+                            <div class="filter__group">
+                                <a href="#filter-3" data-bs-toggle="collapse" class="filter__title d-flex justify-content-between title collapsed align-items-center collapsed">
+                                    Происхождение
+                                    <span class="icon icon-caret d-lg-none"></span>
+                                </a>
+                                <div class="collapse filter__collapse" id="filter-3">
+                                    <div class="filter__body">
+                                        <ul class="input-list">
+                                            <li class="input-list__item">
+                                                <label class="d-flex align-items-center">
+                                                    <input type="checkbox" class="form-check-input">
+                                                    Карачаево-Черкессия
+                                                </label>
+                                            </li>
+                                            <li class="input-list__item">
+                                                <label class="d-flex align-items-center">
+                                                    <input type="checkbox" class="form-check-input">
+                                                    Дагестан
+                                                </label>
+                                            </li>
+                                            <li class="input-list__item">
+                                                <label class="d-flex align-items-center">
+                                                    <input type="checkbox" class="form-check-input">
+                                                    Чеченская республика
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="filter__group">
-                            <a href="#filter-4" data-bs-toggle="collapse" class="filter__title d-flex justify-content-between title">
-                                Часть туши
-                                <span class="icon icon-caret d-lg-none"></span>
-                            </a>
-                            <div class="collapse filter__collapse" id="filter-4">
-                                <div class="filter__body">
-                                    <ul class="input-list">
-                                        <li class="input-list__item">
-                                            <label class="d-flex align-items-center">
-                                                <input type="checkbox" class="form-check-input">
-                                                Лопатка
-                                            </label>
-                                        </li>
-                                        <li class="input-list__item">
-                                            <label class="d-flex align-items-center">
-                                                <input type="checkbox" class="form-check-input">
-                                                Шейная часть
-                                            </label>
-                                        </li>
-                                        <li class="input-list__item">
-                                            <label class="d-flex align-items-center">
-                                                <input type="checkbox" class="form-check-input">
-                                                Спина
-                                            </label>
-                                        </li>
-                                    </ul>
+                            <div class="filter__group">
+                                <a href="#filter-4" data-bs-toggle="collapse" class="filter__title d-flex justify-content-between title align-items-center collapsed">
+                                    Часть туши
+                                    <span class="icon icon-caret d-lg-none"></span>
+                                </a>
+                                <div class="collapse filter__collapse" id="filter-4">
+                                    <div class="filter__body">
+                                        <ul class="input-list">
+                                            <li class="input-list__item">
+                                                <label class="d-flex align-items-center">
+                                                    <input type="checkbox" class="form-check-input">
+                                                    Лопатка
+                                                </label>
+                                            </li>
+                                            <li class="input-list__item">
+                                                <label class="d-flex align-items-center">
+                                                    <input type="checkbox" class="form-check-input">
+                                                    Шейная часть
+                                                </label>
+                                            </li>
+                                            <li class="input-list__item">
+                                                <label class="d-flex align-items-center">
+                                                    <input type="checkbox" class="form-check-input">
+                                                    Спина
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="filter__group">
-                            <a href="#filter-5" data-bs-toggle="collapse" class="filter__title d-flex justify-content-between title">
-                                Тип разделки
-                                <span class="icon icon-caret d-lg-none"></span>
-                            </a>
-                            <div class="collapse filter__collapse" id="filter-5">
-                                <div class="filter__body">
-                                    <ul class="input-list">
-                                        <li class="input-list__item">
-                                            <label class="d-flex align-items-center">
-                                                <input type="checkbox" class="form-check-input">
-                                                Американский
-                                            </label>
-                                        </li>
-                                        <li class="input-list__item">
-                                            <label class="d-flex align-items-center">
-                                                <input type="checkbox" class="form-check-input">
-                                                Британский
-                                            </label>
-                                        </li>
-                                        <li class="input-list__item">
-                                            <label class="d-flex align-items-center">
-                                                <input type="checkbox" class="form-check-input">
-                                                Итальянский
-                                            </label>
-                                        </li>
-                                    </ul>
+                            <div class="filter__group">
+                                <a href="#filter-5" data-bs-toggle="collapse" class="filter__title d-flex justify-content-between title align-items-center collapsed">
+                                    Тип разделки
+                                    <span class="icon icon-caret d-lg-none"></span>
+                                </a>
+                                <div class="collapse filter__collapse" id="filter-5">
+                                    <div class="filter__body">
+                                        <ul class="input-list">
+                                            <li class="input-list__item">
+                                                <label class="d-flex align-items-center">
+                                                    <input type="checkbox" class="form-check-input">
+                                                    Американский
+                                                </label>
+                                            </li>
+                                            <li class="input-list__item">
+                                                <label class="d-flex align-items-center">
+                                                    <input type="checkbox" class="form-check-input">
+                                                    Британский
+                                                </label>
+                                            </li>
+                                            <li class="input-list__item">
+                                                <label class="d-flex align-items-center">
+                                                    <input type="checkbox" class="form-check-input">
+                                                    Итальянский
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="filter__group">
-                            <a href="#filter6-" data-bs-toggle="collapse" class="filter__title d-flex justify-content-between title">
-                                Бренд
-                                <span class="icon icon-caret d-lg-none"></span>
-                            </a>
-                            <div class="collapse filter__collapse" id="filter-6">
-                                <div class="filter__body">
-                                    <ul class="input-list">
-                                        <li class="input-list__item">
-                                            <label class="d-flex align-items-center">
-                                                <input type="checkbox" class="form-check-input">
-                                                Бренд 1
-                                            </label>
-                                        </li>
-                                        <li class="input-list__item">
-                                            <label class="d-flex align-items-center">
-                                                <input type="checkbox" class="form-check-input">
-                                                Бренд 2
-                                            </label>
-                                        </li>
-                                        <li class="input-list__item">
-                                            <label class="d-flex align-items-center">
-                                                <input type="checkbox" class="form-check-input">
-                                                Бренд 3
-                                            </label>
-                                        </li>
-                                    </ul>
+                            <div class="filter__group">
+                                <a href="#filter6-" data-bs-toggle="collapse" class="filter__title d-flex justify-content-between title align-items-center collapsed">
+                                    Бренд
+                                    <span class="icon icon-caret d-lg-none"></span>
+                                </a>
+                                <div class="collapse filter__collapse" id="filter-6">
+                                    <div class="filter__body">
+                                        <ul class="input-list">
+                                            <li class="input-list__item">
+                                                <label class="d-flex align-items-center">
+                                                    <input type="checkbox" class="form-check-input">
+                                                    Бренд 1
+                                                </label>
+                                            </li>
+                                            <li class="input-list__item">
+                                                <label class="d-flex align-items-center">
+                                                    <input type="checkbox" class="form-check-input">
+                                                    Бренд 2
+                                                </label>
+                                            </li>
+                                            <li class="input-list__item">
+                                                <label class="d-flex align-items-center">
+                                                    <input type="checkbox" class="form-check-input">
+                                                    Бренд 3
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="filter__group">
-                            <a href="#filter-7" data-bs-toggle="collapse" class="filter__title d-flex justify-content-between title">
-                                Обвалка
-                                <span class="icon icon-caret d-lg-none"></span>
-                            </a>
-                            <div class="collapse filter__collapse" id="filter-7">
-                                <div class="filter__body">
-                                    <ul class="input-list">
-                                        <li class="input-list__item">
-                                            <label class="d-flex align-items-center">
-                                                <input type="checkbox" class="form-check-input">
-                                                Ручная
-                                            </label>
-                                        </li>
-                                        <li class="input-list__item">
-                                            <label class="d-flex align-items-center">
-                                                <input type="checkbox" class="form-check-input">
-                                                Механическая
-                                            </label>
-                                        </li>
-                                    </ul>
+                            <div class="filter__group">
+                                <a href="#filter-7" data-bs-toggle="collapse" class="filter__title d-flex justify-content-between title align-items-center collapsed">
+                                    Обвалка
+                                    <span class="icon icon-caret d-lg-none"></span>
+                                </a>
+                                <div class="collapse filter__collapse" id="filter-7">
+                                    <div class="filter__body">
+                                        <ul class="input-list">
+                                            <li class="input-list__item">
+                                                <label class="d-flex align-items-center">
+                                                    <input type="checkbox" class="form-check-input">
+                                                    Ручная
+                                                </label>
+                                            </li>
+                                            <li class="input-list__item">
+                                                <label class="d-flex align-items-center">
+                                                    <input type="checkbox" class="form-check-input">
+                                                    Механическая
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="filter__group">
-                            <a href="#filter-8" data-bs-toggle="collapse" class="filter__title d-flex justify-content-between title">
-                                Маринад
-                                <span class="icon icon-caret d-lg-none"></span>
-                            </a>
-                            <div class="collapse filter__collapse" id="filter-8">
-                                <div class="filter__body">
-                                    <ul class="input-list">
-                                        <li class="input-list__item">
-                                            <label class="d-flex align-items-center">
-                                                <input type="radio" class="form-radio-input" name="marinade" checked>
-                                                Да
-                                            </label>
-                                        </li>
-                                        <li class="input-list__item">
-                                            <label class="d-flex align-items-center">
-                                                <input type="radio" class="form-radio-input" name="marinade">
-                                                Нет
-                                            </label>
-                                        </li>
-                                    </ul>
+                            <div class="filter__group">
+                                <a href="#filter-8" data-bs-toggle="collapse" class="filter__title d-flex justify-content-between title align-items-center collapsed">
+                                    Маринад
+                                    <span class="icon icon-caret d-lg-none"></span>
+                                </a>
+                                <div class="collapse filter__collapse" id="filter-8">
+                                    <div class="filter__body">
+                                        <ul class="input-list">
+                                            <li class="input-list__item">
+                                                <label class="d-flex align-items-center">
+                                                    <input type="radio" class="form-radio-input" name="marinade" checked>
+                                                    Да
+                                                </label>
+                                            </li>
+                                            <li class="input-list__item">
+                                                <label class="d-flex align-items-center">
+                                                    <input type="radio" class="form-radio-input" name="marinade">
+                                                    Нет
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="filter__group">
-                            <a href="#filter-9" data-bs-toggle="collapse" class="filter__title filter__title_margin d-flex justify-content-between title">
-                                Популярное
-                                <span class="icon icon-caret d-lg-none"></span>
-                            </a>
-                            <div class="collapse filter__collapse" id="filter-9">
-                                <div class="filter__body">
-                                    <ul class="links-list text_semibold text_size-md">
-                                        <li class="links-list__item">
-                                            <a href="#" class="d-flex align-items-center">
-                                                Каре ягнёнка
-                                            </a>
-                                        </li>
-                                        <li class="links-list__item">
-                                            <a href="#" class="d-flex align-items-center">
-                                                Шея
-                                            </a>
-                                        </li>
-                                        <li class="links-list__item">
-                                            <a href="#" class="d-flex align-items-center">
-                                                Корейка
-                                            </a>
-                                        </li>
-                                        <li class="links-list__item">
-                                            <a href="#" class="d-flex align-items-center">
-                                                Голень
-                                            </a>
-                                        </li>
-                                        <li class="links-list__item">
-                                            <a href="#" class="d-flex align-items-center">
-                                                Охлаждённая
-                                            </a>
-                                        </li>
-                                        <li class="links-list__item">
-                                            <a href="#" class="d-flex align-items-center">
-                                                Фермерская
-                                            </a>
-                                        </li>
-                                        <li class="links-list__item">
-                                            <a href="#" class="d-flex align-items-center">
-                                                Для запекания
-                                            </a>
-                                        </li>
-                                        <li class="links-list__item">
-                                            <a href="#" class="d-flex align-items-center">
-                                                Халяль
-                                            </a>
-                                        </li>
-                                    </ul>
+                            <div class="filter__group">
+                                <a href="#filter-9" data-bs-toggle="collapse" class="filter__title filter__title_margin d-flex justify-content-between title align-items-center collapsed">
+                                    Популярное
+                                    <span class="icon icon-caret d-lg-none"></span>
+                                </a>
+                                <div class="collapse filter__collapse" id="filter-9">
+                                    <div class="filter__body">
+                                        <ul class="links-list text_semibold text_size-md">
+                                            <li class="links-list__item">
+                                                <a href="#" class="d-flex align-items-center">
+                                                    Каре ягнёнка
+                                                </a>
+                                            </li>
+                                            <li class="links-list__item">
+                                                <a href="#" class="d-flex align-items-center">
+                                                    Шея
+                                                </a>
+                                            </li>
+                                            <li class="links-list__item">
+                                                <a href="#" class="d-flex align-items-center">
+                                                    Корейка
+                                                </a>
+                                            </li>
+                                            <li class="links-list__item">
+                                                <a href="#" class="d-flex align-items-center">
+                                                    Голень
+                                                </a>
+                                            </li>
+                                            <li class="links-list__item">
+                                                <a href="#" class="d-flex align-items-center">
+                                                    Охлаждённая
+                                                </a>
+                                            </li>
+                                            <li class="links-list__item">
+                                                <a href="#" class="d-flex align-items-center">
+                                                    Фермерская
+                                                </a>
+                                            </li>
+                                            <li class="links-list__item">
+                                                <a href="#" class="d-flex align-items-center">
+                                                    Для запекания
+                                                </a>
+                                            </li>
+                                            <li class="links-list__item">
+                                                <a href="#" class="d-flex align-items-center">
+                                                    Халяль
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="filter__footer text_size-sm">
-                            <p>Найдено <span class="text_semibold">23 товара</span></p>
-                            <button class="btn btn_dark w-100 btn_size-md text_size-xs">Показать</button>
+                            <p class="d-none d-lg-block">Найдено <span class="text_semibold">23 товара</span></p>
+                            <button class="btn btn_dark w-100 btn_size-md text_size-xs">
+                                <span class="d-none d-lg-block">Показать</span>
+                                <span class="d-lg-none">Применить</span>
+                            </button>
                         </div>
                     </form>
                 </div>
@@ -628,16 +628,17 @@
                 <!-- main -->
                 <main class="main">
                     <!-- sort -->
-                    <div class="sort-block">
-                        <div class="sort-block__dropdown dropdown-select">
-                            <a href="#" data-bs-toggle="dropdown" class="d-lg-none dropdown-toggle" aria-expanded="false"><span class="catalogue-selected">По популярности</span></a>
-                            <div class="sort-list d-lg-flex dropdown-menu dropdown-select-menu text_size-md">
+                    <div class="sort-block d-flex justify-content-between">
+                        <div class="sort-block__dropdown dropdown">
+                            <a href="#" data-bs-toggle="dropdown" class="d-lg-none dropdown-toggle btn btn_light dropdown-toggle" aria-expanded="false"><span class="catalogue-selected">По популярности</span><span class="icon icon-caret"></span></a>
+                            <div class="sort-list d-lg-flex dropdown-menu dropdown-menu_left dropdown-select-menu text_size-md">
                                 <a href="#" class="sort-list__link dropdown-select__link active">По популярности</a>
                                 <a href="#" class="sort-list__link dropdown-select__link">Сначала дешёвые</a>
                                 <a href="#" class="sort-list__link dropdown-select__link">Сначала дорогие</a>
                                 <a href="#" class="sort-list__link dropdown-select__link">По наименованию</a>
                             </div>
                         </div>
+                        <a href="#" class="btn btn_light filter-btn filter__link d-lg-none">Фильтры <span class="icon icon-filter"></span></a>
                     </div>
                     <!-- /sort -->
                     <!-- catalogue-list -->
@@ -1219,7 +1220,7 @@
                         <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
                         <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
                         <li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
-                        <li class="pagination__item"><a href="#" class="pagination__link">5</a></li>
+                        <li class="pagination__item d-none d-md-block"><a href="#" class="pagination__link">5</a></li>
                         <li class="pagination__item">
                             <a href="#" class="pagination__link btn_dark btn">
                                 <span class="icon icon-next-inversion"></span>
@@ -1234,8 +1235,8 @@
             <section class="section">
                 <h2 class="mb_lg">Популярные мясные продукты</h2>
                 <div class="slider-wrapper">
-                    <a href="#" class="popular-next swiper-prev swiper-btn swiper-btn_top btn_light"><span class="icon icon-prev"></span></a>
-                    <a href="#" class="popular-prev swiper-next swiper-btn swiper-btn_top btn_light"><span class="icon icon-next"></span></a>
+                    <a href="#" class="popular-prev swiper-prev swiper-btn swiper-btn_top btn_light"><span class="icon icon-prev"></span></a>
+                    <a href="#" class="popular-next swiper-next swiper-btn swiper-btn_top btn_light"><span class="icon icon-next"></span></a>
                     <div class="popular-slider popular-slider_margin swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -1419,8 +1420,8 @@
             <section class="section">
                 <h2 class="mb_lg">Рекомендуем для вас</h2>
                 <div class="slider-wrapper">
-                    <a href="#" class="recommend-next swiper-prev swiper-btn swiper-btn_top btn_light"><span class="icon icon-prev"></span></a>
-                    <a href="#" class="recommend-prev swiper-next swiper-btn swiper-btn_top btn_light"><span class="icon icon-next"></span></a>
+                    <a href="#" class="recommend-prev swiper-prev swiper-btn swiper-btn_top btn_light"><span class="icon icon-prev"></span></a>
+                    <a href="#" class="recommend-next swiper-next swiper-btn swiper-btn_top btn_light"><span class="icon icon-next"></span></a>
                     <div class="recommend-slider recommend-slider_margin swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -1604,8 +1605,8 @@
             <section class="section">
                 <h2 class="mb_lg">С этим товаром покупают</h2>
                 <div class="slider-wrapper">
-                    <a href="#" class="additionally-next swiper-prev swiper-btn swiper-btn_top btn_light"><span class="icon icon-prev"></span></a>
-                    <a href="#" class="additionally-prev swiper-next swiper-btn swiper-btn_top btn_light"><span class="icon icon-next"></span></a>
+                    <a href="#" class="additionally-prev swiper-prev swiper-btn swiper-btn_top btn_light"><span class="icon icon-prev"></span></a>
+                    <a href="#" class="additionally-next swiper-next swiper-btn swiper-btn_top btn_light"><span class="icon icon-next"></span></a>
                     <div class="additionally-slider additionally-slider_margin swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -1819,9 +1820,11 @@
             <!-- form-block -->
             <div class="form-block bg_pattern text_inversion section">
                 <div class="form-block__image"><img src="img/form.png" alt="" class="img-fluid"></div>
-                <div class="form-block__text">
-                    <div class="title title_size-lg form-block__title">Есть вопросы? Обращайтесь!</div>
-                    <p>Оставьте свои данные и мы свяжемся с вами в течение рабочего дня</p>
+                <div class="form-block__content">
+                    <div class="form-block__text">
+                        <div class="title title_size-lg form-block__title">Есть вопросы? Обращайтесь!</div>
+                        <p>Оставьте свои данные и мы свяжемся с вами в течение рабочего дня</p>
+                    </div>
                     <div class="row form-block__row">
                         <div class="flex-grow-1 col-md-auto">
                             <div class="input form-group pos-rel">
@@ -1848,8 +1851,8 @@
                     <a href="#" class="text_dark text_size-md d-inline-flex align-items-center more-link text_semibold">Смотреть все<span class="icon icon-arrow-right more-link__icon"></span></a>
                 </div>
                 <div class="slider-wrapper">
-                    <a href="#" class="review-next swiper-prev swiper-btn btn_light"><span class="icon icon-prev"></span></a>
-                    <a href="#" class="review-prev swiper-next swiper-btn btn_light"><span class="icon icon-next"></span></a>
+                    <a href="#" class="review-prev swiper-prev swiper-btn btn_light"><span class="icon icon-prev"></span></a>
+                    <a href="#" class="review-next swiper-next swiper-btn btn_light"><span class="icon icon-next"></span></a>
                     <div class="swiper reviews-slider">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -1986,9 +1989,9 @@
         <!-- contacts -->
         <section class="section">
             <div class="container">
-                <h2 class="mb_sm pb-3">Карта доставки нашей продукции</h2>
+                <h2 class="mb_sm pb-md-3">Карта доставки нашей продукции</h2>
             </div>
-            <div id="map-area" class="map"></div>
+            <div id="map" data-settings="area" class="map"></div>
         </section>
         <!-- /contacts -->
         <div class="container">
@@ -2131,7 +2134,7 @@
             </section>
             <!-- /linking -->
             <!-- seo-text -->
-            <section class="section">
+            <section class="section pt-3 pt-md-0">
                 <h2 class="mb_sm">Тут будет SEO текст</h2>
                 <p>Мы работаем только с проверенными фермерами, которые выращивают животных на своих фермах, кормят их натуральными кормами и обеспечивают им комфортные условия содержания. Мы также следим за тем, чтобы наша продукция соответствовала всем необходимым стандартам качества и безопасности.</p>
                 <div class="d-none d-md-block">

@@ -22,8 +22,6 @@ body{
     }
     @include bp(md){
         padding-top: 7.2rem;
-    }
-    @include bp(sm){
         font-size: 1.4rem;
         line-height: 2.2rem;
     }
@@ -166,6 +164,9 @@ body{
 
 // lists
 .num-list{
+    @include bp(sm){
+        margin-bottom: 2rem;
+    }
     &__item{
         counter-increment: list;
         position: relative;
@@ -173,7 +174,6 @@ body{
         margin-bottom: 1rem;
         @include bp(sm){
             padding-left: 2.8rem;
-            margin-bottom: 2rem;
         }
         &:before{
             content: counter(list);
@@ -195,6 +195,7 @@ body{
                 height: 1.8rem;
                 font-size: 1.2rem;
                 line-height: 2rem;
+                top: 0.2rem;
             }
         }
     }
@@ -230,7 +231,6 @@ body{
 // breadcrumb
 .breadcrumb{
     margin: 1rem 0 0.4rem;
-    display: flex;
     flex-wrap: wrap;
     color: $light;
     @include bp(md){
@@ -263,7 +263,7 @@ body{
         padding-right: 39%;
     }
     @include bp(md){
-        margin: 3.1rem 0 3.9rem;
+        margin: 2.8rem 0 2.9rem;
     }
     &__item{
         margin: 0 0.75rem;
@@ -286,6 +286,12 @@ body{
                 border-color: $black;
                 color: $black;
             }
+        }
+        @include bp(sm){
+            width: 3.8rem;
+            height: 3.8rem;
+            font-size: 1.4rem;
+            line-height: 2.2rem;
         }
         &.disabled{
             border-color: transparent;

@@ -107,6 +107,14 @@
         @include bp(md){
             min-height: 5.6rem;
         }
+        @include bp(sm){
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+            min-height: 4.8rem;
+            .btn__icon{
+                margin-top: -0.5rem;
+            }
+        }
     }
     &_size{
         &-xs{

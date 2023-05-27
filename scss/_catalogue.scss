@@ -1,9 +1,10 @@
-.popular-slider, .recommend-sliderб .additionally-slider{
+.popular-slider, .recommend-slider, .additionally-slider{
   @include bp(md){
+    padding-top: 0.5rem;
     margin-right: -1rem;
     padding-right: 1.5rem;
     &_margin{
-      margin-bottom: -0.7rem;
+      margin-bottom: -0.3rem;
     }
   }
 }
@@ -12,14 +13,27 @@
     display: grid;
     grid-template-columns: repeat(3, 29.6%);
     grid-gap: 4rem 2rem;
-  }
-  &-item{
-    .popular-slider &{
-      margin-bottom: 0;
-      @include bp(md){
-        margin-top: 0.5rem;
+    @include bp(xl){
+      grid-template-columns: repeat(3, 31.6%);
+    }
+    @include bp(lg){
+      grid-template-columns: repeat(2, 48.4%);
+    }
+    @include bp(sm){
+      grid-gap: 1.7rem 1rem;
+    }
+    .catalogue-item{
+      .btn{
+        @include bp(xl){
+          font-size: 1.5rem;
+        }
+        @include bp(sm){
+          font-size: 1.2rem;
+        }
       }
     }
+  }
+  &-item{
     &__image{
       position: relative;
       margin-bottom: 2rem;
@@ -98,7 +112,7 @@
       text-overflow: ellipsis;
       overflow: hidden;
       @include bp(md){
-        margin-bottom: 1rem;
+        margin: 0.5rem 0 1rem;
       }
     }
     &__rating{
@@ -111,7 +125,7 @@
   @include bp(xl){
     margin-left: 1rem;
   }
-  @include bp(md){
+  @include bp(sm){
     margin: 0.8rem 0 0;
   }
 }
@@ -188,6 +202,16 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 1.8rem 2rem;
+    @include bp(lg){
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @include bp(md){
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include bp(sm){
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem;
+    }
     &_dropdown{
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 1.3rem;
@@ -230,6 +254,9 @@
     @include bp(md){
       border: none;
     }
+    @include bp(sm){
+      border-radius: 10px;
+    }
     &__title{
       font-weight: 600;
       position: absolute;
@@ -240,23 +267,48 @@
       &:not(.text_size-md){
         font-size: 1.8rem;
         line-height: 2.6rem;
+        @include bp(sm){
+          font-size: 1.4rem;
+          line-height: 2.2rem;
+        }
       }
-      @include bp(md){
+      @include bp(sm){
+        top: 1rem;
+        left: 1rem;
         font-size: 1.4rem;
         line-height: 2.2rem;
       }
+    }
+    &__image{
+      @include bp(sm){
+        width: 8.6rem;
+      }
+
     }
   }
 }
 .main{
   flex-grow: 1;
+  width: calc(100% - 32.8rem);
+  @include bp(xl){
+    width: calc(100% - 30rem);
+  }
 }
 
 // nav-slider
 .nav-slider{
   margin: 2.8rem 0 3rem;
+  @include bp(sm){
+    padding-right: 15%;
+    margin: 2.2rem 0 2rem;
+  }
   &__link {
     width: auto !important;
+    @include bp(md){
+      font-size: 1.4rem;
+      line-height: 2.2rem;
+      padding: 0.5rem 1.2rem;
+    }
   }
 }
 
@@ -270,6 +322,44 @@
   border-radius: 20px;
   border: 1px solid $black;
   flex-shrink: 0;
+  @include bp(xl){
+    margin-right: 2rem;
+  }
+  @include bp(md){
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 10;
+    transform: translateX(100%);
+    transition: all 0.3s ease-out;
+    width: 100%;
+    margin: 0;
+    z-index: 93;
+    border-radius: 0;
+    border: none;
+    overflow: auto;
+    padding: 1.2rem 1.5rem 1.5rem;
+    &.show{
+      transform: none;
+    }
+  }
+  &-btn{
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    padding: 0.5rem 1.3rem;
+    .icon{
+      margin: 0 -0.1rem 0 0.4rem;
+    }
+  }
+  &__close{
+    position: fixed;
+    top: 2.3rem;
+    right: 1.5rem;
+    z-index: 7;
+  }
   &__title{
     font-size: 2.8rem;
     line-height: 4rem;
@@ -278,6 +368,12 @@
       &:hover{
         color: $black;
         cursor: default;
+      }
+    }
+    @include bp(sm){
+      margin-bottom: 1.8rem;
+      .icon-caret{
+        margin-bottom: -0.7rem;
       }
     }
     &_margin{
@@ -292,31 +388,55 @@
   }
   &__body{
     padding-bottom: 0.2rem;
+    @include bp(sm){
+      padding: 0.5rem 0 0;
+    }
   }
   &__group{
+    @include bp(sm){
+      margin-bottom: 1.1rem;
+      &:not(:last-child){
+        border-bottom: 1px solid $black;
+      }
+    }
     &_bordered{
       border-bottom: 1px solid $black;
       margin-bottom: 2.2rem;
+      @include bp(sm){
+        margin-bottom: 1.1rem;
+      }
       .filter__body{
         padding-bottom: 0.4rem;
+        @include bp(sm){
+          padding: 0.5rem 0 0;
+        }
       }
     }
   }
   &__footer{
-    position: absolute;
-    top: 0;
-    left: 100%;
-    margin-left: -4.8rem;
-    opacity: 0;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 45px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    padding: 1rem 1.5rem 1.5rem;
-    min-width: 17.1rem;
-    transition: opacity 0.3s ease-out;
-    z-index: 5;
+    @include bp(lg-up){
+      position: absolute;
+      top: 0;
+      left: 100%;
+      margin-left: -4.8rem;
+      opacity: 0;
+      background: #FFFFFF;
+      box-shadow: 0px 4px 45px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      padding: 1rem 1.5rem 1.5rem;
+      min-width: 17.1rem;
+      transition: opacity 0.3s ease-out;
+      z-index: 5;
+    }
     &.show{
       opacity: 1;
+    }
+    @include bp(md){
+      .btn{
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        padding: 1.5rem 2rem;
+      }
     }
   }
 }
@@ -324,8 +444,15 @@
   font-size: 1.6rem;
   line-height: 2.4rem;
   font-weight: 600;
+  @include bp(sm){
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
   &__item{
     margin-bottom: 1.9rem;
+    @include bp(sm){
+      margin-bottom: 1.5rem;
+    }
   }
 }
 .links-list{
@@ -338,6 +465,10 @@
 .sort{
   &-block{
     margin-bottom: 3rem;
+    position: relative;
+    @include bp(sm){
+      margin-bottom: 2rem;
+    }
   }
   &-list {
     @include bp(lg-up){
@@ -348,16 +479,39 @@
       display: block;
       margin: 0;
     }
+    @include bp(lg){
+      font-size: 1.5rem;
+    }
+    @include bp(md){
+      margin-top: 1.5rem!important;
+      transform: none!important;
+    }
     &__link {
       color: $light;
-      margin-right: 3rem;
+      &:not(:last-child){
+        margin-right: 3rem;
+        @include bp(lg){
+          margin-right: 2rem;
+        }
+        @include bp(md){
+          margin: 0;
+          border-bottom: 1px solid rgba(47, 43, 67, 0.15);
+        }
+      }
       &.active{
         color: $black;
+        font-weight: 600;
       }
       @include bp(hv){
         &:hover{
           color: $black;
         }
+      }
+      @include bp(md){
+        padding: 1rem 1.5rem 0.9rem;
+        display: block;
+        font-size: 1.4rem;
+        line-height: 2.2rem;
       }
     }
   }
@@ -366,6 +520,13 @@
 // watched
 .watched-slider{
   padding-top: 0.4rem;
+  @include bp(md){
+    padding-right: 10%;
+    margin-right: -1rem;
+  }
+  @include bp(sm){
+    padding: 0.5rem 23.5% 1rem 0;
+  }
 }
 .watch-item {
   &__image {
@@ -374,9 +535,15 @@
     width: 8rem;
     height: 8rem;
     flex-shrink: 0;
+    @include bp(sm){
+      border-radius: 10px;
+    }
   }
   &__text {
     width: calc(100% - 11.5rem);
+    @include bp(sm){
+      width: calc(100% - 9.5rem);
+    }
   }
   &__name {
     display: block;
@@ -384,13 +551,22 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     margin-bottom: 1rem;
+    @include bp(sm){
+      margin-bottom: 0.5rem;
+    }
   }
   &__price {
     font-size: 2.4rem;
     line-height: 3.2rem;
     margin-top: -0.3rem;
+    @include bp(sm){
+      font-size: 1.6rem;
+    }
     span{
       font-size: 2rem;
+      @include bp(sm){
+        font-size: 1.6rem;
+      }
     }
   }
   &__btn {
@@ -399,6 +575,9 @@
     align-items: center;
     padding: 0;
     margin-left: 2.2rem;
+    @include bp(sm){
+      margin-left: 1.5rem;
+    }
     .icon{
         width: 2rem;
         height: 2rem;

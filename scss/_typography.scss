@@ -131,6 +131,15 @@ h6{
             }
         }
     }
+    &_heading{
+        @include bp(md){
+            font-size: 3.2rem;
+            line-height: 4rem;
+        }
+        @include bp(sm){
+            margin: 1.6rem 0 1.4rem!important;
+        }
+    }
 }
 .mb{
     &_xs{
