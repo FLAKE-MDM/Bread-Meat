@@ -1161,6 +1161,16 @@ h6 {
     line-height: 2.8rem;
   }
 }
+.title_size-mlg {
+  font-size: 4rem;
+  line-height: 4.8rem;
+}
+@media only screen and (max-width: 991px) {
+  .title_size-mlg {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+}
 .title_size-lg {
   font-size: 5.6rem;
   line-height: 6.4rem;
@@ -3566,6 +3576,32 @@ textarea.form-control {
     width: 6rem;
   }
 }
+.review-empty {
+  margin: 0 auto 13.8%;
+  align-self: center;
+}
+@media only screen and (max-width: 991px) {
+  .review-empty {
+    margin-bottom: 2rem;
+  }
+}
+.review-empty__icon {
+  margin-right: 3rem;
+  flex-shrink: 0;
+}
+@media only screen and (max-width: 1199px) {
+  .review-empty__icon {
+    margin-right: 1.5rem;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .review-empty__icon {
+    width: 6rem;
+  }
+}
+.review-empty__title {
+  margin: 0.6rem 0 1.1rem;
+}
 
 .more-link {
   margin: 1.2rem 0.8rem 0 2rem;
@@ -4785,7 +4821,10 @@ textarea.form-control {
   }
 }
 .card__stock {
-  margin: 0.1rem 2.6rem 0 1.3rem;
+  margin: 0.1rem auto 0 1.3rem;
+}
+.card__share {
+  margin-right: -0.2rem;
 }
 .card__code {
   margin-right: 2.5rem;
@@ -4886,6 +4925,9 @@ textarea.form-control {
 }
 .card-list {
   margin-top: 3.7rem;
+}
+.card-list_margin {
+  margin-top: 6.9rem;
 }
 @media only screen and (min-width: 768px) {
   .modal .card-list {
@@ -5032,6 +5074,7 @@ textarea.form-control {
 .dropdown-menu_share {
   padding: 3.1rem 3rem 2.9rem;
   border-radius: 20px;
+  border: none;
 }
 @media only screen and (min-width: 992px) {
   .dropdown-menu_share {
@@ -5289,8 +5332,4 @@ textarea.form-control {
     font-size: 1.2rem;
     line-height: 2rem;
   }
-}
-
-.pane-nav, .card__fixed-btn {
-  display: none !important;
 }

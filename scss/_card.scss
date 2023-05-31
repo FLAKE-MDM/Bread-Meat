@@ -77,7 +77,10 @@
     }
   }
   &__stock{
-    margin: 0.1rem 2.6rem 0 1.3rem;
+    margin: 0.1rem auto 0 1.3rem;
+  }
+  &__share{
+    margin-right: -0.2rem;
   }
   &__code{
     margin-right: 2.5rem;
@@ -171,6 +174,9 @@
   }
   &-list{
     margin-top: 3.7rem;
+    &_margin{
+      margin-top: 6.9rem;
+    }
     .modal &{
       @include bp(md-up){
         margin-top: 5rem;
@@ -291,6 +297,7 @@
 .dropdown-menu_share{
   padding: 3.1rem 3rem 2.9rem;
   border-radius: 20px;
+  border: none;
   @include bp(lg-up){
     margin-right: -3.7rem!important;
   }

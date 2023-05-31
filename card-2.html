@@ -1,0 +1,1669 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хлеб и мясо</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body_home">
+    <div class="wrap" id="wrap">
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+                <div class="d-flex pos-rel header__wrapper">
+                    <a href="/" class="logo header__logo">
+                        <img src="img/logo.svg" alt="" class="img-fluid d-none d-lg-block">
+                        <img src="img/logo-m.svg" alt="" class="img-fluid d-lg-none">
+                    </a>
+                    <div class="header__content">
+                        <div class="header__contacts d-flex text_size-md align-items-center">
+                            <div class="header__address d-none d-xl-block">Москва,проспект Вернадского, д. 41, стр. 1</div>
+                            <div class="header__phone d-flex">
+                                <a href="tel:+79259411991" class="text_semibold header__phone-link nowrap">+7 (925) 941-19-91</a>
+                                <a href="tel:+74952801156" class="text_semibold header__phone-link nowrap d-none d-lg-block">+7 (495) 280-11-56</a>
+                            </div>
+                            <div class="header__work-time text_size-sm nowrap d-none d-lg-block">9:00 - 20:00</div>
+                            <a href="#callback" data-bs-toggle="modal" class="btn btn_light btn_size-xs d-none d-lg-inline-flex">Заказать звонок</a>
+                            <ul class="social-list header__social-list d-none d-lg-flex">
+                                <li class="social-list__item"><a href="#" class="social-list__link icon icon-vk"></a></li>
+                                <li class="social-list__item"><a href="#" class="social-list__link icon icon-whatsapp"></a></li>
+                                <li class="social-list__item"><a href="#" class="social-list__link icon icon-tg"></a></li>
+                            </ul>
+                            <button class="btn-menu d-lg-none collapsed">
+                                <span class="icon icon-menu"></span>
+                            </button>
+                        </div>
+                        <div class="header__pane d-flex">
+                            <div class="header__catalogue">
+                                <a href="#catalogue-nav" data-bs-toggle="collapse" class="btn btn_dark btn_catalogue collapsed d-none d-lg-inline-flex">
+                                    <span class="icon icon-menu-inversion btn__icon"></span>
+                                    Каталог
+                                </a>
+                                <div class="collapse catalogue-dropdown" id="catalogue-nav">
+                                    <div class="catalogue-dropdown__body d-flex justify-content-between align-items-start">
+                                        <a href="#" class="catalogue-dropdown__close icon icon-close catalogue-link d-lg-none"></a>
+                                        <div class="catalogue-dropdown__category-nav">
+                                            <div class="title title_size-md">Категории продуктов</div>
+                                            <div class="category-nav category-nav_dropdown">
+                                                <a href="category.html" class="btn btn_light category-link">
+                                                    <div class="category-link__title text_size-md">Баранина</div>
+                                                    <div class="category-link__image"><img src="img/content/category-1.png" alt="Баранина" class="img-fluid"></div>
+                                                </a>
+                                                <a href="category.html" class="btn btn_light category-link">
+                                                    <div class="category-link__title text_size-md">Говядина</div>
+                                                    <div class="category-link__image"><img src="img/content/category-2.png" alt="Говядина" class="img-fluid"></div>
+                                                </a>
+                                                <a href="category.html" class="btn btn_light category-link">
+                                                    <div class="category-link__title text_size-md">Курица</div>
+                                                    <div class="category-link__image"><img src="img/content/category-7.png" alt="Курица" class="img-fluid"></div>
+                                                </a>
+                                                <a href="category.html" class="btn btn_light category-link">
+                                                    <div class="category-link__title text_size-md">Готовая еда</div>
+                                                    <div class="category-link__image"><img src="img/content/category-3.png" alt="Готовая еда" class="img-fluid"></div>
+                                                </a>
+                                                <a href="category.html" class="btn btn_light category-link">
+                                                    <div class="category-link__title text_size-md">Индейка</div>
+                                                    <div class="category-link__image"><img src="img/content/category-4.png" alt="Индейка" class="img-fluid"></div>
+                                                </a>
+                                                <a href="category.html" class="btn btn_light category-link">
+                                                    <div class="category-link__title text_size-md">Полу-<wbr>фабрикаты</div>
+                                                    <div class="category-link__image"><img src="img/content/category-8.png" alt="Полу-фабрикаты" class="img-fluid"></div>
+                                                </a>
+                                                <a href="category.html" class="btn btn_light category-link">
+                                                    <div class="category-link__title text_size-md">Конина</div>
+                                                    <div class="category-link__image"><img src="img/content/category-5.png" alt="Конина" class="img-fluid"></div>
+                                                </a>
+                                                <a href="category.html" class="btn btn_light category-link">
+                                                    <div class="category-link__title text_size-md">Кролик</div>
+                                                    <div class="category-link__image"><img src="img/content/category-6.png" alt="Кролик" class="img-fluid"></div>
+                                                </a>
+                                                <a href="category.html" class="btn btn_light category-link">
+                                                    <div class="category-link__title text_size-md">Хлеб</div>
+                                                    <div class="category-link__image"><img src="img/content/category-9.png" alt="Хлеб" class="img-fluid"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="catalogue-dropdown__sub-nav d-none d-lg-flex">
+                                            <div class="title title_size-md">Популярное</div>
+                                            <ul class="sub-nav text_semibold text_size-md">
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Каре ягнёнка</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Шея</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Корейка</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Голень</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Охлаждённая</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Фермерская</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Для запекания</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Халяль</a></li>
+                                            </ul>
+                                            <ul class="sub-nav text_semibold text_size-md">
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Каре ягнёнка</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Шея</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Корейка</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Голень</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Охлаждённая</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Фермерская</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Для запекания</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Халяль</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search collapse" id="search">
+                                <div class="search__inside">
+                                    <form action="#">
+                                        <input type="text" class="search__input" placeholder="Я хочу найти...">
+                                        <button class="search__btn icon icon-search"></button>
+                                    </form>
+                                </div>
+                            </div>
+                            <ul class="pane-nav d-flex">
+                                <li class="pane-nav__item d-lg-none">
+                                    <a href="#" class="pane-nav__link collapsed catalogue-link">
+                                        <span class="pane-nav__icon icon icon-catalogue"></span>
+                                        Каталог
+                                    </a>
+                                </li>
+                                <li class="pane-nav__item d-lg-none">
+                                    <a href="#search" class="pane-nav__link collapsed" data-bs-toggle="collapse">
+                                        <span class="pane-nav__icon icon icon-search"></span>
+                                        Поиск
+                                    </a>
+                                </li>
+                                <li class="pane-nav__item order-lg-1">
+                                    <a href="#" class="pane-nav__link collapsed">
+                                        <span class="pane-nav__icon icon icon-heart"></span>
+                                        Избранное
+                                    </a>
+                                </li>
+                                <li class="pane-nav__item">
+                                    <a href="#" class="pane-nav__link collapsed">
+                                        <span class="pane-nav__icon icon icon-user"></span>
+                                        Войти
+                                    </a>
+                                </li>
+                                <li class="pane-nav__item order-md-2">
+                                    <a href="#" class="pane-nav__link collapsed">
+                                        <span class="pane-nav__icon icon icon-basket"></span>
+                                        Корзина
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navbar">
+                    <ul class="nav-list d-lg-flex">
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Акции</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Доставка</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Оплата</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Блог</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Контакты</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Качество</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">О компании</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Промокоды</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Отзывы</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Рецепты</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Помощь</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Поставщики</a></li>
+                    </ul>
+                    <div class="navbar__contacts d-lg-none">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="contact-item px-0">
+                                    <a href="tel:+74952801156" class="title title_size-md">+7 (495) 280-11-56</a>
+                                    <div class="text_size-md">Телефон в Москве</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="contact-item px-0">
+                                    <a href="tel:+79259411991" class="title title_size-md">+7 (925) 941-19-91</a>
+                                    <div class="text_size-md">WhatsApp, Telegram</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="contact-item px-0">
+                                    <a href="mailto:EmaiL@example.com" class="title title_size-md">EmaiL@example.com</a>
+                                    <div class="text_size-md">Электронная почта</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="contact-item px-0">
+                                    <ul class="social-list navbar__social-list d-flex">
+                                        <li class="social-list__item"><a href="#" class="social-list__link icon icon-vk-dark"></a></li>
+                                        <li class="social-list__item"><a href="#" class="social-list__link icon icon-whatsapp-dark"></a></li>
+                                        <li class="social-list__item"><a href="#" class="social-list__link icon icon-tg-dark"></a></li>
+                                    </ul>
+                                    <div class="text_size-md">Мы в соцсетях</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- /header -->
+        <div class="container">
+            <!-- breadcrumb -->
+            <ul class="breadcrumb text_size-sm d-none d-md-flex">
+                <li class="breadcrumb__item"><a href="#" class="breadcrumb__link text_light">Главная</a></li>
+                <li class="breadcrumb__item"><a href="#" class="breadcrumb__link text_light">Каталог</a></li>
+                <li class="breadcrumb__item">Антрекот из говядины</li>
+            </ul>
+            <!-- /breadcrumb -->
+            <!-- card -->
+            <div class="card d-md-flex justify-content-between">
+              <div class="card__slider card__image_modal">
+                <div class="card-slider swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/content/card.jpg" alt="" class="w-100"></div>
+                    <div class="swiper-slide"><img src="img/content/card.jpg" alt="" class="w-100"></div>
+                    <div class="swiper-slide"><img src="img/content/card.jpg" alt="" class="w-100"></div>
+                    <div class="swiper-slide"><img src="img/content/card.jpg" alt="" class="w-100"></div>
+                  </div>
+                  <div class="swiper-pagination swiper-pagination_lg d-none d-md-flex"></div>
+                  <a href="#" class="swiper-prev swiper-btn_full swiper-btn_top"><span class="icon icon-caret-prev"></span></a>
+                  <a href="#" class="swiper-next swiper-btn_full swiper-btn_top"><span class="icon icon-caret-next"></span></a>
+                </div>
+              </div>
+              <div class="card__info">
+                  <div class="title title_size-lg mb_sm card__title">Грудинка говяжья <br class="d-none d-lg-block">на кости</div>
+                  <div class="d-flex align-items-center flex-wrap card__header">
+                      <div class="order-md-1 w-100_sm d-flex align-items-center mb-3 mb-md-0">
+                        <div class="text_dark card__code text_size-sm">Арт. 12345678</div>
+                        <div class="dropdown card__share">
+                          <a href="#" data-bs-toggle="dropdown" class="text_size-sm text_dark text_semibold d-flex align-items-center"><span class="icon icon-share"></span>Поделиться</a>
+                          <div class="dropdown-menu dropdown-menu_right dropdown-menu_share">
+                              <a href="#" class="share-link d-flex align-items-center text_size-md">
+                                <span class="icon share-link__icon icon-copy"></span>
+                                Скопировать ссылку
+                              </a>
+                              <a href="#" class="share-link d-flex align-items-center text_size-md">
+                                <span class="icon share-link__icon icon-vk-colored"></span>
+                                Вконтакте
+                              </a>
+                              <a href="#" class="share-link d-flex align-items-center text_size-md">
+                                <span class="icon share-link__icon icon-whatsapp-colored"></span>
+                                WhatsApp
+                              </a>
+                              <a href="#" class="share-link d-flex align-items-center text_size-md">
+                                <span class="icon share-link__icon icon-tg-colored"></span>
+                                Telegram
+                              </a>
+                              <a href="#" class="share-link d-flex align-items-center text_size-md">
+                                <span class="icon share-link__icon icon-odnoklassniki"></span>
+                                Одноклассники
+                              </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="rating card__ratind">
+                          <div class="rating__active" style="width: 100%;"></div>
+                      </div>
+                      <div class="stock card__stock text_danger text_size-sm text_semibold">Закончился</div>
+                  </div>
+                  <div class="card__description text_size-md">
+                      <p>Грудинка говяжья на кости лучший отруб для приготовления наваристого говяжьего бульона с насыщенным ароматом и супов на его основе. Требует длительной варки.</p>
+                  </div>
+                  <div class="card__price d-flex align-items-center">
+                      <div class="price text_styling text_light">999 Р<span class="text_size-lg">/кг</span></div>
+                  </div>
+                  <div class="d-md-flex pos-rel card__btn">
+                      <div class="btn-wrapper">
+                          <div class="card__fixed-btn">
+                            <a href="#notice-modal" data-bs-toggle="modal" class="btn btn_dark btn_size-lg w-100_sm">
+                              Сообщить о поступлении
+                            </a>
+                            <div class="card__fake-btn fake-btn collapse">
+                                <a href="basket.html" class="btn btn_success flex-column">
+                                    В корзине
+                                    <span class="text_size-xs">Перейти</span>
+                                </a>
+                                <div class="input-number card__input-number">
+                                    <div class="input-number__down input-number__minus btn_light">
+                                        <span class="icon icon-minus"></span>
+                                    </div>
+                                    <input class="input-number__input" type="text" pattern="^[0-9]+$" value="1" readonly="">
+                                    <div class="input-number__up input-number__plus btn_light">
+                                        <span class="icon icon-plus"></span>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="text_center text_size-md one-click"><a href="#" class="text_semibold">Купить в 1 клик</a></div>
+                      </div>
+                      <a href="#" class="favorite-link toggler"><span class="icon icon-heart"></span></a>
+                  </div>
+                  <div class="card-list card-list_margin d-flex text_size-sm">
+                      <div class="card-item text_center">
+                          <div class="card-item__icon icon icon-cooled"></div>
+                          Охлаждённый
+                      </div>
+                      <div class="card-item text_center">
+                          <div class="card-item__icon icon icon-halal"></div>
+                          Халяль
+                      </div>
+                      <div class="card-item text_center">
+                          <div class="card-item__icon icon icon-frying"></div>
+                          Для жарки
+                      </div>
+                      <div class="card-item text_center">
+                          <div class="card-item__icon icon icon-soups"></div>
+                          Для супов
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <!-- /card -->
+        </div>
+        <!-- tabs -->
+        <div class="tab-section section">
+            <div class="container">
+                <div class="tab-nav swiper">
+                    <div class="swiper-wrapper nav">
+                        <a href="#description" data-bs-toggle="tab" class="swiper-slide tab-nav__link title title_size-md">Описание товара</a>
+                        <a href="#recipes" data-bs-toggle="tab" class="swiper-slide tab-nav__link title title_size-md">Рецепты</a>
+                        <a href="#review" data-bs-toggle="tab" class="swiper-slide tab-nav__link title title_size-md active">Отзывы</a>
+                        <a href="#payment" data-bs-toggle="tab" class="swiper-slide tab-nav__link title title_size-md">Оплата</a>
+                        <a href="#delivery" data-bs-toggle="tab" class="swiper-slide tab-nav__link title title_size-md">Доставка</a>
+                        <a href="#how-to-buy" data-bs-toggle="tab" class="swiper-slide tab-nav__link title title_size-md">Как купить</a>
+                        <a href="#return" data-bs-toggle="tab" class="swiper-slide tab-nav__link title title_size-md">Возврат</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="cardTabs">
+                <!-- description -->
+                <div class="tab-pane" id="description">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 text_size-md">
+                                <div class="title mb_sm">Грудинка говяжья на кости</div>
+                                <p>Антрекот из говядины, также известный как «толстый край» - это отборный отрез мяса между рёбрами и хребтом толщиной 4—6 см и весом 350-550 грамм.Антрекот из говядины является классическим блюдом ресторанного ассортимента европейской кухни.z</p>
+                                <p>Отбейте кусочек этого мяса, пожарьте или потушите его, и вы получите на ужин сочный и мягкий антрекот с непревзойденным вкусом. А раскрыть и дополнить этот вкус помогут наши фирменные соусы.</p>
+                                <p>Наша говядина это мясо молодых фермерских бычков, выращенных и откормленных на территории Дагестана. Непревзойденный вкус этого мяса не уступает мраморным сортам говядины. Охлажденный продукт, произведенный и соответствующий принципам "Халяль", имеет соответствующий сертификат.</p>
+                            </div>
+                            <div class="col-lg-4 d-flex justify-content-end text_size-md">
+                                <div class="value-block">
+                                    <div class="title title_size-md pb-2 value-block__title">Пищевая ценность</div>
+                                    <p class="text_size-sm mb-3 pb-1 pb-md-3">На 100 гр. продукта</p>
+                                    <div class="value-item d-flex">
+                                    Белки
+                                    <span class="text_semibold order-3">15 г</span>
+                                    </div>
+                                    <div class="value-item d-flex">
+                                    Жиры
+                                    <span class="text_semibold order-3">31 г</span>
+                                    </div>
+                                    <div class="value-item d-flex">
+                                    Углеводы
+                                    <span class="text_semibold order-3">0 г</span>
+                                    </div>
+                                    <div class="value-item d-flex">
+                                    Калорийность
+                                    <span class="text_semibold order-3">345 ккал</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /description -->
+                <!-- recipes -->
+                <div class="tab-pane" id="recipes">
+                    <div class="container">
+                        <div class="title mb_md pb-2">Рецепты от повара</div>
+                        <div class="row">
+                            <div class="col-md-4 d-flex">
+                                <div class="blog-item mb-3 mb-md-0">
+                                <a href="#" class="zoom-link blog-item__image"><img src="img/content/blog-5.jpg" alt="" class="img-fluid"></a>
+                                <div class="blog-item__body blog-item__body_padding text_size-sm">
+                                    <h5 class="blog-item__title">Говядина с овощами на огне</h5>
+                                    <p>Обжаренная до румяной корочки, а затем тушенная в сметане</p>
+                                    <a href="#" class="text_medium-light">Читать далее</a>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-md-4 d-flex">
+                                <div class="blog-item mb-3 mb-md-0">
+                                <a href="#" class="zoom-link blog-item__image"><img src="img/content/blog-6.jpg" alt="" class="img-fluid"></a>
+                                <div class="blog-item__body blog-item__body_padding text_size-sm">
+                                    <h5 class="blog-item__title">Домашний борщ</h5>
+                                    <p>Приготовление классического бефстроганова не вызывает сложностей, но результат всегда потрясающий</p>
+                                    <a href="#" class="text_medium-light">Читать далее</a>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-md-4 d-flex">
+                                <div class="blog-item mb-3 mb-md-0">
+                                <a href="#" class="zoom-link blog-item__image"><img src="img/content/blog-7.jpg" alt="" class="img-fluid"></a>
+                                <div class="blog-item__body blog-item__body_padding text_size-sm">
+                                    <h5 class="blog-item__title">Хашлама в мультиварке</h5>
+                                    <p>Рулетики из куриного филе - с хрустящей корочкой, нежные и сочные внутри!</p>
+                                    <a href="#" class="text_medium-light">Читать далее</a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /recipes -->
+                <!-- review -->
+                <div class="tab-pane active" id="review">
+                    <div class="container">
+                        <div class="title mb_sm pb-2 pb-md-0">Отзывы покупеталей</div>
+                        <div class="row">
+                            <div class="col-xl-8 col-lg-7 d-flex flex-column">
+                                <!-- review-info -->
+                                <div class="review-info d-flex text_inversion bg_dark text_size-md">
+                                <div class="review-info__title text_semibold">Отзывы на независимых площадках</div>
+                                <div class="review-platform d-flex">
+                                    <div class="review-platform__icon"><img src="img/icons/review-yandex.svg" alt="" class="img-fluid"></div>
+                                    <div class="review-platform__content">
+                                    <div class="rating rating_lg review-platform__rating">
+                                        <div class="rating__active" style="width:100%"></div>
+                                    </div>
+                                    <a href="#" class="text_inversion">25 отзывов</a>
+                                    </div>
+                                </div>
+                                <div class="review-platform d-flex">
+                                    <div class="review-platform__icon"><img src="img/icons/review-google.svg" alt="" class="img-fluid"></div>
+                                    <div class="review-platform__content">
+                                    <div class="rating rating_lg review-platform__rating">
+                                        <div class="rating__active" style="width:100%"></div>
+                                    </div>
+                                    <a href="#" class="text_inversion">25 отзывов</a>
+                                    </div>
+                                </div>
+                                <div class="review-platform d-flex">
+                                    <div class="review-platform__icon"><img src="img/icons/review-vk.svg" alt="" class="img-fluid"></div>
+                                    <div class="review-platform__content">
+                                    <div class="text_semibold d-xl-none">Вконтакте</div>
+                                    <a href="#" class="text_inversion">25 отзывов</a>
+                                    </div>
+                                </div>
+                                </div>
+                                <!-- /review-info -->
+                                <div class="flex-grow-1 d-flex">
+                                  <div class="review-empty d-flex align-items-center">
+                                    <div class="review-empty__icon"><img src="img/icons/review.svg" alt="" class="img-fluid"></div>
+                                    <div class="review-empty__text">
+                                      <div class="review-empty__title title title_size-mlg mb-2">Отзывов пока нет</div>
+                                      <p class="text_size-md">Об этом товаре пока нет отзывов, ваш может быть первый</p>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-5">
+                                <div class="review-form">
+                                <div class="title title_size-md review-form__title">Написать отзыв</div>
+                                <div class="text_size-sm review-form__sub-title">Поделитесь впечатлениями</div>
+                                <form action="#">
+                                    <div class="d-flex align-content-center form-group_md review-form__header">
+                                        <div class="rating-form rating rating_xl">
+                                            <input type="radio" name="rating" class="rating-form__input" value="1">
+                                            <input type="radio" name="rating" class="rating-form__input" value="2" checked>
+                                            <input type="radio" name="rating" class="rating-form__input" value="3">
+                                            <input type="radio" name="rating" class="rating-form__input" value="4">
+                                            <input type="radio" name="rating" class="rating-form__input" value="5">
+                                        </div>
+                                        <div class="text_light text_size-sm">Ваша оценка</div>
+                                    </div>
+                                    <div class="input form-group_sm pos-rel">
+                                        <input class="input__field form-control form-control_dark" type="text" id="name">
+                                        <label class="input__label input__label--juro" for="name">
+                                            <span class="input__label-content input__label-content--juro">Ваше имя</span>
+                                        </label>
+                                    </div>
+                                    <div class="input form-group_sm pos-rel">
+                                    <input class="input__field form-control form-control_dark" type="text" id="email">
+                                    <label class="input__label input__label--juro" for="email">
+                                        <span class="input__label-content input__label-content--juro">Email</span>
+                                    </label>
+                                    </div>
+                                    <div class="input form-group_md pos-rel">
+                                    <textarea class="input__field form-control form-control_dark" type="text" id="message"></textarea>
+                                    <label class="input__label input__label--juro" for="message">
+                                        <span class="input__label-content input__label-content--juro">Текст отзыва</span>
+                                    </label>
+                                    </div>
+                                    <button class="btn btn_dark w-100 btn_form btn_form-lg">Опубликовать</button>
+                                </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /review -->
+                <!-- payment -->
+                <div class="tab-pane text_size-md" id="payment">
+                    <div class="container">
+                        <div class="title mb_sm">Оплата заказа</div>
+                        <p>Тут текст про оплату. антрекот из говядины, также известный как «толстый край» - это отборный отрез мяса между рёбрами и хребтом толщиной 4—6 см и весом 350-550 грамм.Антрекот из говядины является классическим блюдом ресторанного ассортимента европейской кухни.</p>
+                        <div class="row payment-row">
+                            <div class="col-lg-4 d-flex">
+                                <div class="border-block payment-item flex-grow-1">
+                                <div class="title title_size-sm mb_xs payment-item__title">Картой на сайте</div>
+                                <p class="text_dark">Оплата через платёжный сервис картой любого российского банка до 200 000 р</p>
+                                <ul class="payment-list payment-list_margin d-flex">
+                                    <li class="payment-list__item icon icon-visa-colored"></li>
+                                    <li class="payment-list__item icon icon-mastercard-colored"></li>
+                                    <li class="payment-list__item icon icon-mir-colored"></li>
+                                    <li class="payment-list__item icon icon-sbp-colored"></li>
+                                </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 d-flex">
+                                <div class="border-block payment-item flex-grow-1">
+                                <div class="title title_size-sm mb_xs payment-item__title">Наличными при получении</div>
+                                <p class="text_dark">Оплата через платёжный сервис картой любого российского банка до 200 000 р</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 d-flex">
+                                <div class="border-block payment-item flex-grow-1">
+                                <div class="title title_size-sm mb_xs payment-item__title">Безналичный расчёт</div>
+                                <p class="text_dark">Оплата через платёжный сервис картой любого российского банка до 200 000 р</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /payment -->
+                <!-- delivery -->
+                <div class="tab-pane" id="delivery">
+                    <div class="container">
+                        <div class="title mb_xs pb-2">Правила и условия доставки</div>
+                        <p class="text_size-md">Доставка осуществляется по Москве и Московской области</p>
+                        <div class="row pt-5 pb-3 pb-md-5 mb-0 mb-md-5">
+                            <div class="col-lg-7 d-flex">
+                                <div class="border-block border-block_padding">
+                                <div class="title mb_sm pb-2 pb-md-3">Доставка в ваш район</div>
+                                <div class="delivery-tab d-flex">
+                                    <div class="col-12 col-md-auto delivery-nav">
+                                        <p class="text_semibold pb-3">Куда доставить мясо?</p>
+                                        <div class="dropdown nav">
+                                            <a href="#" data-bs-toggle="dropdown" class="form-control form-control_dark d-flex dropdown-toggle">
+                                            <div class="catalogue-selected">Одинцово</div>
+                                            <div class="input__label-content input__label-content--juro input__label--juro">Выберите район</div>
+                                            <span class="icon icon-caret"></span>
+                                            </a>
+                                            <div class="dropdown-menu">
+                                            <a href="#area-1" data-bs-toggle="tab" class="dropdown-select__link dropdown-menu__link active">Одинцово</a>
+                                            <a href="#area-2" data-bs-toggle="tab" class="dropdown-select__link dropdown-menu__link">Центр</a>
+                                            <a href="#area-3" data-bs-toggle="tab" class="dropdown-select__link dropdown-menu__link">Окраина</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content" id="delivery-tab">
+                                    <div class="tab-pane active p-0" id="area-1">
+                                        <div class="row">
+                                            <div class="col-4 col-xl-4 delivery-item">
+                                                <div class="title delivery-item__price">500 р</div>
+                                                <p class="text_size-md">Стоимость доставки</p>
+                                            </div>
+                                            <div class="col-6 col-xl-8 col-xxl-6 ps-xxl-1 delivery-item ms-4 ms-md-0">
+                                                <div class="title delivery-item__price">1 000 р</div>
+                                                <p class="text_size-md">Срочная доставка в день заказа</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane p-0" id="area-2">
+                                        <div class="row">
+                                        <div class="col-4 col-xl-4 delivery-item">
+                                            <div class="title delivery-item__price">600 р</div>
+                                            <p class="text_size-md">Стоимость доставки</p>
+                                        </div>
+                                        <div class="col-6 col-xl-8 col-xxl-6 ps-xxl-1 delivery-item ms-4 ms-md-0">
+                                            <div class="title delivery-item__price">1 200 р</div>
+                                            <p class="text_size-md">Срочная доставка в день заказа</p>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane p-0" id="area-3">
+                                        <div class="row">
+                                        <div class="col-4 col-xl-4 delivery-item">
+                                            <div class="title delivery-item__price">700 р</div>
+                                            <p class="text_size-md">Стоимость доставки</p>
+                                        </div>
+                                        <div class="col-6 col-xl-8 col-xxl-6 ps-xxl-1 delivery-item ms-4 ms-md-0">
+                                            <div class="title delivery-item__price">1 400 р</div>
+                                            <p class="text_size-md">Срочная доставка в день заказа</p>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <p class="text_size-sm">При условии заказа за пределы МКАД или срочной доставки стоимость такой доставки считается без учета стоимости стандартной доставки в пределах МКАД</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 d-flex">
+                                <div class="border-block flex-grow-1 mt-3 mt-lg-0 d-flex d-md-block">
+                                <div class="border-block__icon border-block__icon_margin"><img src="img/icons/car.svg" alt="" class="img-fluid"></div>
+                                <div class="title title_size-md mb-3 mb-md-4 mb-lg-0">При заказе от 9000 р доставка в пределах МКАД ДОСТАВКА бесплатно</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pos-rel">
+                            <div class="map-address">
+                                <div class="title mb_sm pb-2">Выдача заказов</div>
+                                <div class="title title_size-md mb-2 mb-md-3 pt-1 pb-1 pb-md-0">Проспект Вернадского, д. 41 с1</div>
+                                <p class="text_size-md">Ежедневно с 10:00 до 18:00 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="map" data-settings="marker" class="map map_md"></div>
+                    <div class="container pt-md-3">
+                        <div class="title mb_sm pb-md-3 pt-md-4 mt-5">Как добраться?</div>
+                        <div class="row pb-md-3">
+                            <div class="col-lg-6 d-flex">
+                                <div class="bg_light border-block text_size-md mb-3 mb-lg-0">
+                                    <div class="title title_size-md pb-1 pb-md-3 mb-3">На автомобиле</div>
+                                    <p>Двигаться со сторорны области в сторону центра, поврот прямо перед БЦ "Академик", проехзать вдоль торца БЦ "Академик" на парковку здания МСПК, или повернуть за БЦ "Академик" к ул. Семена-Тян-Шанского и припарковаться сразу за поворотом на парковке ТЦ "Премьер"</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-flex">
+                                <div class="bg_light border-block text_size-md">
+                                    <div class="title title_size-md pb-1 pb-md-3 mb-3">на общественном транспорте</div>
+                                    <div class="d-flex align-items-center">
+                                        <span class="icon icon-metro me-3"></span>
+                                        <span class="text_semibold text_size-md">Проспект Верндаского</span>
+                                    </div>
+                                    <p class="text_dark text_size-sm mb-3 mb-md-4 mt-2">Сокольническая ветка - выход <br class="d-md-none">№6, БКЛ - выход №9</p>
+                                    <p>Выход к ТЦ "Премьер" и БЦ "Вернадский", повернуть ул. Семена-Тян-Шанского, ожидать у шлагбаума между домами с номером 41 с3 и 43 с1, или пройти по проспекту Вернадского мимо БЦ "Академик" и повернуть за БЦ "Академик", пройдя вглубь, через парковку до входа с большой надписью МСПК</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title mb_sm pt-md-4 mt-5">Условия доставки</div>
+                        <p>Доставляем ежедневно, кроме 1-го января.</p>
+                        <p>Заказ с доставкой на следующий день принимается до 19:00.Интервалы и время доставки:</p>
+                        <p>· с 9:00 до 12:00;</p>
+                        <p>· с 12:00 до 15:00;</p>
+                        <p>· с 15:00 до 18:00;</p>
+                        <p>· c 18:00 до 21:00;</p>
+                        <p>· в течение дня.</p>
+                        <p>Покупателем доступна услуга "Срочная доставка в день заказа". Заказ будет доставлен по удобному для Вас адресу и в удобное для время в течение 3-х часов (в зависимости от загруженности производства время доставки может быть увеличено, при это наши операторы предупредят Вас об этом в момент заказа).</p>
+                        <p>Срочная доставка возможна, если заказ сделан до 18:00.</p>
+                        <p>Заказ, оформленный с услугой "Срочная доставка в день заказа", может быть оплачен только на условиях предоплаты.</p>
+                    </div>
+                </div>
+                <!-- /delivery -->
+                <!-- how-to-buy -->
+                <div class="tab-pane" id="how-to-buy">
+                    <div class="container">
+                        <div class="title mb_xxs pb-md-1">Сделать заказ на сайте легко и просто</div>
+                        <p class="text_size-xs-mobile">Мы сделали процесс максимально удобным для наших клиентов</p>
+                        <div class="swiper steps-slider steps-slider_margin">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="step-item">
+                                        <div class="step-item__icon"><img src="img/icons/basket-lg.svg" alt="" class="img-fluid"></div>
+                                        <div class="title title_size-sm">Добавляете товар в корзину</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="step-item">
+                                        <div class="step-item__icon"><img src="img/icons/delivery.svg" alt="" class="img-fluid"></div>
+                                        <div class="title title_size-sm">Выбираете способ доставки</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="step-item">
+                                        <div class="step-item__icon"><img src="img/icons/wallet.svg" alt="" class="img-fluid"></div>
+                                        <div class="title title_size-sm">Выбираете способ оплаты</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="step-item">
+                                        <div class="step-item__icon"><img src="img/icons/recipient.svg" alt="" class="img-fluid"></div>
+                                        <div class="title title_size-sm">Указываете получателя</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="mb_sm">Тут подробности по<br class="d-md-none"> оформлению заказа</h3>
+                        <p class="text_size-md">Антрекот из говядины, также известный как «толстый край» - это отборный отрез мяса между рёбрами и хребтом толщиной 4—6 см и весом 350-550 грамм.Антрекот из говядины является классическим блюдом ресторанного ассортимента европейской кухни.</p>
+                        <p class="text_size-md">Отбейте кусочек этого мяса, пожарьте или потушите его, и вы получите на ужин сочный и мягкий антрекот с непревзойденным вкусом. А раскрыть и дополнить этот вкус помогут наши фирменные соусы.</p>
+                        <p class="text_size-md">Наша говядина это мясо молодых фермерских бычков, выращенных и откормленных на территории Дагестана. Непревзойденный вкус этого мяса не уступает мраморным сортам говядины. Охлажденный продукт, произведенный и соответствующий принципам "Халяль", имеет соответствующий сертификат.</p>
+                    </div>
+                </div>
+                <!-- /how-to-buy -->
+                <!-- return -->
+                <div class="tab-pane text_size-md" id="return">
+                    <div class="container">
+                        <div class="title mb_sm">А что если мясо мне не понравится?</div>
+                        <p class="mb_sm">Тут текст про условия возврата. антрекот из говядины, также известный как «толстый край» - это отборный отрез мяса между рёбрами и хребтом толщиной 4—6 см и весом 350-550 грамм.Антрекот из говядины является классическим блюдом ресторанного ассортимента европейской кухни.</p>
+                        <div class="row return-row">
+                            <div class="col-md-4 d-flex">
+                                <div class="border-block text_size-md return-item mb-3 mb-md-0">
+                                <div class="border-block__icon return-item__icon"><img src="img/icons/bag.svg" alt="" class="img-fluid"></div>
+                                <div class="title title_size-sm mb_xs return-item__title">Заберём обратно В любом виде</div>
+                                <p class="text_dark">Вы можете вернуть продукт в сыром виде или даже приготовленном</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 d-flex">
+                                <div class="border-block text_size-md return-item mb-3 mb-md-0">
+                                <div class="border-block__icon return-item__icon"><img src="img/icons/wallet.svg" alt="" class="img-fluid"></div>
+                                <div class="title title_size-sm mb_xs return-item__title">Возврат денег или замена</div>
+                                <p class="text_dark">Вы можете вернуть продукт в сыром виде или даже приготовленном</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 d-flex">
+                                <div class="border-block text_size-md return-item">
+                                <div class="border-block__icon return-item__icon"><img src="img/icons/heart-decor.svg" alt="" class="img-fluid"></div>
+                                <div class="title title_size-sm mb_xs return-item__title">Клиент всегда прав</div>
+                                <p class="text_dark">Вы можете вернуть продукт в сыром виде или даже приготовленном</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /return -->
+            </div>
+        </div>
+        <!-- /tabs -->
+        <div class="container">
+            <!-- additionally -->
+            <section class="section">
+              <h2 class="mb_lg">С этим товаром покупают</h2>
+              <div class="slider-wrapper">
+                  <a href="#" class="additionally-prev swiper-prev swiper-btn swiper-btn_top btn_light"><span class="icon icon-prev"></span></a>
+                  <a href="#" class="additionally-next swiper-next swiper-btn swiper-btn_top btn_light"><span class="icon icon-next"></span></a>
+                  <div class="additionally-slider additionally-slider_margin swiper">
+                      <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                              <div class="catalogue-item">
+                                  <div class="catalogue-item">
+                                      <a href="#card-modal" data-bs-toggle="modal" class="catalogue-item__image">
+                                          <img src="img/content/catalogue-1.jpg" class="img-fluid" alt="">
+                                          <div class="catalogue-item__tags">
+                                              <div class="catalogue-item__tag">Запекать</div>
+                                              <div class="catalogue-item__tag">Тушить</div>
+                                          </div>
+                                          <div class="catalogue-item__hidden text_center text_size-md">Быстрый просмотр</div>
+                                          <div class="mark mark_success d-md-none">Новинка</div>
+                                      </a>
+                                      <div class="d-flex align-items-center">
+                                          <div class="rating catalogue-item__rating rating_md">
+                                              <div class="rating__active" style="width:100%"></div>
+                                          </div>
+                                          <div class="mark mark_success d-none d-md-inline-flex">Новинка</div>
+                                      </div>
+                                      <div class="catalogue-item__price d-flex align-items-center">
+                                          <div class="price text_styling">1 330 Р/<span class="text_size-lg">кг</span></div>
+                                          <del class="price_old text_light text_styling">1 330 р</del>
+                                          <div class="discount text_danger text_styling text_bold">-15%</div>
+                                      </div>
+                                      <a href="card.html" class="catalogue-item__name text_size-md">Антрекот из говядины</a>
+                                      <div class="d-md-flex align-items-center">
+                                          <div class="btn-wrapper">
+                                              <a href="#" class="btn btn_outline btn-add btn_size-md">
+                                                  <span class="icon icon-basket btn__icon"></span>В корзину
+                                              </a>
+                                              <div class="input-number fake-btn collapse">
+                                                  <div class="input-number__down input-number__minus btn_light">
+                                                      <span class="icon icon-minus"></span>
+                                                  </div>
+                                                  <input class="input-number__input" type="text" pattern="^[0-9]+$" value="1" readonly="">
+                                                  <div class="input-number__up input-number__plus btn_light">
+                                                      <span class="icon icon-plus"></span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="stock text_success text_size-sm text_semibold">В наличии</div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="swiper-slide">
+                              <div class="catalogue-item">
+                                  <div class="catalogue-item">
+                                      <a href="#card-modal" data-bs-toggle="modal" class="catalogue-item__image">
+                                          <img src="img/content/catalogue-2.jpg" class="img-fluid" alt="">
+                                          <div class="catalogue-item__tags">
+                                              <div class="catalogue-item__tag">Запекать</div>
+                                              <div class="catalogue-item__tag">Тушить</div>
+                                          </div>
+                                          <div class="catalogue-item__hidden text_center text_size-md">Быстрый просмотр</div>
+                                      </a>
+                                      <div class="d-flex align-items-center">
+                                          <div class="rating catalogue-item__rating rating_md">
+                                              <div class="rating__active" style="width:100%"></div>
+                                          </div>
+                                      </div>
+                                      <div class="catalogue-item__price d-flex align-items-center">
+                                          <div class="price text_styling">840 Р/<span class="text_size-lg">кг</span></div>
+                                          <del class="price_old text_light text_styling">1 330 р</del>
+                                          <div class="discount text_danger text_styling text_bold">-15%</div>
+                                      </div>
+                                      <a href="card.html" class="catalogue-item__name text_size-md">Голяжка говяжья для запекания</a>
+                                      <div class="d-md-flex align-items-center">
+                                          <div class="btn-wrapper">
+                                              <a href="#" class="btn btn_outline btn-add btn_size-md">
+                                                  <span class="icon icon-basket btn__icon"></span>В корзину
+                                              </a>
+                                              <div class="input-number fake-btn collapse">
+                                                  <div class="input-number__down input-number__minus btn_light">
+                                                      <span class="icon icon-minus"></span>
+                                                  </div>
+                                                  <input class="input-number__input" type="text" pattern="^[0-9]+$" value="1" readonly="">
+                                                  <div class="input-number__up input-number__plus btn_light">
+                                                      <span class="icon icon-plus"></span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="stock text_success text_size-sm text_semibold">В наличии</div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="swiper-slide">
+                              <div class="catalogue-item">
+                                  <div class="catalogue-item">
+                                      <a href="#card-modal" data-bs-toggle="modal" class="catalogue-item__image">
+                                          <img src="img/content/catalogue-3.jpg" class="img-fluid" alt="">
+                                          <div class="catalogue-item__tags">
+                                              <div class="catalogue-item__tag">Запекать</div>
+                                              <div class="catalogue-item__tag">Тушить</div>
+                                          </div>
+                                          <div class="catalogue-item__hidden text_center text_size-md">Быстрый просмотр</div>
+                                          <div class="mark mark_success d-md-none">Новинка</div>
+                                      </a>
+                                      <div class="d-flex align-items-center">
+                                          <div class="rating catalogue-item__rating rating_md">
+                                              <div class="rating__active" style="width:100%"></div>
+                                          </div>
+                                          <div class="mark mark_success d-none d-md-inline-flex">Новинка</div>
+                                      </div>
+                                      <div class="catalogue-item__price d-flex align-items-center">
+                                          <div class="price text_styling">1 330 Р/<span class="text_size-lg">кг</span></div>
+                                      </div>
+                                      <a href="card.html" class="catalogue-item__name text_size-md">Грудинка говяжья бескостная</a>
+                                      <div class="d-md-flex align-items-center">
+                                          <div class="btn-wrapper">
+                                              <a href="#" class="btn btn_outline btn-add btn_size-md">
+                                                  <span class="icon icon-basket btn__icon"></span>В корзину
+                                              </a>
+                                              <div class="input-number fake-btn collapse">
+                                                  <div class="input-number__down input-number__minus btn_light">
+                                                      <span class="icon icon-minus"></span>
+                                                  </div>
+                                                  <input class="input-number__input" type="text" pattern="^[0-9]+$" value="1" readonly="">
+                                                  <div class="input-number__up input-number__plus btn_light">
+                                                      <span class="icon icon-plus"></span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="stock text_success text_size-sm text_semibold">В наличии</div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="swiper-slide">
+                              <div class="catalogue-item">
+                                  <div class="catalogue-item">
+                                      <a href="#card-modal" data-bs-toggle="modal" class="catalogue-item__image">
+                                          <img src="img/content/catalogue-4.jpg" class="img-fluid" alt="">
+                                          <div class="catalogue-item__tags">
+                                              <div class="catalogue-item__tag">Запекать</div>
+                                              <div class="catalogue-item__tag">Тушить</div>
+                                          </div>
+                                          <div class="catalogue-item__hidden text_center text_size-md">Быстрый просмотр</div>
+                                          <div class="mark mark_success d-md-none">Новинка</div>
+                                      </a>
+                                      <div class="d-flex align-items-center">
+                                          <div class="rating catalogue-item__rating rating_md">
+                                              <div class="rating__active" style="width:100%"></div>
+                                          </div>
+                                          <div class="mark mark_success d-none d-md-inline-flex">Новинка</div>
+                                      </div>
+                                      <div class="catalogue-item__price d-flex align-items-center">
+                                          <div class="price text_styling">1 330 Р/<span class="text_size-lg">кг</span></div>
+                                          <del class="price_old text_light text_styling">1 330 р</del>
+                                          <div class="discount text_danger text_styling text_bold">-15%</div>
+                                      </div>
+                                      <a href="card.html" class="catalogue-item__name text_size-md">Гуляш говяжий</a>
+                                      <div class="d-md-flex align-items-center">
+                                          <div class="btn-wrapper">
+                                              <a href="#" class="btn btn_outline btn-add btn_size-md">
+                                                  <span class="icon icon-basket btn__icon"></span>В корзину
+                                              </a>
+                                              <div class="input-number fake-btn collapse">
+                                                  <div class="input-number__down input-number__minus btn_light">
+                                                      <span class="icon icon-minus"></span>
+                                                  </div>
+                                                  <input class="input-number__input" type="text" pattern="^[0-9]+$" value="1" readonly="">
+                                                  <div class="input-number__up input-number__plus btn_light">
+                                                      <span class="icon icon-plus"></span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="stock text_success text_size-sm text_semibold">В наличии</div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </section>
+            <!-- /additionally -->
+            <!-- recommend -->
+            <section class="section">
+              <h2 class="mb_lg">Мы рекомендуем</h2>
+              <div class="slider-wrapper">
+                  <a href="#" class="recommend-prev swiper-prev swiper-btn swiper-btn_top btn_light"><span class="icon icon-prev"></span></a>
+                  <a href="#" class="recommend-next swiper-next swiper-btn swiper-btn_top btn_light"><span class="icon icon-next"></span></a>
+                  <div class="recommend-slider recommend-slider_margin swiper">
+                      <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                              <div class="catalogue-item">
+                                  <div class="catalogue-item">
+                                      <a href="#card-modal" data-bs-toggle="modal" class="catalogue-item__image">
+                                          <img src="img/content/catalogue-1.jpg" class="img-fluid" alt="">
+                                          <div class="catalogue-item__tags">
+                                              <div class="catalogue-item__tag">Запекать</div>
+                                              <div class="catalogue-item__tag">Тушить</div>
+                                          </div>
+                                          <div class="catalogue-item__hidden text_center text_size-md">Быстрый просмотр</div>
+                                          <div class="mark mark_success d-md-none">Новинка</div>
+                                      </a>
+                                      <div class="d-flex align-items-center">
+                                          <div class="rating catalogue-item__rating rating_md">
+                                              <div class="rating__active" style="width:100%"></div>
+                                          </div>
+                                          <div class="mark mark_success d-none d-md-inline-flex">Новинка</div>
+                                      </div>
+                                      <div class="catalogue-item__price d-flex align-items-center">
+                                          <div class="price text_styling">1 330 Р/<span class="text_size-lg">кг</span></div>
+                                          <del class="price_old text_light text_styling">1 330 р</del>
+                                          <div class="discount text_danger text_styling text_bold">-15%</div>
+                                      </div>
+                                      <a href="card.html" class="catalogue-item__name text_size-md">Антрекот из говядины</a>
+                                      <div class="d-md-flex align-items-center">
+                                          <div class="btn-wrapper">
+                                              <a href="#" class="btn btn_outline btn-add btn_size-md">
+                                                  <span class="icon icon-basket btn__icon"></span>В корзину
+                                              </a>
+                                              <div class="input-number fake-btn collapse">
+                                                  <div class="input-number__down input-number__minus btn_light">
+                                                      <span class="icon icon-minus"></span>
+                                                  </div>
+                                                  <input class="input-number__input" type="text" pattern="^[0-9]+$" value="1" readonly="">
+                                                  <div class="input-number__up input-number__plus btn_light">
+                                                      <span class="icon icon-plus"></span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="stock text_success text_size-sm text_semibold">В наличии</div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="swiper-slide">
+                              <div class="catalogue-item">
+                                  <div class="catalogue-item">
+                                      <a href="#card-modal" data-bs-toggle="modal" class="catalogue-item__image">
+                                          <img src="img/content/catalogue-2.jpg" class="img-fluid" alt="">
+                                          <div class="catalogue-item__tags">
+                                              <div class="catalogue-item__tag">Запекать</div>
+                                              <div class="catalogue-item__tag">Тушить</div>
+                                          </div>
+                                          <div class="catalogue-item__hidden text_center text_size-md">Быстрый просмотр</div>
+                                      </a>
+                                      <div class="d-flex align-items-center">
+                                          <div class="rating catalogue-item__rating rating_md">
+                                              <div class="rating__active" style="width:100%"></div>
+                                          </div>
+                                      </div>
+                                      <div class="catalogue-item__price d-flex align-items-center">
+                                          <div class="price text_styling">840 Р/<span class="text_size-lg">кг</span></div>
+                                          <del class="price_old text_light text_styling">1 330 р</del>
+                                          <div class="discount text_danger text_styling text_bold">-15%</div>
+                                      </div>
+                                      <a href="card.html" class="catalogue-item__name text_size-md">Голяжка говяжья для запекания</a>
+                                      <div class="d-md-flex align-items-center">
+                                          <div class="btn-wrapper">
+                                              <a href="#" class="btn btn_outline btn-add btn_size-md">
+                                                  <span class="icon icon-basket btn__icon"></span>В корзину
+                                              </a>
+                                              <div class="input-number fake-btn collapse">
+                                                  <div class="input-number__down input-number__minus btn_light">
+                                                      <span class="icon icon-minus"></span>
+                                                  </div>
+                                                  <input class="input-number__input" type="text" pattern="^[0-9]+$" value="1" readonly="">
+                                                  <div class="input-number__up input-number__plus btn_light">
+                                                      <span class="icon icon-plus"></span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="stock text_success text_size-sm text_semibold">В наличии</div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="swiper-slide">
+                              <div class="catalogue-item">
+                                  <div class="catalogue-item">
+                                      <a href="#card-modal" data-bs-toggle="modal" class="catalogue-item__image">
+                                          <img src="img/content/catalogue-3.jpg" class="img-fluid" alt="">
+                                          <div class="catalogue-item__tags">
+                                              <div class="catalogue-item__tag">Запекать</div>
+                                              <div class="catalogue-item__tag">Тушить</div>
+                                          </div>
+                                          <div class="catalogue-item__hidden text_center text_size-md">Быстрый просмотр</div>
+                                          <div class="mark mark_success d-md-none">Новинка</div>
+                                      </a>
+                                      <div class="d-flex align-items-center">
+                                          <div class="rating catalogue-item__rating rating_md">
+                                              <div class="rating__active" style="width:100%"></div>
+                                          </div>
+                                          <div class="mark mark_success d-none d-md-inline-flex">Новинка</div>
+                                      </div>
+                                      <div class="catalogue-item__price d-flex align-items-center">
+                                          <div class="price text_styling">1 330 Р/<span class="text_size-lg">кг</span></div>
+                                      </div>
+                                      <a href="card.html" class="catalogue-item__name text_size-md">Грудинка говяжья бескостная</a>
+                                      <div class="d-md-flex align-items-center">
+                                          <div class="btn-wrapper">
+                                              <a href="#" class="btn btn_outline btn-add btn_size-md">
+                                                  <span class="icon icon-basket btn__icon"></span>В корзину
+                                              </a>
+                                              <div class="input-number fake-btn collapse">
+                                                  <div class="input-number__down input-number__minus btn_light">
+                                                      <span class="icon icon-minus"></span>
+                                                  </div>
+                                                  <input class="input-number__input" type="text" pattern="^[0-9]+$" value="1" readonly="">
+                                                  <div class="input-number__up input-number__plus btn_light">
+                                                      <span class="icon icon-plus"></span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="stock text_success text_size-sm text_semibold">В наличии</div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="swiper-slide">
+                              <div class="catalogue-item">
+                                  <div class="catalogue-item">
+                                      <a href="#card-modal" data-bs-toggle="modal" class="catalogue-item__image">
+                                          <img src="img/content/catalogue-4.jpg" class="img-fluid" alt="">
+                                          <div class="catalogue-item__tags">
+                                              <div class="catalogue-item__tag">Запекать</div>
+                                              <div class="catalogue-item__tag">Тушить</div>
+                                          </div>
+                                          <div class="catalogue-item__hidden text_center text_size-md">Быстрый просмотр</div>
+                                          <div class="mark mark_success d-md-none">Новинка</div>
+                                      </a>
+                                      <div class="d-flex align-items-center">
+                                          <div class="rating catalogue-item__rating rating_md">
+                                              <div class="rating__active" style="width:100%"></div>
+                                          </div>
+                                          <div class="mark mark_success d-none d-md-inline-flex">Новинка</div>
+                                      </div>
+                                      <div class="catalogue-item__price d-flex align-items-center">
+                                          <div class="price text_styling">1 330 Р/<span class="text_size-lg">кг</span></div>
+                                          <del class="price_old text_light text_styling">1 330 р</del>
+                                          <div class="discount text_danger text_styling text_bold">-15%</div>
+                                      </div>
+                                      <a href="card.html" class="catalogue-item__name text_size-md">Гуляш говяжий</a>
+                                      <div class="d-md-flex align-items-center">
+                                          <div class="btn-wrapper">
+                                              <a href="#" class="btn btn_outline btn-add btn_size-md">
+                                                  <span class="icon icon-basket btn__icon"></span>В корзину
+                                              </a>
+                                              <div class="input-number fake-btn collapse">
+                                                  <div class="input-number__down input-number__minus btn_light">
+                                                      <span class="icon icon-minus"></span>
+                                                  </div>
+                                                  <input class="input-number__input" type="text" pattern="^[0-9]+$" value="1" readonly="">
+                                                  <div class="input-number__up input-number__plus btn_light">
+                                                      <span class="icon icon-plus"></span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="stock text_success text_size-sm text_semibold">В наличии</div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </section>
+            <!-- /recommend -->
+            <!-- popular -->
+            <section class="section">
+                <h2 class="mb_lg">Вам может понравиться</h2>
+                <div class="slider-wrapper">
+                    <a href="#" class="popular-prev swiper-prev swiper-btn swiper-btn_top btn_light"><span class="icon icon-prev"></span></a>
+                    <a href="#" class="popular-next swiper-next swiper-btn swiper-btn_top btn_light"><span class="icon icon-next"></span></a>
+                    <div class="popular-slider popular-slider_margin swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="catalogue-item">
+                                    <div class="catalogue-item">
+                                        <a href="#card-modal" data-bs-toggle="modal" class="catalogue-item__image">
+                                            <img src="img/content/catalogue-1.jpg" class="img-fluid" alt="">
+                                            <div class="catalogue-item__tags">
+                                                <div class="catalogue-item__tag">Запекать</div>
+                                                <div class="catalogue-item__tag">Тушить</div>
+                                            </div>
+                                            <div class="catalogue-item__hidden text_center text_size-md">Быстрый просмотр</div>
+                                            <div class="mark mark_success d-md-none">Новинка</div>
+                                        </a>
+                                        <div class="d-flex align-items-center">
+                                            <div class="rating catalogue-item__rating rating_md">
+                                                <div class="rating__active" style="width:100%"></div>
+                                            </div>
+                                            <div class="mark mark_success d-none d-md-inline-flex">Новинка</div>
+                                        </div>
+                                        <div class="catalogue-item__price d-flex align-items-center">
+                                            <div class="price text_styling">1 330 Р/<span class="text_size-lg">кг</span></div>
+                                            <del class="price_old text_light text_styling">1 330 р</del>
+                                            <div class="discount text_danger text_styling text_bold">-15%</div>
+                                        </div>
+                                        <a href="card.html" class="catalogue-item__name text_size-md">Антрекот из говядины</a>
+                                        <div class="d-md-flex align-items-center">
+                                            <div class="btn-wrapper">
+                                                <a href="#" class="btn btn_outline btn-add btn_size-md">
+                                                    <span class="icon icon-basket btn__icon"></span>В корзину
+                                                </a>
+                                                <div class="input-number fake-btn collapse">
+                                                    <div class="input-number__down input-number__minus btn_light">
+                                                        <span class="icon icon-minus"></span>
+                                                    </div>
+                                                    <input class="input-number__input" type="text" pattern="^[0-9]+$" value="1" readonly="">
+                                                    <div class="input-number__up input-number__plus btn_light">
+                                                        <span class="icon icon-plus"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="stock text_success text_size-sm text_semibold">В наличии</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="catalogue-item">
+                                    <div class="catalogue-item">
+                                        <a href="#card-modal" data-bs-toggle="modal" class="catalogue-item__image">
+                                            <img src="img/content/catalogue-2.jpg" class="img-fluid" alt="">
+                                            <div class="catalogue-item__tags">
+                                                <div class="catalogue-item__tag">Запекать</div>
+                                                <div class="catalogue-item__tag">Тушить</div>
+                                            </div>
+                                            <div class="catalogue-item__hidden text_center text_size-md">Быстрый просмотр</div>
+                                        </a>
+                                        <div class="d-flex align-items-center">
+                                            <div class="rating catalogue-item__rating rating_md">
+                                                <div class="rating__active" style="width:100%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="catalogue-item__price d-flex align-items-center">
+                                            <div class="price text_styling">840 Р/<span class="text_size-lg">кг</span></div>
+                                            <del class="price_old text_light text_styling">1 330 р</del>
+                                            <div class="discount text_danger text_styling text_bold">-15%</div>
+                                        </div>
+                                        <a href="card.html" class="catalogue-item__name text_size-md">Голяжка говяжья для запекания</a>
+                                        <div class="d-md-flex align-items-center">
+                                            <div class="btn-wrapper">
+                                                <a href="#" class="btn btn_outline btn-add btn_size-md">
+                                                    <span class="icon icon-basket btn__icon"></span>В корзину
+                                                </a>
+                                                <div class="input-number fake-btn collapse">
+                                                    <div class="input-number__down input-number__minus btn_light">
+                                                        <span class="icon icon-minus"></span>
+                                                    </div>
+                                                    <input class="input-number__input" type="text" pattern="^[0-9]+$" value="1" readonly="">
+                                                    <div class="input-number__up input-number__plus btn_light">
+                                                        <span class="icon icon-plus"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="stock text_success text_size-sm text_semibold">В наличии</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="catalogue-item">
+                                    <div class="catalogue-item">
+                                        <a href="#card-modal" data-bs-toggle="modal" class="catalogue-item__image">
+                                            <img src="img/content/catalogue-3.jpg" class="img-fluid" alt="">
+                                            <div class="catalogue-item__tags">
+                                                <div class="catalogue-item__tag">Запекать</div>
+                                                <div class="catalogue-item__tag">Тушить</div>
+                                            </div>
+                                            <div class="catalogue-item__hidden text_center text_size-md">Быстрый просмотр</div>
+                                            <div class="mark mark_success d-md-none">Новинка</div>
+                                        </a>
+                                        <div class="d-flex align-items-center">
+                                            <div class="rating catalogue-item__rating rating_md">
+                                                <div class="rating__active" style="width:100%"></div>
+                                            </div>
+                                            <div class="mark mark_success d-none d-md-inline-flex">Новинка</div>
+                                        </div>
+                                        <div class="catalogue-item__price d-flex align-items-center">
+                                            <div class="price text_styling">1 330 Р/<span class="text_size-lg">кг</span></div>
+                                        </div>
+                                        <a href="card.html" class="catalogue-item__name text_size-md">Грудинка говяжья бескостная</a>
+                                        <div class="d-md-flex align-items-center">
+                                            <div class="btn-wrapper">
+                                                <a href="#" class="btn btn_outline btn-add btn_size-md">
+                                                    <span class="icon icon-basket btn__icon"></span>В корзину
+                                                </a>
+                                                <div class="input-number fake-btn collapse">
+                                                    <div class="input-number__down input-number__minus btn_light">
+                                                        <span class="icon icon-minus"></span>
+                                                    </div>
+                                                    <input class="input-number__input" type="text" pattern="^[0-9]+$" value="1" readonly="">
+                                                    <div class="input-number__up input-number__plus btn_light">
+                                                        <span class="icon icon-plus"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="stock text_success text_size-sm text_semibold">В наличии</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="catalogue-item">
+                                    <div class="catalogue-item">
+                                        <a href="#card-modal" data-bs-toggle="modal" class="catalogue-item__image">
+                                            <img src="img/content/catalogue-4.jpg" class="img-fluid" alt="">
+                                            <div class="catalogue-item__tags">
+                                                <div class="catalogue-item__tag">Запекать</div>
+                                                <div class="catalogue-item__tag">Тушить</div>
+                                            </div>
+                                            <div class="catalogue-item__hidden text_center text_size-md">Быстрый просмотр</div>
+                                            <div class="mark mark_success d-md-none">Новинка</div>
+                                        </a>
+                                        <div class="d-flex align-items-center">
+                                            <div class="rating catalogue-item__rating rating_md">
+                                                <div class="rating__active" style="width:100%"></div>
+                                            </div>
+                                            <div class="mark mark_success d-none d-md-inline-flex">Новинка</div>
+                                        </div>
+                                        <div class="catalogue-item__price d-flex align-items-center">
+                                            <div class="price text_styling">1 330 Р/<span class="text_size-lg">кг</span></div>
+                                            <del class="price_old text_light text_styling">1 330 р</del>
+                                            <div class="discount text_danger text_styling text_bold">-15%</div>
+                                        </div>
+                                        <a href="card.html" class="catalogue-item__name text_size-md">Гуляш говяжий</a>
+                                        <div class="d-md-flex align-items-center">
+                                            <div class="btn-wrapper">
+                                                <a href="#" class="btn btn_outline btn-add btn_size-md">
+                                                    <span class="icon icon-basket btn__icon"></span>В корзину
+                                                </a>
+                                                <div class="input-number fake-btn collapse">
+                                                    <div class="input-number__down input-number__minus btn_light">
+                                                        <span class="icon icon-minus"></span>
+                                                    </div>
+                                                    <input class="input-number__input" type="text" pattern="^[0-9]+$" value="1" readonly="">
+                                                    <div class="input-number__up input-number__plus btn_light">
+                                                        <span class="icon icon-plus"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="stock text_success text_size-sm text_semibold">В наличии</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /popular -->
+            <!-- watched-section -->
+            <section class="section">
+              <h2 class="mb_md">Вы смотрели</h2>
+              <div class="swiper watched-slider pb-0">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                          <div class="watch-item d-flex align-items-center">
+                              <a href="card.html" class="watch-item__image zoom-link">
+                                  <img src="img/content/catalogue-1.jpg" alt="Антрекот из говядины">
+                              </a>
+                              <div class="watch-item__text">
+                                  <a href="card.html" class="watch-item__name text_size-sm">Антрекот из говядины</a>
+                                  <div class="d-flex align-items-center">
+                                      <div class="watch-item__price text_styling">1 330 р<span>/кг</span></div>
+                                      <a href="#" class="btn btn_light watch-item__btn"><span class="icon icon-basket"></span></a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="watch-item d-flex align-items-center">
+                              <a href="card.html" class="watch-item__image zoom-link">
+                                  <img src="img/content/catalogue-2.jpg" alt="Голяжка говяжья для запекания">
+                              </a>
+                              <div class="watch-item__text">
+                                  <a href="card.html" class="watch-item__name text_size-sm">Голяжка говяжья для запекания</a>
+                                  <div class="d-flex align-items-center">
+                                      <div class="watch-item__price text_styling">840 р<span>/кг</span></div>
+                                      <a href="#" class="btn btn_light watch-item__btn"><span class="icon icon-basket"></span></a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="watch-item d-flex align-items-center">
+                              <a href="card.html" class="watch-item__image zoom-link"><img src="img/content/catalogue-3.jpg" alt="Грудинка говяжья бесконечная"></a>
+                              <div class="watch-item__text">
+                                  <a href="card.html" class="watch-item__name text_size-sm">Грудинка говяжья бесконечная</a>
+                                  <div class="d-flex align-items-center">
+                                      <div class="watch-item__price text_styling">1 330 р<span>/кг</span></div>
+                                      <a href="#" class="btn btn_light watch-item__btn"><span class="icon icon-basket"></span></a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="watch-item d-flex align-items-center">
+                              <a href="card.html" class="watch-item__image zoom-link"><img src="img/content/catalogue-4.jpg" alt="Гуляш говяжий"></a>
+                              <div class="watch-item__text">
+                                  <a href="card.html" class="watch-item__name text_size-sm">Гуляш говяжий</a>
+                                  <div class="d-flex align-items-center">
+                                      <div class="watch-item__price text_styling">1 330 р<span>/кг</span></div>
+                                      <a href="#" class="btn btn_light watch-item__btn"><span class="icon icon-basket"></span></a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </section>
+            <!-- /watched-section -->
+            <!-- linking -->
+            <section class="section d-none d-md-block linking-section">
+              <h2 class="mb_lg py-1">Блок для перелинковки</h2>
+              <div class="row">
+                  <div class="col-md-4 col-lg-2">
+                      <ul class="links-list text_semibold text_size-md">
+                          <li class="links-list__item"><a href="#">Баранина</a></li>
+                          <li class="links-list__item"><a href="#">Говядина</a></li>
+                          <li class="links-list__item"><a href="#">Готовая еда</a></li>
+                          <li class="links-list__item"><a href="#">Индейка</a></li>
+                          <li class="links-list__item"><a href="#">Конина</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-4 col-lg-2">
+                      <ul class="links-list text_semibold text_size-md">
+                          <li class="links-list__item"><a href="#">Конина</a></li>
+                          <li class="links-list__item"><a href="#">Кролик</a></li>
+                          <li class="links-list__item"><a href="#">Курица</a></li>
+                          <li class="links-list__item"><a href="#">Хлеб</a></li>
+                          <li class="links-list__item"><a href="#">Полуфабрикаты</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-4 col-lg-2">
+                      <ul class="links-list text_semibold text_size-md">
+                          <li class="links-list__item"><a href="#">Баранина</a></li>
+                          <li class="links-list__item"><a href="#">Говядина</a></li>
+                          <li class="links-list__item"><a href="#">Готовая еда</a></li>
+                          <li class="links-list__item"><a href="#">Индейка</a></li>
+                          <li class="links-list__item"><a href="#">Конина</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-4 col-lg-2">
+                      <ul class="links-list text_semibold text_size-md">
+                          <li class="links-list__item"><a href="#">Конина</a></li>
+                          <li class="links-list__item"><a href="#">Кролик</a></li>
+                          <li class="links-list__item"><a href="#">Курица</a></li>
+                          <li class="links-list__item"><a href="#">Хлеб</a></li>
+                          <li class="links-list__item"><a href="#">Полуфабрикаты</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-4 col-lg-2">
+                      <ul class="links-list text_semibold text_size-md">
+                          <li class="links-list__item"><a href="#">Баранина</a></li>
+                          <li class="links-list__item"><a href="#">Говядина</a></li>
+                          <li class="links-list__item"><a href="#">Готовая еда</a></li>
+                          <li class="links-list__item"><a href="#">Индейка</a></li>
+                          <li class="links-list__item"><a href="#">Конина</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-4 col-lg-2">
+                      <ul class="links-list text_semibold text_size-md">
+                          <li class="links-list__item"><a href="#">Конина</a></li>
+                          <li class="links-list__item"><a href="#">Кролик</a></li>
+                          <li class="links-list__item"><a href="#">Курица</a></li>
+                          <li class="links-list__item"><a href="#">Хлеб</a></li>
+                          <li class="links-list__item"><a href="#">Полуфабрикаты</a></li>
+                      </ul>
+                  </div>
+              </div>
+            </section>
+            <!-- /linking -->
+            <!-- catalogue-nav -->
+            <section class="section d-md-none">
+              <h2 class="mb_sm pb-2 pb-md-0">Каталог продукции</h2>
+              <div class="category-nav">
+                  <a href="category.html" class="btn btn_light category-link">
+                      <div class="category-link__title">Баранина</div>
+                      <div class="category-link__image"><img src="img/content/category-1.png" alt="Баранина" class="img-fluid"></div>
+                  </a>
+                  <a href="category.html" class="btn btn_light category-link">
+                      <div class="category-link__title">Говядина</div>
+                      <div class="category-link__image"><img src="img/content/category-2.png" alt="Говядина" class="img-fluid"></div>
+                  </a>
+                  <a href="category.html" class="btn btn_light category-link">
+                      <div class="category-link__title">Готовая еда</div>
+                      <div class="category-link__image"><img src="img/content/category-3.png" alt="Готовая еда" class="img-fluid"></div>
+                  </a>
+                  <a href="category.html" class="btn btn_light category-link">
+                      <div class="category-link__title">Индейка</div>
+                      <div class="category-link__image"><img src="img/content/category-4.png" alt="Индейка" class="img-fluid"></div>
+                  </a>
+                  <a href="category.html" class="btn btn_light category-link">
+                      <div class="category-link__title">Конина</div>
+                      <div class="category-link__image"><img src="img/content/category-5.png" alt="Конина" class="img-fluid"></div>
+                  </a>
+                  <a href="category.html" class="btn btn_light category-link">
+                      <div class="category-link__title">Кролик</div>
+                      <div class="category-link__image"><img src="img/content/category-6.png" alt="Кролик" class="img-fluid"></div>
+                  </a>
+                  <a href="category.html" class="btn btn_light category-link">
+                      <div class="category-link__title">Курица</div>
+                      <div class="category-link__image"><img src="img/content/category-7.png" alt="Курица" class="img-fluid"></div>
+                  </a>
+                  <a href="category.html" class="btn btn_light category-link">
+                      <div class="category-link__title">Полу-<wbr>фабрикаты</div>
+                      <div class="category-link__image"><img src="img/content/category-8.png" alt="Полу-фабрикаты" class="img-fluid"></div>
+                  </a>
+                  <a href="category.html" class="btn btn_light category-link">
+                      <div class="category-link__title">Хлеб</div>
+                      <div class="category-link__image"><img src="img/content/category-9.png" alt="Хлеб" class="img-fluid"></div>
+                  </a>
+              </div>
+            </section>
+            <!-- /catalogue-nav -->
+        </div>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                <a href="#wrap" class="up-link btn btn_light text_size-md d-none d-md-flex">
+                    <span class="icon icon-up"></span>
+                    Наверх
+                </a>
+                <div class="d-lg-flex">
+                    <a href="/" class="logo footer__logo"><img src="img/logo-inversion.svg" alt="" class="img-fluid"></a>
+                    <div class="footer__content">
+                        <div class="footer__contacts d-flex text_size-md">
+                            <div class="contact-item">
+                                <div class="contact-item__icon icon icon-phone"></div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p><a href="tel:+79259411991" class="text_inversion text_semibold nowrap">+7 (925) 941-19-91</a></p>
+                                        <p class="text_size-sm">Телефон в Москве</p>
+                                    </div>
+                                    <div class="col-6 footer__phone">
+                                        <p><a href="tel:+78009411991" class="text_inversion text_semibold nowrap">+7 (800) 941-19-91</a></p>
+                                        <p class="text_size-sm">Бесплатно по РФ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-item col-lg-6 col-xl-auto">
+                                <div class="contact-item__icon icon icon-map"></div>
+                                <p class="text_semibold">Москва, пр. Вернадского 41, стр. 1</p>
+                                <p class="text_size-sm">Пункт выдачи заказов работает 9:00 - 20:00</p>
+                            </div>
+                            <div class="contact-item col-lg-6 col-xl-auto">
+                                <div class="contact-item__icon icon icon-email"></div>
+                                <p><a href="mailto:info@breadmeatmarket.ru" class="text_inversion text_semibold">info@breadmeatmarket.ru</a></p>
+                                <p class="text_size-sm">Email для связи</p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between flex-column flex-xl-row">
+                            <ul class="footer-nav d-flex justify-content-center justify-content-md-between text_size-md align-items-center">
+                                <li class="footer-nav__item order-lg-1"><a href="#" class="text_inversion">Условия и соглашения</a></li>
+                                <li class="footer-nav__item order-lg-1"><a href="#" class="text_inversion">Обмен и возврат</a></li>
+                                <li class="footer-nav__item order-lg-1"><a href="#" class="text_inversion">Сертификаты</a></li>
+                                <li class="footer-nav__item"><a href="#callback" data-bs-toggle="modal" class="text_inversion text_size-sm text_semibold btn btn_size-xs">Заказать звонок</a></li>
+                            </ul>
+                            <ul class="social-list footer__social-list d-flex">
+                                <li class="social-list__item"><a href="#" class="social-list__link icon icon-vk-inversion"></a></li>
+                                <li class="social-list__item"><a href="#" class="social-list__link icon icon-whatsapp-inversion"></a></li>
+                                <li class="social-list__item"><a href="#" class="social-list__link icon icon-tg-inversion"></a></li>
+                                <li class="social-list__item"><a href="#" class="social-list__link icon icon-ins-inversion"></a></li>
+                                <li class="social-list__item"><a href="#" class="social-list__link icon icon-youtube-inversion"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom text_size-xs">
+                <div class="container">
+                    <div class="d-flex justify-content-center justify-content-lg-between align-items-center flex-wrap">
+                        <ul class="footer__payment-list payment-list order-xl-2 d-flex">
+                            <li class="payment-list__item icon icon-visa"></li>
+                            <li class="payment-list__item icon icon-mastercard"></li>
+                            <li class="payment-list__item icon icon-mir"></li>
+                            <li class="payment-list__item icon icon-sbp"></li>
+                        </ul>
+                        <div class="copyright">ООО «Хлеб и Мясо» © 2015–2023. Копирование любых материалов запрещено.</div>
+                        <div class="producer">Разработка и продвижение сайта <a href="#" class="text_warning d-block d-md-inline">Ozhgibesov Agency</a></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+    </div>
+
+  <!-- callback -->
+  <div class="modal fade" id="callback" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog_sm">
+          <div class="modal-content text_inversion bg_pattern">
+              <button type="button" class="icon modal__close icon-close-inversion" data-bs-dismiss="modal"></button>
+              <div class="title title_size-lg modal__title">Заказать звонок</div>
+              <p>Оставьте свои данные и мы свяжемся с вами в течение рабочего дня</p>
+              <form action="#">
+                  <div class="d-md-flex modal__row">
+                      <div class="flex-grow-1 modal__col">
+                          <div class="input form-group pos-rel">
+                              <input class="input__field form-control" type="text" id="phone">
+                              <label class="input__label input__label--juro" for="phone">
+                                  <span class="input__label-content input__label-content--juro">Номер телефона</span>
+                              </label>
+                          </div>
+                      </div>
+                      <div class="form-group modal__col">
+                          <button class="btn btn_transparent w-100 btn_form" data-bs-toggle="modal" data-bs-target="#success">
+                              <span class="icon btn__icon icon icon-phone"></span>
+                              Заказать звонок
+                          </button>
+                      </div>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+  <!-- /callback -->
+  <!-- notice-modal -->
+  <div class="modal fade" id="notice-modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+          <div class="modal-content text_inversion bg_pattern">
+              <button type="button" class="icon modal__close icon-close-inversion" data-bs-dismiss="modal"></button>
+              <div class="title title_size-lg modal__title">Уведомить о поступлении</div>
+              <p>Введите ваш адрес электронной почты и мы уведомим о поступлении этого товара на склад</p>
+              <form action="#">
+                  <div class="d-md-flex modal__row">
+                      <div class="flex-grow-1 modal__col">
+                          <div class="input form-group pos-rel">
+                              <input class="input__field form-control" type="text" id="email-modal">
+                              <label class="input__label input__label--juro" for="email-modal">
+                                  <span class="input__label-content input__label-content--juro">Email</span>
+                              </label>
+                          </div>
+                      </div>
+                      <div class="form-group modal__col">
+                          <button class="btn btn_transparent w-100 btn_form" data-bs-toggle="modal" data-bs-target="#success">Подтвердить</button>
+                      </div>
+                  </div>
+              </form>
+          </div>
+      </div>
+    </div>
+    <!-- /notice-modal -->
+    <!-- success -->
+    <div class="modal fade" id="success" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog_xs">
+            <div class="modal-content text_center text_inversion bg_pattern">
+                <button type="button" class="icon modal__close icon-close-inversion" data-bs-dismiss="modal"></button>
+                <div class="modal__icon"><img src="img/icons/check-succsess.svg" alt=""></div>
+                <div class="title title_size-lg mb_sm pb-1">Заявка принята</div>
+                <div class="form-group">
+                    <button class="btn btn_transparent" data-bs-dismiss="modal">Закрыть окно</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /success -->
+    <!-- card-modal -->
+    <div class="modal fade" id="card-modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog_lg">
+            <div class="modal-content modal-content_inversion">
+                <button type="button" class="icon modal__close icon-close d-md-none" data-bs-dismiss="modal"></button>
+                <div class="card d-md-flex">
+                  <div class="card__image card__image_modal"><img src="img/content/card.jpg" alt="" class="w-100"></div>
+                  <div class="card__info">
+                      <div class="title title_size-lg mb_sm  card__title">Грудинка говяжья <br class="d-none d-lg-block">на кости</div>
+                      <div class="d-flex align-items-center flex-wrap  card__header">
+                          <div class="text_dark card__code text_size-sm order-md-1 w-100_sm">Арт. 12345678</div>
+                          <div class="rating card__ratind">
+                              <div class="rating__active" style="width: 100%;"></div>
+                          </div>
+                          <div class="stock card__stock text_success text_size-sm text_semibold">В наличии</div>
+                      </div>
+                      <div class="card__description text_size-md">
+                          <p>Грудинка говяжья на кости лучший отруб для приготовления наваристого говяжьего бульона с насыщенным ароматом и супов на его основе. Требует длительной варки.</p>
+                      </div>
+                      <div class="card__price d-flex align-items-center">
+                          <div class="price text_styling">999 Р<span class="text_size-lg">/кг</span></div>
+                          <del class="price_old text_light text_styling">1 330 р</del>
+                          <div class="discount text_danger text_styling text_bold">-15%</div>
+                      </div>
+                      <div class="d-md-flex pos-rel card__btn">
+                          <div class="btn-wrapper">
+                              <a href="#" class="btn btn_dark btn-add btn_size-lg w-100_sm">
+                                  <span class="icon icon-basket-inversion btn__icon"></span>В корзину
+                              </a>
+                              <div class="card__fake-btn fake-btn collapse">
+                                  <a href="basket.html" class="btn btn_success flex-column">
+                                      В корзине
+                                      <span class="text_size-xs">Перейти</span>
+                                  </a>
+                                  <div class="input-number card__input-number">
+                                      <div class="input-number__down input-number__minus btn_light">
+                                          <span class="icon icon-minus"></span>
+                                      </div>
+                                      <input class="input-number__input" type="text" pattern="^[0-9]+$" value="1" readonly="">
+                                      <div class="input-number__up input-number__plus btn_light">
+                                          <span class="icon icon-plus"></span>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <a href="#" class="favorite-link favorite-link_modal toggler"><span class="icon icon-heart"></span></a>
+                      </div>
+                      <div class="card-list d-flex text_size-sm">
+                          <div class="card-item text_center">
+                              <div class="card-item__icon icon icon-cooled"></div>
+                              Охлаждённый
+                          </div>
+                          <div class="card-item text_center">
+                              <div class="card-item__icon icon icon-halal"></div>
+                              Халяль
+                          </div>
+                          <div class="card-item text_center">
+                              <div class="card-item__icon icon icon-frying"></div>
+                              Для жарки
+                          </div>
+                          <div class="card-item text_center">
+                              <div class="card-item__icon icon icon-soups"></div>
+                              Для супов
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!-- /card-modal -->
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiIonNI8Lg81sQ_2zkvMTcIUmQn5KikzA&callback=initMap" async defer></script>
+    <script src="js/classie.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
