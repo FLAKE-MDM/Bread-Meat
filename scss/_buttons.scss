@@ -115,6 +115,11 @@
                 margin-top: -0.5rem;
             }
         }
+        &-lg{
+            @include bp(sm){
+                min-height: 5.4rem;
+            }
+        }
     }
     &_size{
         &-xs{

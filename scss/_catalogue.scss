@@ -11,7 +11,7 @@
 .catalogue{
   &-list{
     display: grid;
-    grid-template-columns: repeat(3, 29.6%);
+    grid-template-columns: repeat(3, 31.9%);
     grid-gap: 4rem 2rem;
     @include bp(xl){
       grid-template-columns: repeat(3, 31.6%);
@@ -471,6 +471,8 @@
     }
   }
   &-list {
+    border: none;
+    border-radius: 10px;
     @include bp(lg-up){
       position: static;
       background: none;
@@ -488,6 +490,7 @@
     }
     &__link {
       color: $light;
+      font-weight: 500;
       &:not(:last-child){
         margin-right: 3rem;
         @include bp(lg){

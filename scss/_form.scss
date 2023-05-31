@@ -1,6 +1,12 @@
 .form{
     &-group{
         margin-bottom: 1.4rem;
+        &_sm{
+            margin-bottom: 1rem;
+        }
+        &_md{
+            margin-bottom: 2rem;
+        }
     }
     &-control{
         font-family: inherit;
@@ -29,8 +35,13 @@
             border-color: #E8E8E8;
 
         }
-        &:focus{
-
+        &_dark{
+            background: $light-bg;
+            border-radius: 8px;
+            padding-left: 1.5rem;
+            .input--filled &.form-control{
+                border-color: $light-bg;
+            }
         }
     }
     &-check-input{
@@ -91,6 +102,12 @@
         }
     }
 }
+textarea.form-control{
+    resize: vertical;
+    min-height: 18.4rem;
+    display: block;
+    width: 100%!important;
+}
 
 /* Juro */
 .input--juro {
@@ -110,12 +127,21 @@
     line-height: 2.4rem;
 	transition: all 0.2s ease-out;
 }
+.form-control_dark + .input__label--juro .input__label-content--juro{
+    padding: 1.3rem 2.1rem;
+}
 .input__field--juro:focus + .input__label--juro .input__label-content--juro,
-.input--filled .input__label--juro .input__label-content--juro {
+.input--filled .input__label--juro .input__label-content--juro, .dropdown-toggle .input__label-content--juro{
 	color: $medium-light;
 	font-size: 1.2rem;
     line-height: 2rem;
     padding: 0.6rem 2rem;
+}
+.dropdown-toggle .input__label-content--juro{
+    padding-left: 1.6rem;
+}
+.form-control_dark.input__field--juro:focus + .input__label--juro .input__label-content--juro, .input--filled .form-control_dark + .input__label--juro .input__label-content--juro{
+    padding-left: 1.6rem;
 }
 .input--filled{
     .form-control{
@@ -159,14 +185,57 @@
             background-image: url(../img/icons/rating-active_md.svg);
         }
     }
-    // &_lg{
-    //     width: 14.6rem;
-    //     height: 2.5rem;
-    //     @include bp(md){
-    //         width: 9.3rem;
-    //         height: 1.6rem;
-    //     }
-    // }
+    &_lg{
+        width: 12rem;
+        height: 1.6rem;
+        background-image: url(../img/icons/rating-lg.svg);
+        @include bp(md){
+            width: 8rem;
+            height: 1.05rem;
+        }
+        .rating__active{
+            background-image: url(../img/icons/rating-active-lg.svg);
+        }
+    }
+    &_xl{
+        width: 16rem;
+        height: 2.4rem;
+        background-image: url(../img/icons/rating-xl.svg);
+    }
+    &-form{
+        margin-right: 2rem;
+        &__input{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            cursor: pointer;
+            &:checked{
+                background: url(../img/icons/rating-active-xl.svg) 0 0 no-repeat;
+                background-size: auto 100%;
+            }
+        }
+        &__input:nth-of-type(1){
+            z-index: 5;
+            width: 20%;
+        }
+        &__input:nth-of-type(2){
+            z-index: 4;
+            width: 40%;
+        }
+        &__input:nth-of-type(3){
+            z-index: 3;
+            width: 60%;
+        }
+        &__input:nth-of-type(4){
+            z-index: 2;
+            width: 80%;
+        }
+        &__input:nth-of-type(5){
+            z-index: 1;
+            width: 100%;
+        }
+    }
 }
 
 
@@ -183,6 +252,9 @@
         line-height: 2.6rem;
         background: transparent;
         width: 4.7rem;
+        @include bp(sm){
+            width: 6.3rem;
+        }
     }
     &__plus, &__minus{
         position: relative;
@@ -196,13 +268,13 @@
         z-index: 2;
         cursor: pointer;
         flex-shrink: 0;
-        &:before, &:after{
-            content: '';
-            display: block;
-            position: absolute;
-            width: 1.4rem;
-            height: 0.2rem;
-            border-radius: 3px;
+        @include bp(sm){
+            width: 4rem;
+            height: 4rem;
+            .icon{
+                width: 2rem;
+                height: 2rem;
+            }
         }
     }
 }
@@ -275,7 +347,7 @@
             width: 45%;
         }
         @include bp(xxs){
-            width: 52%;
+            width: 53%;
         }
     }
     &__title{

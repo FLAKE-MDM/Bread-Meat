@@ -62,6 +62,10 @@ h2{
 h3{
     font-size: 4rem;
     line-height: 4.8rem;
+    @include bp(md){
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+    }
 }
 h4{
     font-size: 3.2rem;
@@ -89,6 +93,9 @@ h6{
     @include bp(md){
       font-size: 2.4rem;
       line-height: 3.2rem;
+    }
+    @include bp(sm){
+      margin-right: -0.1rem;
     }
     &_size{
         &-xs{
@@ -142,6 +149,12 @@ h6{
     }
 }
 .mb{
+    &_xxs{
+        margin-bottom: 1.3rem;
+        @include bp(md){
+            margin-bottom: 0.7rem;
+        }
+    }
     &_xs{
         margin-bottom: 1.3rem;
         @include bp(md){
@@ -168,20 +181,11 @@ h6{
     }
 }
 .mt{
-    &_xs{
-
-    }
-    &_sm{
-        
-    }
     &_md{
         margin-top: 3rem;
         @include bp(sm){
             margin-top: 2rem;
         }
-    }
-    &_lg{
-
     }
 }
 .text{
@@ -196,11 +200,17 @@ h6{
         &-xs{
             font-size: 1.2rem;
             line-height: 2rem;
+            &-mobile{
+                @include bp(sm){
+                    font-size: 1.2rem;
+                    line-height: 2rem;
+                }
+            }
         }
         &-sm{
             font-size: 1.4rem;
             line-height: 2.2rem;
-            @include bp(sm){
+            @include bp(md){
                 font-size: 1.2rem;
                 line-height: 2rem;
             }
@@ -208,7 +218,7 @@ h6{
         &-md{
             font-size: 1.6rem;
             line-height: 2.4rem;
-            @include bp(sm){
+            @include bp(md){
                 font-size: 1.2rem;
                 line-height: 2rem;
             }

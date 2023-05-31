@@ -57,8 +57,16 @@ body{
         }
     }
 }
-.bg_pattern{
-    background: url(../img/pattern.png), linear-gradient(99.75deg, #252525 9.11%, #373737 78.91%);
+.bg{
+    &_light{
+        background: $light-bg;
+    }
+    &_pattern{
+        background: url(../img/pattern.png), linear-gradient(99.75deg, #252525 9.11%, #373737 78.91%);
+    }
+    &_dark{
+        background: $black;
+    }
 }
 .pos-rel{
     position: relative;
@@ -117,8 +125,21 @@ body{
             margin: 1.5rem 0.5rem 0!important;
             opacity: 1;
             background: rgba(47, 43, 67, 0.15);
-            &:hover, &-active{
+            transition: all 0.3s ease-out;
+            &-active{
                background:  $black;
+            }
+            @include bp(hv){
+                &:hover{
+                    background:  $black;
+                }
+            }
+        }
+        &_lg{
+            .swiper-pagination-bullet{
+                width: 1.2rem;
+                height: 1.2rem;
+                margin: 2rem 0.7rem 0!important;
             }
         }
     }
@@ -158,6 +179,35 @@ body{
         &_top{
             top: 15.3rem;
             bottom: auto;
+        }
+        &_full{
+            position: absolute;
+            top: 0;
+            bottom: 2.5rem;
+            width: 6.4rem;
+            left: 0;
+            opacity: 0.3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 3;
+            &.swiper-next{
+                left: auto;
+                right: 0;
+            }
+            @include bp(hv){
+                &:hover{
+                    background: rgba(255, 255, 255, 0.05);
+                    opacity: 1;
+                }
+            }
+            @include bp(md){
+                opacity: 1;
+            }
+            @include bp(sm){
+                bottom: 0rem;
+                width: 4rem;
+            }
         }
     }
 }
@@ -258,9 +308,9 @@ body{
 
 // pagination
 .pagination{
-    margin: 6.1rem 0 7.4rem;
+    margin: 6.2rem 0 7.4rem;
     @include bp(xl-up){
-        padding-right: 39%;
+        padding-right: 34%;
     }
     @include bp(md){
         margin: 2.8rem 0 2.9rem;
@@ -310,6 +360,111 @@ body{
     }
 }
 
+// file
+.file-item{
+    border-radius: 15px;
+    margin-bottom: 1.4rem;
+    padding: 1.5rem 2rem;
+    @include bp(sm){
+        border-radius: 10px;
+      }
+    &__title{
+        @include bp(sm){
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+        }
+    }
+    &__icon{
+      margin-left: auto;
+      flex-shrink: 0;
+    }
+}
+
+// border-block
+.border-block{
+    border: 1px solid $black;
+    padding: 2.9rem 2.9rem 2rem;
+    border-radius: 20px;
+    @include bp(md){
+      padding: 1.4rem 1.4rem 0.6rem;
+      border-radius: 10px;
+    }
+    &__icon{
+      margin-bottom: 2.8rem;
+      flex-shrink: 0;
+      @include bp(md){
+        width: 5rem;
+        margin-bottom: 0.9rem;
+      }
+      &_margin{
+        margin: 3.6rem 0 0.7rem;
+        @include bp(md){
+          margin-top: 0;
+        }
+        @include bp(sm){
+            width: 4.2rem;
+            height: 4.2rem;
+            margin: 0 2rem 1rem 0;
+            align-self: center;
+        }
+      }
+    }
+    &_padding{
+      padding: 2.3rem 2.9rem 2rem;
+      @include bp(sm){
+        padding: 12px 14px 0.6rem;
+      }
+    }
+    &.bg_light{
+      border: none;
+      border: 1px solid $light-bg;
+      padding: 2.6rem 2.9rem 2rem;
+      @include bp(sm){
+        border-radius: 20px;
+        padding: 1.1rem 1.4rem 0.6rem;
+        &.text_size-md{
+            font-size: 1.2rem;
+            line-height: 2rem;
+        }
+      }
+    }
+}
+
+// payment-list
+.payment-list{
+    &__item{
+        margin: 0 0.5rem;
+        width: 5.8rem;
+        height: 4rem;
+        @include bp(xl){
+            width: 5rem;
+            height: 3rem;
+        }
+        @include bp(lg){
+            width: 5.8rem;
+            height: 4rem;
+        }
+    }
+    &_margin{
+        margin: 1.9rem 0 0 -0.7rem;
+        @include bp(lg){
+            margin-left: 0;
+        }
+        @include bp(sm){
+            margin: 2rem 0 0.8rem -0.7rem;
+        }
+        .payment-list__item{
+            margin: 0 0.7rem;
+            @include bp(lg){
+                margin: 0;
+            }
+            @include bp(sm){
+                margin: 0 0.7rem;
+            }
+        }
+    }
+}
+
 @import 'form';
 @import 'header';
 @import 'home';
@@ -320,7 +475,7 @@ body{
 @import 'footer';
 @import 'card';
 
-
+.pane-nav, .card__fixed-btn{display: none!important;}
 
 
 

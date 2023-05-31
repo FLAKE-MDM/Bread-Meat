@@ -5,6 +5,7 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     @include bp(md){
       border-radius: 10px;
     }
@@ -25,6 +26,22 @@
       a{
         margin-top: auto;
       }
+      &_padding{
+        border-top: 1px solid $dark;
+        padding: 1.1rem 1.9rem 1.4rem;
+        @include bp(md){
+          padding: 1.2rem 1.4rem 1.4rem;
+        }
+        .blog-item__title{
+          margin-bottom: 0.7rem;
+        }
+        p{
+          margin-bottom: 1.5rem;
+          @include bp(sm){
+            margin-bottom: 1rem;
+          }
+        }
+      }
     }
     &__title{
       margin-bottom: 0.9rem;
@@ -40,7 +57,7 @@
     }
     &__image{
       @include bp(md){
-        min-height: 16.9rem;
+        height: 16.9rem;
         img{
           height: 100%;
           width: 100%;

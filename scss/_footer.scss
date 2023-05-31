@@ -4,9 +4,11 @@
     padding-top: 3.5rem;
     margin-top: auto;
     position: relative;
+    @include bp(lg){
+        margin-top: 7rem;
+    }
     @include bp(md){
         padding: 2.4rem 0 7.6rem;
-        margin-top: 7rem;
     }
     @include bp(sm){
         margin-top: 0;
@@ -157,21 +159,6 @@
         margin-bottom: 0.5rem;
         @include bp(sm){
             margin-bottom: 0.2rem;
-        }
-    }
-}
-.payment-list{
-    &__item{
-        margin: 0 0.5rem;
-        width: 5.8rem;
-        height: 4rem;
-        @include bp(xl){
-            width: 5rem;
-            height: 3rem;
-        }
-        @include bp(lg){
-            width: 5.8rem;
-            height: 4rem;
         }
     }
 }

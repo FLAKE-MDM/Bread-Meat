@@ -159,7 +159,9 @@
   margin: 1.5rem 0 0;
   background: #FFFFFF;
   box-shadow: 0px 4px 45px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(47, 43, 67, 0.15);
   &_right{
     inset: 100% 0 auto auto!important;
   }
@@ -167,17 +169,18 @@
     inset: 100% auto auto 0!important;
   }
   &__link{
-    font-size: 1.4rem;
-    line-height: 2.8rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 600;
     display: block;
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.6rem;
     display: block;
     margin: 0;
     &:not(:last-child){
       border-bottom: 1px solid rgba(47, 43, 67, 0.15);
     }
     &.active{
-      background: #ECF3EA;
+      background: $light-bg;
     }
   }
 }
@@ -204,6 +207,23 @@
     .icon-caret{
       transform: rotate(180deg);
       background-image: url(../img/icons/caret-inversion.svg);
+    }
+  }
+  &.form-control{
+    position: relative;
+    padding-right: 4rem;
+    &.show{
+      .icon-caret{
+        opacity: 1;
+      }
+    }
+    .icon-caret{
+      opacity: 0.5;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 1.1rem;
+      margin: auto 0;
     }
   }
 }
