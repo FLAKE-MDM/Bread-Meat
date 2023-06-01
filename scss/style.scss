@@ -50,6 +50,12 @@ body{
     @include bp(md){
         margin-bottom: 2.8rem;
     }
+    &_md{
+        margin-bottom: 6.6rem;
+        @include bp(md){
+            margin-bottom: 2.8rem;
+        }
+    }
     &_last{
         margin-bottom: 6rem;
         @include bp(sm){
@@ -106,6 +112,14 @@ body{
         @include bp(sm){
             padding-left: 0.5rem;
             padding-right: 0.5rem;
+        }
+    }
+    &_md{
+        margin-left: -0.75rem;
+        margin-right: -0.75rem;
+        & > *{
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
         }
     }
 }
@@ -362,13 +376,17 @@ body{
 
 // file
 .file-item{
-    border-radius: 15px;
+    border-radius: 10px;
     margin-bottom: 1.4rem;
     padding: 1.5rem 2rem;
     @include bp(sm){
         border-radius: 10px;
-      }
+    }
+    &.collapse{
+        display: none!important;
+    }
     &__title{
+        margin-bottom: -0.1rem;
         @include bp(sm){
             font-size: 1.4rem;
             line-height: 2.2rem;
@@ -378,6 +396,9 @@ body{
       margin-left: auto;
       flex-shrink: 0;
     }
+    &__format{
+        margin: 0 3.3rem 0 1rem;
+    }
 }
 
 // border-block
@@ -385,6 +406,7 @@ body{
     border: 1px solid $black;
     padding: 2.9rem 2.9rem 2rem;
     border-radius: 20px;
+    overflow: hidden;
     @include bp(md){
       padding: 1.4rem 1.4rem 0.6rem;
       border-radius: 10px;
@@ -474,8 +496,9 @@ body{
 @import 'faq';
 @import 'footer';
 @import 'card';
+@import 'about';
 
-
+.pane-nav{display: none!important;}
 
 
 

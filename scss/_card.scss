@@ -221,6 +221,7 @@
     }
   }
   &__file-item{
+    border-radius: 15px;
     padding: 1.6rem 1.5rem 1.5rem;
     @include bp(md-up){
       margin-top: 3.8rem;

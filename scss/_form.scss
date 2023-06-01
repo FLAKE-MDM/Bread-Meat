@@ -359,7 +359,7 @@ textarea.form-control{
     &__image{
         position: absolute;
         bottom: 0;
-        width: 30%;
+        width: 28.4%;
         left: 3.8rem;
         @include bp(lg){
             left: 0;
@@ -376,12 +376,10 @@ textarea.form-control{
         max-width: 100%;
         margin-top: 3.5rem;
         @include bp(md){
-            margin: 1.8rem 0 0;
-            & > *{
-                padding: 0;
-            }
+            margin-top: 1.8rem;
         }
         @include bp(sm){
+            margin: 1.8rem 0 0;
             & > *{
                 padding: 0;
             }
@@ -390,6 +388,40 @@ textarea.form-control{
             @include bp(sm){
                 margin-bottom: 1.5rem;
             }
+        }
+    }
+}
+
+// form-section
+.form-section{
+    position: relative;
+    margin-top: 3.5rem;
+    &__content{
+        width: 65%;
+        padding: 5.4rem 4.7% 4.7rem;
+        @include bp(lg){
+            padding: 3rem 0;
+        }
+        @include bp(sm){
+            width: 100%;
+        }
+    }
+    &__image{
+        position: absolute;
+        right: 7%;
+        bottom: 0;
+        width: 40%;
+        @include bp(lg){
+            right: 0;
+        }
+    }
+    &__inside{
+        width: 90%;
+        @include bp(xxl-up){
+            width: 76.5%;
+        }
+        textarea.form-control{
+            min-height: 15.1rem;
         }
     }
 }

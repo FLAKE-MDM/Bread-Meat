@@ -309,6 +309,18 @@
       line-height: 2.2rem;
       padding: 0.5rem 1.2rem;
     }
+    @include bp(hv){
+      &:hover{
+        border-color: $black;
+        background: $black;
+        color: #fff;
+      }
+    }
+    &.active{
+      border-color: $black;
+      background: $black;
+      color: #fff;
+    }
   }
 }
 

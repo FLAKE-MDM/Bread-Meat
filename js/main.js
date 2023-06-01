@@ -662,6 +662,130 @@ new Swiper(".tab-nav", {
   },
 });
 
+// about
+new Swiper(".history-slider", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+new Swiper(".team-slider", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+  },
+  navigation: {
+    nextEl: ".team-next",
+    prevEl: ".team-prev",
+  },
+});
+
+new Swiper(".gallery-slider", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+  },
+  navigation: {
+    nextEl: ".gallery-next",
+    prevEl: ".gallery-prev",
+  },
+});
+
+
+new Swiper(".gallery-modal-slider", {
+  loop: true,
+  slidesPerView: 1,
+  thumbs: {
+    swiper: {
+      el: ".thumbs-slider",
+      slidesPerView: 1,
+      spaceBetween: 10,
+      loop: true,
+      breakpoints: {
+        "@0.00": {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        992: {
+          slidesPerView: 4,
+        },
+        1200: {
+          slidesPerView: 5,
+        },
+      },
+    },
+  },
+  nested: true,
+  navigation: {
+    nextEl: ".gallery-modal-next",
+    prevEl: ".gallery-modal-prev",
+  },
+});
+
+$('.certificates-nav .nav-slider__link').click(function(e){
+  e.preventDefault();
+  let category = $(this).data('category');
+  let items = document.querySelectorAll('.file-item');
+  $('.nav-slider__link').removeClass('active');
+  $(this).addClass('active');
+
+  items.forEach(item => {
+    if($(item).data('category') === category){
+      $(item).removeClass('collapse')
+    } else{
+      $(item).addClass('collapse')
+    }
+  })
+})
+
+new Swiper(".certificates-slider", {
+  slidesPerView: 2,
+  spaceBetween: 5,
+  loop: true,
+  breakpoints: {
+    768: {
+      spaceBetween: 20,
+    },
+  },
+  navigation: {
+    nextEl: ".certificates-next",
+    prevEl: ".certificates-prev",
+  },
+});
+
 // fake-select
 // $('.fake-select__item').click(function(){
 //   $(this).parents(".fake-select").find('.fake-select__item').removeClass('fake-select__item_active active');
