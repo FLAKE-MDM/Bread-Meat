@@ -57,7 +57,7 @@
       display: flex;
     }
     .border-block{
-      @include bp(sm){
+      @include bp(md){
         border-radius: 20px;
       }
     }
