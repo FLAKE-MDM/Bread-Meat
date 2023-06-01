@@ -222,6 +222,12 @@ h6{
                 font-size: 1.2rem;
                 line-height: 2rem;
             }
+            &-mobile{
+                @include bp(md){
+                    font-size: 1.4rem!important;
+                    line-height: 2.2rem!important;
+                }
+            }
         }
         &-md{
             font-size: 1.6rem;

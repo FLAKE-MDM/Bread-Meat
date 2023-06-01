@@ -709,11 +709,12 @@ new Swiper(".team-slider", {
 
 new Swiper(".gallery-slider", {
   slidesPerView: 1,
-  spaceBetween: 20,
+  spaceBetween: 10,
   loop: true,
   breakpoints: {
     768: {
       slidesPerView: 2,
+      spaceBetween: 20,
     },
   },
   navigation: {

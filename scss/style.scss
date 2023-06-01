@@ -53,7 +53,7 @@ body{
     &_md{
         margin-bottom: 6.6rem;
         @include bp(md){
-            margin-bottom: 2.8rem;
+            margin-bottom: 2rem;
         }
     }
     &_last{
@@ -381,6 +381,9 @@ body{
     padding: 1.5rem 2rem;
     @include bp(sm){
         border-radius: 10px;
+        padding: 1.5rem;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
     }
     &.collapse{
         display: none!important;
@@ -390,14 +393,22 @@ body{
         @include bp(sm){
             font-size: 1.4rem;
             line-height: 2.2rem;
+            width: 100%;
+            margin-bottom: 0.3rem;
         }
     }
     &__icon{
       margin-left: auto;
       flex-shrink: 0;
+      @include bp(sm){
+        margin: 0.2rem 0 0;
+      }
     }
     &__format{
         margin: 0 3.3rem 0 1rem;
+        @include bp(sm){
+            margin: 0.2rem 2rem 0 1rem;
+        }
     }
 }
 
