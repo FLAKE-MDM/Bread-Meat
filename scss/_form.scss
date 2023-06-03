@@ -390,6 +390,52 @@ textarea.form-control{
             }
         }
     }
+    &_subscriprion{
+        @include bp(xl-up){
+            padding: 5.4rem 6rem 6.1rem;
+        }
+        @include bp(md-up){
+            padding: 3.4rem 3rem 3rem;
+        }
+        .form-block__image{
+            @include bp(md-up){
+                width: 36.5%;
+                bottom: 2rem;
+                left: auto;
+                top: 0;
+                margin: auto;
+                display: flex;
+                align-items: center;
+            }
+            @include bp(lg-up){
+                right: 2rem;
+            }
+            @include bp(xl-up){
+                right: 7.2%;
+            }
+            @include bp(sm){
+                width: 22.7rem;
+                top: -1.5rem;
+                right: -3.7rem;
+            }
+        }
+        .form-block__title{
+            @include bp(md-up){
+                margin-bottom: 1.2rem;
+            }
+        }
+        .form-block__row{
+            @include bp(md-up){
+                margin-top: 2.9rem;
+                width: 49.7rem;
+            }
+        }
+        .form-block__content{
+            @include bp(lg-up){
+               width: 65%;
+            }
+        }
+    }
 }
 
 // form-section
@@ -430,7 +476,6 @@ textarea.form-control{
         width: 43%;
         @include bp(lg){
             right: 0;
-            
         }
         @include bp(sm){
             top: -3.6rem;

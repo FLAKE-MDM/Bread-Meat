@@ -787,6 +787,29 @@ new Swiper(".certificates-slider", {
   },
 });
 
+// blog
+new Swiper(".blog-nav-slider", {
+  freeMode: true,
+  breakpoints: {
+    "@0.00": {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    576: {
+      slidesPerView: 4,
+      spaceBetween: 15,
+    },
+    993: {
+      slidesPerView: 6,
+      spaceBetween: 15,
+    },
+    1400: {
+      slidesPerView: 8,
+      spaceBetween: 15,
+    },
+  },
+});
+
 // fake-select
 // $('.fake-select__item').click(function(){
 //   $(this).parents(".fake-select").find('.fake-select__item').removeClass('fake-select__item_active active');

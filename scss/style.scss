@@ -366,6 +366,12 @@ body{
     @include bp(md){
         margin: 2.8rem 0 2.9rem;
     }
+    &_blog{
+        margin: 6rem 0 10rem;
+        @include bp(md){
+            margin: 3.2rem 0 2.9rem;
+        }
+    }
     &__item{
         margin: 0 0.75rem;
     }
