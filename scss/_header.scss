@@ -62,11 +62,30 @@
     &:hover{opacity: 0.7;}
 }
 .social-list{
+    &_md{
+        margin: 0.3rem -1.4rem 0.1rem;
+        @include bp(md){
+            margin-top: 0;
+        }
+        @include bp(sm){
+            margin: -0.4rem -1.3rem 0.4rem;
+        }
+    }
     &__item{
         margin: 0 1.25rem;
     }
     &__link{
-
+        @include bp(hv){
+            &.icon-vk-dark:hover, &.icon-whatsapp-dark:hover, &.icon-tg-dark:hover{
+                opacity: 0.6;
+            }
+        }
+        .social-list_md &{
+            @include bp(lg-up){
+                width: 3.2rem;
+                height: 3.2rem;
+            }
+        }
     }
 }
 .navbar{

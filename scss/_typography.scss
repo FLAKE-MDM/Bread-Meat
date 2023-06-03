@@ -87,6 +87,12 @@ h6{
     font-size: 2rem;
     line-height: 2.8rem;
 }
+.title-content{
+    margin: 2.8rem 0 2.3rem;
+    @include bp(md){
+        margin: 1.8rem 0 1.2rem;
+    }
+}
 .title{
     font: 400 4.8rem/5.6rem 'Bebas Neue', sans-serif;
     text-transform: uppercase;
