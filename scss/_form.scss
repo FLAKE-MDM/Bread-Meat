@@ -197,6 +197,20 @@ textarea.form-control{
             background-image: url(../img/icons/rating-active-lg.svg);
         }
     }
+    &_article{
+        width: 13.2rem;
+        height: 1.9rem;
+        margin: 0.2rem 0 0;
+        @include bp(sm){
+            width: 8rem;
+            height: 1.15rem;
+            margin: 0.4rem 0 0 0.4rem;
+            background-image: url(../img/icons/rating.svg);
+            .rating__active{
+                background-image: url(../img/icons/rating-active.svg);
+            }
+        }
+    }
     &_xl{
         width: 16rem;
         height: 2.4rem;
@@ -391,11 +405,11 @@ textarea.form-control{
         }
     }
     &_subscriprion{
-        @include bp(xl-up){
-            padding: 5.4rem 6rem 6.1rem;
-        }
         @include bp(md-up){
             padding: 3.4rem 3rem 3rem;
+        }
+        @include bp(xl-up){
+            padding: 5.4rem 6rem 6.1rem;
         }
         .form-block__image{
             @include bp(md-up){
@@ -412,6 +426,7 @@ textarea.form-control{
             }
             @include bp(xl-up){
                 right: 7.2%;
+                bottom: 6.1rem;
             }
             @include bp(sm){
                 width: 22.7rem;

@@ -810,6 +810,64 @@ new Swiper(".blog-nav-slider", {
   },
 });
 
+new Swiper(".article-slider", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  loop: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    993: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+  },
+});
+
+// reviews
+if(window.innerWidth < 992){
+  new Swiper(".platforms-slider", {
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 10,
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+};
+
+new Swiper(".messenger-slider", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  loop: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+  },
+  navigation: {
+    nextEl: ".messenger-next",
+    prevEl: ".messenger-prev",
+  },
+});
+
 // fake-select
 // $('.fake-select__item').click(function(){
 //   $(this).parents(".fake-select").find('.fake-select__item').removeClass('fake-select__item_active active');

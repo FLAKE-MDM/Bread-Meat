@@ -208,175 +208,96 @@
         </header>
         <!-- /header -->
         <div class="container">
-            <!-- breadcrumb -->
-            <ul class="breadcrumb text_size-sm d-none d-md-flex">
-                <li class="breadcrumb__item"><a href="#" class="breadcrumb__link text_light">Главная</a></li>
-                <li class="breadcrumb__item">Контакты</li>
-            </ul>
-            <!-- /breadcrumb -->
-            <h1 class="mb_md title_heading pb-md-1">Контакты</h1>
-            <div class="d-flex text_size-md contacts-group">
-              <div class="contact-item col-6 col-md-auto">
-                <p><a href="tel:+74952801156" class="title title_size-md nowrap">+7 (495) 280-11-56</a></p>
-                <p class="text_size-sm">Телефон в Москве</p>
-              </div>
-              <div class="contact-item col-6 col-md-auto">
-                <p><a href="tel:+78009411991" class="title title_size-md nowrap">+7 (800) 941-19-91</a></p>
-                <p class="text_size-sm">WhatsApp, Telegram</p>
-              </div>
-              <div class="contact-item col-6 col-md-auto">
-                  <p><a href="mailto:EmaiL@example.com" class="title title_size-md">EmaiL@example.com</a></p>
-                  <p class="text_size-sm">Электронная почта</p>
-              </div>
-              <div class="contact-item col-6 col-md-auto">
-                <ul class="social-list d-flex social-list_md">
-                  <li class="social-list__item"><a href="#" class="social-list__link icon icon-vk-dark"></a></li>
-                  <li class="social-list__item"><a href="#" class="social-list__link icon icon-whatsapp-dark"></a></li>
-                  <li class="social-list__item"><a href="#" class="social-list__link icon icon-tg-dark"></a></li>
-                </ul>
-                <p class="text_size-sm">Мы в соцсетях</p>
-              </div>
+          <!-- breadcrumb -->
+          <ul class="breadcrumb text_size-sm d-none d-md-flex">
+              <li class="breadcrumb__item"><a href="#" class="breadcrumb__link text_light">Главная</a></li>
+              <li class="breadcrumb__item">Блог</li>
+          </ul>
+          <!-- /breadcrumb -->
+          <h1 class="mb_sm title_heading">Результаты поиска «Говядина»</h1>
+          <!-- blog-search -->
+          <div class="search_blog">
+            <form action="#">
+                <input type="text" class="search__input" placeholder="Поиск по блогу">
+                <button class="search__btn icon icon-search"></button>
+            </form>
+          </div>
+          <!-- /blog-search -->
+          <div class="blog-list">
+            <div class="blog-item">
+                <a href="#" class="zoom-link blog-item__image"><img src="img/content/blog-5.jpg" alt="" class="img-fluid"></a>
+                <div class="blog-item__body blog-item__body_padding text_size-sm">
+                    <h5 class="blog-item__title">Говядина с овощами на огне</h5>
+                    <p>Обжаренная до румяной корочки, а затем тушенная в сметане</p>
+                    <a href="#" class="text_medium-light">Читать далее</a>
+                </div>
             </div>
-            <div class="pos-rel">
-              <div class="map-address map-address_contacts">
-                  <div class="title mb_sm pb-2">Выдача заказов</div>
-                  <div class="title title_size-md mb-2 mb-md-3 pt-1 pb-1 pb-md-0">Проспект Вернадского, д. 41 с1</div>
-                  <p class="text_size-md">Ежедневно с 10:00 до 18:00 </p>
-              </div>
+            <div class="blog-item">
+                <a href="#" class="zoom-link blog-item__image"><img src="img/content/blog-6.jpg" alt="" class="img-fluid"></a>
+                <div class="blog-item__body blog-item__body_padding text_size-sm">
+                    <h5 class="blog-item__title">Домашний борщ</h5>
+                    <p>Приготовление классического бефстроганова не вызывает сложностей, но результат всегда потрясающий</p>
+                    <a href="#" class="text_medium-light">Читать далее</a>
+                </div>
+            </div>
+            <div class="blog-item">
+                <a href="#" class="zoom-link blog-item__image"><img src="img/content/blog-7.jpg" alt="" class="img-fluid"></a>
+                <div class="blog-item__body blog-item__body_padding text_size-sm">
+                    <h5 class="blog-item__title">Хашлама в мультиварке</h5>
+                    <p>Рулетики из куриного филе - с хрустящей корочкой, нежные и сочные внутри!</p>
+                    <a href="#" class="text_medium-light">Читать далее</a>
+                </div>
             </div>
           </div>
-          <div id="map" data-settings="marker" class="map map_md map_contacts"></div>
-          <div class="container pt-md-3">
-            <section class="section_sm pb-2">
-              <h2 class="mb_sm pb-md-3 pt-md-4 mt-5">Как добраться?</h2>
-              <div class="row pb-md-3">
-                  <div class="col-lg-6 d-flex">
-                      <div class="bg_light border-block text_size-md mb-3 mb-lg-0">
-                          <div class="title title_size-md pb-1 pb-md-3 mb-3">На автомобиле</div>
-                          <p>Двигаться со сторорны области в сторону центра, поврот прямо перед БЦ "Академик", проехзать вдоль торца БЦ "Академик" на парковку здания МСПК, или повернуть за БЦ "Академик" к ул. Семена-Тян-Шанского и припарковаться сразу за поворотом на парковке ТЦ "Премьер"</p>
-                      </div>
-                  </div>
-                  <div class="col-lg-6 d-flex">
-                      <div class="bg_light border-block text_size-md">
-                          <div class="title title_size-md pb-1 pb-md-3 mb-3">на общественном транспорте</div>
-                          <div class="d-flex align-items-center">
-                              <span class="icon icon-metro me-3"></span>
-                              <span class="text_semibold text_size-md text_size-sm-mobile">Проспект Верндаского</span>
-                          </div>
-                          <p class="text_dark text_size-sm mb-3 mb-md-4 mt-2">Сокольническая ветка - выход <br class="d-md-none">№6, БКЛ - выход №9</p>
-                          <p>Выход к ТЦ "Премьер" и БЦ "Вернадский", повернуть ул. Семена-Тян-Шанского, ожидать у шлагбаума между домами с номером 41 с3 и 43 с1, или пройти по проспекту Вернадского мимо БЦ "Академик" и повернуть за БЦ "Академик", пройдя вглубь, через парковку до входа с большой надписью МСПК</p>
-                      </div>
-                  </div>
-              </div>
-            </section>
-            <!-- requisites -->
-            <section class="section_sm pb-3 pb-md-4">
-              <div class="d-flex align-items-center mb_sm pb-md-3 pt-1 pt-md-4 mt-4 mt-md-5">
-                <h2 class="title">Реквизиты</h2>
-                <a href="#" class="download-link text_size-md text_size-sm-mobile d-flex align-items-center"><span class="icon icon-download"></span>Скачать .pdf</a>
-              </div>
-              <div class="group">
-                <div class="border-item text_size-md d-flex">
-                  <div class="border-item__title">Полное наименование организации</div>
-                  Общество с ограниченной ответственностью «Компания»
+          <!-- pagination -->
+          <ul class="pagination pagination_blog p-0 d-flex justify-content-center align-items-center text_size-md text_semibold pb-md-4">
+            <li class="pagination__item">
+                <a href="#" class="pagination__link pagination__link_circle disabled btn_dark btn">
+                    <span class="icon icon-prev-inversion"></span>
+                </a>
+            </li>
+            <li class="pagination__item"><span class="pagination__link active">1</span></li>
+            <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+            <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+            <li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
+            <li class="pagination__item d-none d-md-block"><a href="#" class="pagination__link">5</a></li>
+            <li class="pagination__item">
+                <a href="#" class="pagination__link btn_dark btn">
+                    <span class="icon icon-next-inversion"></span>
+                </a>
+            </li>
+          </ul>
+          <!-- /pagination -->
+          <!-- form-block -->
+          <div class="form-block form-block_subscriprion bg_pattern text_inversion section">
+            <div class="form-block__image"><img src="img/subscription.png" alt="" class="img-fluid"></div>
+            <div class="form-block__content">
+                <div class="form-block__text">
+                    <div class="title title_size-lg form-block__title">Подпишитесь<br class="d-md-none"> на обновления</div>
+                    <p>Высылаем только самые важные новости о скидках и новинках</p>
                 </div>
-                <div class="border-item text_size-md d-flex">
-                  <div class="border-item__title">Юридический адрес</div>
-                  123456, г. Москва, ул. Подвойского, д. 14, стр. 7
-                </div>
-                <div class="border-item text_size-md d-flex">
-                  <div class="border-item__title">Почтовый адрес</div>
-                  123456, г. Москва, ул. Подвойского, д. 14, стр. 7
-                </div>
-                <div class="border-item text_size-md d-flex">
-                  <div class="border-item__title">ИНН</div>
-                  7712345678
-                </div>
-                <div class="border-item text_size-md d-flex">
-                  <div class="border-item__title">КПП</div>
-                  779101001
-                </div>
-                <div class="border-item text_size-md d-flex">
-                  <div class="border-item__title">БИК</div>
-                  044521234
-                </div>
-                <div class="border-item text_size-md d-flex">
-                  <div class="border-item__title">Р/С</div>
-                  40702810123450101230 в Московский банк ПАО СберБанк г. Москва
-                </div>
-                <div class="border-item text_size-md d-flex">
-                  <div class="border-item__title">К/С</div>
-                  30101234500000000225
-                </div>
-                <div class="border-item text_size-md d-flex">
-                  <div class="border-item__title">ОГРН</div>
-                  1047712345678
-                </div>
-              </div>
-            </section>
-            <!-- /requisites -->
-            <div class="responsible-block d-flex justify-content-between bg_dark text_inversion">
-              <div class="d-flex me-auto responsible-block__info">
-                <div class="responsible-block__image"><img src="img/content/user-3.jpg" alt=""></div>
-                <div class="responsible-block__text">
-                  <div class="title title_size-sm responsible-block__title">Ответственный за сайт</div>
-                  <p class="text_size-md text_size-sm-mobile">Александр Александров</p>
-                </div>
-              </div>
-              <div class="contact-item col-6 col-md-auto pe-1">
-                <p><a href="tel:+79259411991" class="text_inversion title title_size-sm nowrap">+7 (925) 941-19-91</a></p>
-                <p class="text_size-sm">WhatsApp, Telegram</p>
-              </div>
-              <div class="contact-item col-6 col-md-auto ps-2 ps-md-0">
-                  <p><a href="mailto:EmaiL@example.com" class="text_inversion title title_size-sm">EmaiL@example.com</a></p>
-                  <p class="text_size-sm">Электронная почта</p>
-              </div>
-            </div>
-        </div>
-        <!-- form-section -->
-        <div class="form-section bg_pattern text_inversion">
-          <div class="container pos-rel">
-            <div class="form-section__image"><img src="img/form.png" alt="" class="img-fluid"></div>
-            <div class="form-section__content">
-                <div class="form-section__text">
-                    <div class="title title_size-lg form-section__title mb-2 pb-1 pb-md-0 mb-md-3">Есть вопросы? Обращайтесь!</div>
-                    <p>Оставьте свои данные и мы свяжемся с вами в течение рабочего дня</p>
-                </div>
-                <form action="#" class="mt-4 pt-2 pt-md-1 mt-md-5 form-section__inside">
-                  <div class="input form-group pos-rel">
-                    <textarea class="input__field form-control" type="text" id="message"></textarea>
-                    <label class="input__label input__label--juro" for="message">
-                        <span class="input__label-content input__label-content--juro">Текст сообщения...</span>
-                    </label>
-                  </div>
-                  <div class="row row_md">
-                    <div class="col-md-6">
-                      <div class="input form-group pos-rel">
-                          <input class="input__field form-control" type="text" id="phone">
-                          <label class="input__label input__label--juro" for="phone">
-                              <span class="input__label-content input__label-content--juro">Номер телефона</span>
-                          </label>
-                      </div>
+                <div class="row form-block__row">
+                    <div class="flex-grow-1 col-md-auto">
+                        <div class="input form-group pos-rel">
+                            <input class="input__field form-control" type="text" id="phone">
+                            <label class="input__label input__label--juro" for="phone">
+                                <span class="input__label-content input__label-content--juro">Номер телефона</span>
+                            </label>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                      <div class="input form-group_md pos-rel">
-                          <input class="input__field form-control" type="text" id="email">
-                          <label class="input__label input__label--juro" for="email">
-                              <span class="input__label-content input__label-content--juro">Email</span>
-                          </label>
-                      </div>
+                    <div class="form-group col-md-auto w-100_md">
+                        <button class="btn btn_transparent w-100 btn_form" data-bs-toggle="modal" data-bs-target="#success">
+                            <span class="icon btn__icon icon icon-phone d-none d-md-inline-block"></span>
+                            Подписаться
+                        </button>
                     </div>
-                  </div>
-                  <div class="form-group">
-                    <button class="btn btn_transparent w-100_sm btn_form">Отправить сообщение</button>
                 </div>
-                </form>
             </div>
           </div>
+          <!-- /form-block -->
         </div>
-        <!-- /form-section -->
         <!-- footer -->
-        <footer class="footer m-0">
+        <footer class="footer">
             <div class="container">
                 <a href="#wrap" class="up-link btn btn_light text_size-md d-none d-md-flex">
                     <span class="icon icon-up"></span>

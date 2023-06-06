@@ -12,6 +12,14 @@
       object-fit: cover;
     }
   }
+  &_article{
+    margin: 3rem 0 2rem;
+    @include bp(sm){
+      margin: 2rem -1rem 1.5rem;
+      border-radius: 0;
+      height: 25.2rem;
+    }
+  }
 }
 
 // history

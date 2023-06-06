@@ -67,6 +67,22 @@
         }
       }
     }
+    &_block{
+      padding: 2rem;
+      border-radius: 15px;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      @include bp(sm){
+        padding: 1rem 1rem 0.8rem!important;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        border-radius: 10px;
+        min-width: 10rem;
+      }
+      &:after{
+        display: none;
+      }
+    }
     &__icon{
       flex-shrink: 0;
       margin: -0.2rem 1.5rem 0 0;
@@ -91,7 +107,8 @@
   }
   &-item {
     margin-bottom: 4.9rem;
-    @include bp(sm){
+    flex-grow: 1;
+    @include bp(md){
       margin-bottom: 2.5rem;
     }
     &__header {
@@ -131,6 +148,14 @@
         left: 0;
         right: 0;
         margin: auto;
+      }
+      &_lg{
+        margin-right: 2.7rem;
+        width: 8rem;
+        height: 8rem;
+        @include bp(md){
+          width: 6rem;
+        }
       }
       img{
         display: block;
@@ -172,6 +197,19 @@
         margin-bottom: 0.9rem;
       }
     }
+    &__body{
+      @include bp(md){
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+      }
+    }
+    &__footer{
+      margin-top: auto;
+      padding: 1.1rem 0 0.8rem;
+      @include bp(sm){
+        padding-top: 0.2rem;
+      }
+    }
     &_bordered {
       border: 1px solid $black;
       padding: 2.9rem 2.9rem 2rem;
@@ -187,12 +225,23 @@
       .review-item__info{
         margin-right: 0;
       }
-      .review-item__image{
-        margin-right: 2.7rem;
-        width: 8rem;
-        height: 8rem;
+      .review-item__body{
         @include bp(md){
-          width: 6rem;
+          font-size: 1.2rem;
+          line-height: 2rem;
+        }
+      }
+      &.flex-column{
+        @include bp(md){
+          border-radius: 20px;
+        }
+        @include bp(sm){
+          .review-item__date{
+            margin-top: 0;
+          }
+          .review-item__header{
+            margin-bottom: 0;
+          }
         }
       }
     }
@@ -269,4 +318,25 @@
   }
 }
 
+// platforms
+.platforms-slider{
+  &__wrapper{
+    @include bp(lg-up){
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
+    }
+    .swiper-slide{
+      display: flex;
+      height: auto;
+    }
+  }
+}
 
+.messenger-slider{
+  @include bp(sm){
+    padding-bottom: 0.6rem;
+    padding-right: 31.6%;
+    margin-right: -1rem;
+  }
+}

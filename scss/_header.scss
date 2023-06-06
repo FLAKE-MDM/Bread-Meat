@@ -76,8 +76,12 @@
     }
     &__link{
         @include bp(hv){
-            &.icon-vk-dark:hover, &.icon-whatsapp-dark:hover, &.icon-tg-dark:hover{
-                opacity: 0.6;
+            .social-list_dark &{
+                @include bp(hv){
+                    &:hover{
+                        opacity: 0.6;
+                    }
+                }
             }
         }
         .social-list_md &{

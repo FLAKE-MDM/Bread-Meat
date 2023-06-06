@@ -79,6 +79,9 @@ body{
     &_dark{
         background: $black;
     }
+    &_warning-light{
+        background: $warning-bg;
+    }
 }
 .pos-rel{
     position: relative;
@@ -269,6 +272,23 @@ body{
             }
         }
     }
+    &_clear{
+        @include bp(sm){
+            margin-bottom: 0.8rem;
+        }
+        .num-list__item{
+            padding-left: 2.5rem;
+            &:before{
+                content: counter(list)".";
+                background: none;
+                color: $black;
+            }
+            @include bp(sm){
+                padding-left: 2.1rem;
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
 }
 .dots-list{
     &__item{
@@ -370,6 +390,12 @@ body{
         margin: 6rem 0 10rem;
         @include bp(md){
             margin: 3.2rem 0 2.9rem;
+        }
+    }
+    &_review{
+        margin: 6rem 0 7.4rem;
+        @include bp(md){
+            margin: 4rem 0 3.7rem;
         }
     }
     &__item{
@@ -536,6 +562,78 @@ body{
             }
             @include bp(sm){
                 margin: 0 0.7rem;
+            }
+        }
+    }
+}
+
+// table
+.table{
+    margin: 3rem 0 6rem;
+    width: 100%;
+    border-radius: 20px;
+    border-collapse: separate;
+    overflow: hidden;
+    border: 1px solid $black;
+    @include bp(sm){
+        margin: 1.8rem 0 3rem;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+    th{
+        padding: 0.8rem 3rem 0.75rem;
+        font-weight: 600;
+        background: $black;
+        color: #fff;
+        text-align: left;
+        @include bp(sm){
+            padding: 0.9rem 1.4rem 1rem;
+        }
+    }
+    td{
+        border-bottom: 1px solid $black;
+        padding: 1.05rem 3rem;
+        @include bp(sm){
+            padding: 1.2rem 1.4rem 0.9rem;
+        }
+    }
+    tr:last-child{
+        td{
+            border: none;
+        }
+    }
+    thead{
+        tr{
+            @include bp(sm){
+                display: flex;
+                th{
+                    flex-grow: 1;
+                    &:last-child{
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+    &_mobile{
+        @include bp(sm){
+            tr{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            td{
+                display: block;
+                width: 23.9%;
+                font-size: 1.4rem;
+                line-height: 2.2rem;
+                padding: 0.5rem 1.4rem 0.9rem;
+                &:first-child{
+                    font-weight: 600;
+                    width: 100%;
+                    border: none;
+                    padding: 1.2rem 1.4rem 0;
+                }
             }
         }
     }
