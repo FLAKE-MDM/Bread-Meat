@@ -151,6 +151,13 @@
               }
         }
     }
+    &_mobile{
+        @include bp(md){
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            padding: 1.2rem 2.35rem 1rem;
+        }
+    }
 }
 
 

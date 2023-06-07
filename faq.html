@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хлеб и мясо</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body_home">
+    <div class="wrap" id="wrap">
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+                <div class="d-flex pos-rel header__wrapper">
+                    <a href="index.html" class="logo header__logo">
+                        <img src="img/logo.svg" alt="" class="img-fluid d-none d-lg-block">
+                        <img src="img/logo-m.svg" alt="" class="img-fluid d-lg-none">
+                    </a>
+                    <div class="header__content">
+                        <div class="header__contacts d-flex text_size-md align-items-center">
+                            <div class="header__address d-none d-xl-block">Москва,проспект Вернадского, д. 41, стр. 1</div>
+                            <div class="header__phone d-flex">
+                                <a href="tel:+79259411991" class="text_semibold header__phone-link nowrap">+7 (925) 941-19-91</a>
+                                <a href="tel:+74952801156" class="text_semibold header__phone-link nowrap d-none d-lg-block">+7 (495) 280-11-56</a>
+                            </div>
+                            <div class="header__work-time text_size-sm nowrap d-none d-lg-block">9:00 - 20:00</div>
+                            <a href="#callback" data-bs-toggle="modal" class="btn btn_light btn_size-xs d-none d-lg-inline-flex">Заказать звонок</a>
+                            <ul class="social-list header__social-list d-none d-lg-flex">
+                                <li class="social-list__item"><a href="#" class="social-list__link icon icon-vk"></a></li>
+                                <li class="social-list__item"><a href="#" class="social-list__link icon icon-whatsapp"></a></li>
+                                <li class="social-list__item"><a href="#" class="social-list__link icon icon-tg"></a></li>
+                            </ul>
+                            <button class="btn-menu d-lg-none collapsed">
+                                <span class="icon icon-menu"></span>
+                            </button>
+                        </div>
+                        <div class="header__pane d-flex">
+                            <div class="header__catalogue">
+                                <a href="#catalogue-nav" data-bs-toggle="collapse" class="btn btn_dark btn_catalogue collapsed d-none d-lg-inline-flex">
+                                    <span class="icon icon-menu-inversion btn__icon"></span>
+                                    Каталог
+                                </a>
+                                <div class="collapse catalogue-dropdown" id="catalogue-nav">
+                                    <div class="catalogue-dropdown__body d-flex justify-content-between align-items-start">
+                                        <a href="#" class="catalogue-dropdown__close icon icon-close catalogue-link d-lg-none"></a>
+                                        <div class="catalogue-dropdown__category-nav">
+                                            <div class="title title_size-md">Категории продуктов</div>
+                                            <div class="category-nav category-nav_dropdown">
+                                                <a href="category.html" class="btn btn_light category-link">
+                                                    <div class="category-link__title text_size-md">Баранина</div>
+                                                    <div class="category-link__image"><img src="img/content/category-1.png" alt="Баранина" class="img-fluid"></div>
+                                                </a>
+                                                <a href="category.html" class="btn btn_light category-link">
+                                                    <div class="category-link__title text_size-md">Говядина</div>
+                                                    <div class="category-link__image"><img src="img/content/category-2.png" alt="Говядина" class="img-fluid"></div>
+                                                </a>
+                                                <a href="category.html" class="btn btn_light category-link">
+                                                    <div class="category-link__title text_size-md">Курица</div>
+                                                    <div class="category-link__image"><img src="img/content/category-7.png" alt="Курица" class="img-fluid"></div>
+                                                </a>
+                                                <a href="category.html" class="btn btn_light category-link">
+                                                    <div class="category-link__title text_size-md">Готовая еда</div>
+                                                    <div class="category-link__image"><img src="img/content/category-3.png" alt="Готовая еда" class="img-fluid"></div>
+                                                </a>
+                                                <a href="category.html" class="btn btn_light category-link">
+                                                    <div class="category-link__title text_size-md">Индейка</div>
+                                                    <div class="category-link__image"><img src="img/content/category-4.png" alt="Индейка" class="img-fluid"></div>
+                                                </a>
+                                                <a href="category.html" class="btn btn_light category-link">
+                                                    <div class="category-link__title text_size-md">Полу-<wbr>фабрикаты</div>
+                                                    <div class="category-link__image"><img src="img/content/category-8.png" alt="Полу-фабрикаты" class="img-fluid"></div>
+                                                </a>
+                                                <a href="category.html" class="btn btn_light category-link">
+                                                    <div class="category-link__title text_size-md">Конина</div>
+                                                    <div class="category-link__image"><img src="img/content/category-5.png" alt="Конина" class="img-fluid"></div>
+                                                </a>
+                                                <a href="category.html" class="btn btn_light category-link">
+                                                    <div class="category-link__title text_size-md">Кролик</div>
+                                                    <div class="category-link__image"><img src="img/content/category-6.png" alt="Кролик" class="img-fluid"></div>
+                                                </a>
+                                                <a href="category.html" class="btn btn_light category-link">
+                                                    <div class="category-link__title text_size-md">Хлеб</div>
+                                                    <div class="category-link__image"><img src="img/content/category-9.png" alt="Хлеб" class="img-fluid"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="catalogue-dropdown__sub-nav d-none d-lg-flex">
+                                            <div class="title title_size-md">Популярное</div>
+                                            <ul class="sub-nav text_semibold text_size-md">
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Каре ягнёнка</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Шея</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Корейка</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Голень</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Охлаждённая</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Фермерская</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Для запекания</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Халяль</a></li>
+                                            </ul>
+                                            <ul class="sub-nav text_semibold text_size-md">
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Каре ягнёнка</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Шея</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Корейка</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Голень</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Охлаждённая</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Фермерская</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Для запекания</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Халяль</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search collapse" id="search">
+                                <div class="search__inside">
+                                    <form action="#">
+                                        <input type="text" class="search__input" placeholder="Я хочу найти...">
+                                        <button class="search__btn icon icon-search"></button>
+                                    </form>
+                                </div>
+                            </div>
+                            <ul class="pane-nav d-flex">
+                                <li class="pane-nav__item d-lg-none">
+                                    <a href="#" class="pane-nav__link collapsed catalogue-link">
+                                        <span class="pane-nav__icon icon icon-catalogue"></span>
+                                        Каталог
+                                    </a>
+                                </li>
+                                <li class="pane-nav__item d-lg-none">
+                                    <a href="#search" class="pane-nav__link collapsed" data-bs-toggle="collapse">
+                                        <span class="pane-nav__icon icon icon-search"></span>
+                                        Поиск
+                                    </a>
+                                </li>
+                                <li class="pane-nav__item order-lg-1">
+                                    <a href="#" class="pane-nav__link collapsed">
+                                        <span class="pane-nav__icon icon icon-heart"></span>
+                                        Избранное
+                                    </a>
+                                </li>
+                                <li class="pane-nav__item">
+                                    <a href="#" class="pane-nav__link collapsed">
+                                        <span class="pane-nav__icon icon icon-user"></span>
+                                        Войти
+                                    </a>
+                                </li>
+                                <li class="pane-nav__item order-md-2">
+                                    <a href="#" class="pane-nav__link collapsed">
+                                        <span class="pane-nav__icon icon icon-basket"></span>
+                                        Корзина
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navbar">
+                    <ul class="nav-list d-lg-flex">
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Акции</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Доставка</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Оплата</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Блог</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Контакты</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Качество</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">О компании</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Промокоды</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Отзывы</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Рецепты</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Помощь</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Поставщики</a></li>
+                    </ul>
+                    <div class="navbar__contacts d-lg-none">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="contact-item px-0">
+                                    <a href="tel:+74952801156" class="title title_size-md">+7 (495) 280-11-56</a>
+                                    <div class="text_size-md">Телефон в Москве</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="contact-item px-0">
+                                    <a href="tel:+79259411991" class="title title_size-md">+7 (925) 941-19-91</a>
+                                    <div class="text_size-md">WhatsApp, Telegram</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="contact-item px-0">
+                                    <a href="mailto:EmaiL@example.com" class="title title_size-md">EmaiL@example.com</a>
+                                    <div class="text_size-md">Электронная почта</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="contact-item px-0">
+                                    <ul class="social-list navbar__social-list d-flex">
+                                        <li class="social-list__item"><a href="#" class="social-list__link icon icon-vk-dark"></a></li>
+                                        <li class="social-list__item"><a href="#" class="social-list__link icon icon-whatsapp-dark"></a></li>
+                                        <li class="social-list__item"><a href="#" class="social-list__link icon icon-tg-dark"></a></li>
+                                    </ul>
+                                    <div class="text_size-md">Мы в соцсетях</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- /header -->
+        <div class="container">
+            <!-- breadcrumb -->
+            <ul class="breadcrumb text_size-sm d-none d-md-flex">
+                <li class="breadcrumb__item"><a href="#" class="breadcrumb__link text_light">Главная</a></li>
+                <li class="breadcrumb__item">Ответы на вопросы</li>
+            </ul>
+            <!-- /breadcrumb -->
+            <h1 class="mb_xs title_heading pb-2 pb-md-1">Ответы на частые вопросы</h1>
+            <div class="faq-group section_md pb-3 pb-md-0">
+                <div class="faq-item">
+                    <a href="#faq-1" data-bs-toggle="collapse" class="faq-item__link text_semibold collapsed d-flex align-items-center justify-content-between">Какой выбрать кусочек... Скажем, для тушения?<span class="icon icon-caret"></span></a>
+                    <div class="collapse" id="faq-1">
+                        <div class="faq-item__body text_dark text_size-md">С каждым годом дичь становится всё популярнее и многие позиции очень быстро заканчиваются. Тогда как наши информационные рассылки о поступлении и новинках отправляются всего раз в неделю.Чтобы не пропустить появление желанной вкуснятины, подпишитесь непосредственно на товар. В таком случае, как только желанный товар появится на складе, на вашу электронную почту придет уведомление о поступлении.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <a href="#faq-2" data-bs-toggle="collapse" class="faq-item__link text_semibold collapsed d-flex align-items-center justify-content-between">У меня кафе и я хочу с вами сотрудничать. Возможны для меня особые условия?<span class="icon icon-caret"></span></a>
+                    <div class="collapse" id="faq-2">
+                        <div class="faq-item__body text_dark text_size-md">С каждым годом дичь становится всё популярнее и многие позиции очень быстро заканчиваются. Тогда как наши информационные рассылки о поступлении и новинках отправляются всего раз в неделю.Чтобы не пропустить появление желанной вкуснятины, подпишитесь непосредственно на товар. В таком случае, как только желанный товар появится на складе, на вашу электронную почту придет уведомление о поступлении.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <a href="#faq-3" aria-expanded="true" data-bs-toggle="collapse" class="faq-item__link text_semibold d-flex align-items-center justify-content-between">Товара, который мне нужен, нет в наличии. Как мне узнать когда его привезут?<span class="icon icon-caret"></span></a>
+                    <div class="collapse show" id="faq-3">
+                        <div class="faq-item__body text_dark text_size-md">С каждым годом дичь становится всё популярнее и многие позиции очень быстро заканчиваются. Тогда как наши информационные рассылки о поступлении и новинках отправляются всего раз в неделю.Чтобы не пропустить появление желанной вкуснятины, подпишитесь непосредственно на товар. В таком случае, как только желанный товар появится на складе, на вашу электронную почту придет уведомление о поступлении.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <a href="#faq-4" data-bs-toggle="collapse" class="faq-item__link text_semibold collapsed d-flex align-items-center justify-content-between">А сколько у dас есть? А если мне нужно больше, я могу оставить предзаказ?<span class="icon icon-caret"></span></a>
+                    <div class="collapse" id="faq-4">
+                        <div class="faq-item__body text_dark text_size-md">С каждым годом дичь становится всё популярнее и многие позиции очень быстро заканчиваются. Тогда как наши информационные рассылки о поступлении и новинках отправляются всего раз в неделю.Чтобы не пропустить появление желанной вкуснятины, подпишитесь непосредственно на товар. В таком случае, как только желанный товар появится на складе, на вашу электронную почту придет уведомление о поступлении.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <a href="#faq-5" data-bs-toggle="collapse" class="faq-item__link text_semibold collapsed d-flex align-items-center justify-content-between">Как оформить заказ, если я еще не был клиентом на сайте?<span class="icon icon-caret"></span></a>
+                    <div class="collapse" id="faq-5">
+                        <div class="faq-item__body text_dark text_size-md">С каждым годом дичь становится всё популярнее и многие позиции очень быстро заканчиваются. Тогда как наши информационные рассылки о поступлении и новинках отправляются всего раз в неделю.Чтобы не пропустить появление желанной вкуснятины, подпишитесь непосредственно на товар. В таком случае, как только желанный товар появится на складе, на вашу электронную почту придет уведомление о поступлении.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <a href="#faq-6" data-bs-toggle="collapse" class="faq-item__link text_semibold collapsed d-flex align-items-center justify-content-between">Окорок? Корейка? Это где? Как выбирать-то?<span class="icon icon-caret"></span></a>
+                    <div class="collapse" id="faq-6">
+                        <div class="faq-item__body text_dark text_size-md">С каждым годом дичь становится всё популярнее и многие позиции очень быстро заканчиваются. Тогда как наши информационные рассылки о поступлении и новинках отправляются всего раз в неделю.Чтобы не пропустить появление желанной вкуснятины, подпишитесь непосредственно на товар. В таком случае, как только желанный товар появится на складе, на вашу электронную почту придет уведомление о поступлении.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- form-section -->
+        <div class="form-section bg_pattern text_inversion">
+            <div class="container pos-rel">
+              <div class="form-section__image"><img src="img/form.png" alt="" class="img-fluid"></div>
+              <div class="form-section__content">
+                  <div class="form-section__text">
+                      <div class="title title_size-lg form-section__title mb-2 pb-1 pb-md-0 mb-md-3">Есть вопросы? Обращайтесь!</div>
+                      <p>Оставьте свои данные и мы свяжемся с вами в течение рабочего дня</p>
+                  </div>
+                  <form action="#" class="mt-4 pt-2 pt-md-1 mt-md-5 form-section__inside">
+                    <div class="input form-group pos-rel">
+                      <textarea class="input__field form-control" type="text" id="message"></textarea>
+                      <label class="input__label input__label--juro" for="message">
+                          <span class="input__label-content input__label-content--juro">Текст сообщения...</span>
+                      </label>
+                    </div>
+                    <div class="row row_md">
+                      <div class="col-md-6">
+                        <div class="input form-group pos-rel">
+                            <input class="input__field form-control" type="text" id="phone">
+                            <label class="input__label input__label--juro" for="phone">
+                                <span class="input__label-content input__label-content--juro">Номер телефона</span>
+                            </label>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="input form-group_md pos-rel">
+                            <input class="input__field form-control" type="text" id="email">
+                            <label class="input__label input__label--juro" for="email">
+                                <span class="input__label-content input__label-content--juro">Email</span>
+                            </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <button class="btn btn_transparent w-100_sm btn_form">Отправить сообщение</button>
+                  </div>
+                  </form>
+              </div>
+            </div>
+        </div>
+        <!-- /form-section -->
+        <!-- footer -->
+        <footer class="footer m-0">
+            <div class="container">
+                <a href="#wrap" class="up-link btn btn_light text_size-md d-none d-md-flex">
+                    <span class="icon icon-up"></span>
+                    Наверх
+                </a>
+                <div class="d-lg-flex">
+                    <a href="index.html" class="logo footer__logo"><img src="img/logo-inversion.svg" alt="" class="img-fluid"></a>
+                    <div class="footer__content">
+                        <div class="footer__contacts d-flex text_size-md">
+                            <div class="contact-item">
+                                <div class="contact-item__icon icon icon-phone"></div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p><a href="tel:+79259411991" class="text_inversion text_semibold nowrap">+7 (925) 941-19-91</a></p>
+                                        <p class="text_size-sm">Телефон в Москве</p>
+                                    </div>
+                                    <div class="col-6 footer__phone">
+                                        <p><a href="tel:+78009411991" class="text_inversion text_semibold nowrap">+7 (800) 941-19-91</a></p>
+                                        <p class="text_size-sm">Бесплатно по РФ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-item col-lg-6 col-xl-auto">
+                                <div class="contact-item__icon icon icon-map"></div>
+                                <p class="text_semibold">Москва, пр. Вернадского 41, стр. 1</p>
+                                <p class="text_size-sm">Пункт выдачи заказов работает 9:00 - 20:00</p>
+                            </div>
+                            <div class="contact-item col-lg-6 col-xl-auto">
+                                <div class="contact-item__icon icon icon-email"></div>
+                                <p><a href="mailto:info@breadmeatmarket.ru" class="text_inversion text_semibold">info@breadmeatmarket.ru</a></p>
+                                <p class="text_size-sm">Email для связи</p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between flex-column flex-xl-row">
+                            <ul class="footer-nav d-flex justify-content-center justify-content-md-between text_size-md align-items-center">
+                                <li class="footer-nav__item order-lg-1"><a href="#" class="text_inversion">Условия и соглашения</a></li>
+                                <li class="footer-nav__item order-lg-1"><a href="#" class="text_inversion">Обмен и возврат</a></li>
+                                <li class="footer-nav__item order-lg-1"><a href="#" class="text_inversion">Сертификаты</a></li>
+                                <li class="footer-nav__item"><a href="#callback" data-bs-toggle="modal" class="text_inversion text_size-sm text_semibold btn btn_size-xs">Заказать звонок</a></li>
+                            </ul>
+                            <ul class="social-list footer__social-list d-flex">
+                                <li class="social-list__item"><a href="#" class="social-list__link icon icon-vk-inversion"></a></li>
+                                <li class="social-list__item"><a href="#" class="social-list__link icon icon-whatsapp-inversion"></a></li>
+                                <li class="social-list__item"><a href="#" class="social-list__link icon icon-tg-inversion"></a></li>
+                                <li class="social-list__item"><a href="#" class="social-list__link icon icon-ins-inversion"></a></li>
+                                <li class="social-list__item"><a href="#" class="social-list__link icon icon-youtube-inversion"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom text_size-xs">
+                <div class="container">
+                    <div class="d-flex justify-content-center justify-content-lg-between align-items-center flex-wrap">
+                        <ul class="footer__payment-list payment-list order-xl-2 d-flex">
+                            <li class="payment-list__item icon icon-visa"></li>
+                            <li class="payment-list__item icon icon-mastercard"></li>
+                            <li class="payment-list__item icon icon-mir"></li>
+                            <li class="payment-list__item icon icon-sbp"></li>
+                        </ul>
+                        <div class="copyright">ООО «Хлеб и Мясо» © 2015–2023. Копирование любых материалов запрещено.</div>
+                        <div class="producer">Разработка и продвижение сайта <a href="#" class="text_warning d-block d-md-inline">Ozhgibesov Agency</a></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+    </div>
+
+    <!-- callback -->
+    <div class="modal fade" id="callback" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog_sm">
+            <div class="modal-content text_inversion bg_pattern">
+                <button type="button" class="icon modal__close icon-close-inversion" data-bs-dismiss="modal"></button>
+                <div class="title title_size-lg modal__title">Заказать звонок</div>
+                <p>Оставьте свои данные и мы свяжемся с вами в течение рабочего дня</p>
+                <form action="#">
+                    <div class="d-md-flex modal__row">
+                        <div class="flex-grow-1 modal__col">
+                            <div class="input form-group pos-rel">
+                                <input class="input__field form-control" type="text" id="phone">
+                                <label class="input__label input__label--juro" for="phone">
+                                    <span class="input__label-content input__label-content--juro">Номер телефона</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group modal__col">
+                            <button class="btn btn_transparent w-100 btn_form" data-bs-toggle="modal" data-bs-target="#success">
+                                <span class="icon btn__icon icon icon-phone"></span>
+                                Заказать звонок
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- /callback -->
+    <!-- success -->
+    <div class="modal fade" id="success" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog_xs">
+            <div class="modal-content text_center text_inversion bg_pattern">
+                <button type="button" class="icon modal__close icon-close-inversion" data-bs-dismiss="modal"></button>
+                <div class="modal__icon"><img src="img/icons/check-succsess.svg" alt=""></div>
+                <div class="title title_size-lg mb_sm pb-1">Заявка принята</div>
+                <div class="form-group">
+                    <button class="btn btn_transparent" data-bs-dismiss="modal">Закрыть окно</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /success -->
+    <!-- card-modal -->
+    <div class="modal fade" id="card-modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog_lg">
+            <div class="modal-content modal-content_inversion">
+                <button type="button" class="icon modal__close icon-close d-md-none" data-bs-dismiss="modal"></button>
+                <div class="card d-md-flex">
+                  <div class="card__image card__image_modal"><img src="img/content/card.jpg" alt="" class="w-100"></div>
+                  <div class="card__info">
+                      <div class="title title_size-lg mb_sm  card__title">Грудинка говяжья <br class="d-none d-lg-block">на кости</div>
+                      <div class="d-flex align-items-center flex-wrap  card__header">
+                          <div class="text_dark card__code text_size-sm order-md-1 w-100_sm">Арт. 12345678</div>
+                          <div class="rating card__ratind">
+                              <div class="rating__active" style="width: 100%;"></div>
+                          </div>
+                          <div class="stock card__stock text_success text_size-sm text_semibold">В наличии</div>
+                      </div>
+                      <div class="card__description text_size-md">
+                          <p>Грудинка говяжья на кости лучший отруб для приготовления наваристого говяжьего бульона с насыщенным ароматом и супов на его основе. Требует длительной варки.</p>
+                      </div>
+                      <div class="card__price d-flex align-items-center">
+                          <div class="price text_styling">999 Р<span class="text_size-lg">/кг</span></div>
+                          <del class="price_old text_light text_styling">1 330 р</del>
+                          <div class="discount text_danger text_styling text_bold">-15%</div>
+                      </div>
+                      <div class="d-md-flex pos-rel card__btn">
+                          <div class="btn-wrapper">
+                              <a href="#" class="btn btn_dark btn-add btn_size-lg w-100_sm">
+                                  <span class="icon icon-basket-inversion btn__icon"></span>В корзину
+                              </a>
+                              <div class="card__fake-btn fake-btn collapse">
+                                  <a href="basket.html" class="btn btn_success flex-column">
+                                      В корзине
+                                      <span class="text_size-xs">Перейти</span>
+                                  </a>
+                                  <div class="input-number card__input-number">
+                                      <div class="input-number__down input-number__minus btn_light">
+                                          <span class="icon icon-minus"></span>
+                                      </div>
+                                      <input class="input-number__input" type="text" pattern="^[0-9]+$" value="1" readonly="">
+                                      <div class="input-number__up input-number__plus btn_light">
+                                          <span class="icon icon-plus"></span>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <a href="#" class="favorite-link favorite-link_modal toggler"><span class="icon icon-heart"></span></a>
+                      </div>
+                      <div class="card-list d-flex text_size-sm">
+                          <div class="card-item text_center">
+                              <div class="card-item__icon icon icon-cooled"></div>
+                              Охлаждённый
+                          </div>
+                          <div class="card-item text_center">
+                              <div class="card-item__icon icon icon-halal"></div>
+                              Халяль
+                          </div>
+                          <div class="card-item text_center">
+                              <div class="card-item__icon icon icon-frying"></div>
+                              Для жарки
+                          </div>
+                          <div class="card-item text_center">
+                              <div class="card-item__icon icon icon-soups"></div>
+                              Для супов
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!-- /card-modal -->
+    <!-- gallery-modal -->
+    <div class="modal fade" id="gallery-modal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog_full container">
+        <div class="modal-content modal-content_full">
+          <button type="button" class="icon modal__close modal__close-lg icon-close-inversion" data-bs-dismiss="modal"></button>
+            <div class="slider-wrapper">
+              <a href="#" class="gallery-modal-prev swiper-prev swiper-btn"><span class="icon icon-prev-inversion_lg"></span></a>
+              <a href="#" class="gallery-modal-next swiper-next swiper-btn"><span class="icon icon-next-inversion_lg"></span></a>
+              <div class="gallery-modal-slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="img/content/gallery-3.jpg" alt="" class="w-100 d-block"></div>
+                  <div class="swiper-slide"><img src="img/content/gallery-5.jpg" alt="" class="w-100 d-block"></div>
+                  <div class="swiper-slide"><img src="img/content/gallery-6.jpg" alt="" class="w-100 d-block"></div>
+                  <div class="swiper-slide"><img src="img/content/gallery-7.jpg" alt="" class="w-100 d-block"></div>
+                  <div class="swiper-slide"><img src="img/content/gallery-8.jpg" alt="" class="w-100 d-block"></div>
+                  <div class="swiper-slide"><img src="img/content/gallery-9.jpg" alt="" class="w-100 d-block"></div>
+                </div>
+              </div>
+            </div>
+            <div class="thumbs-slider swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide zoom-link"><img src="img/content/gallery-3.jpg" alt="" class="w-100"></div>
+                <div class="swiper-slide zoom-link"><img src="img/content/gallery-5.jpg" alt="" class="w-100"></div>
+                <div class="swiper-slide zoom-link"><img src="img/content/gallery-6.jpg" alt="" class="w-100"></div>
+                <div class="swiper-slide zoom-link"><img src="img/content/gallery-7.jpg" alt="" class="w-100"></div>
+                <div class="swiper-slide zoom-link"><img src="img/content/gallery-8.jpg" alt="" class="w-100"></div>
+                <div class="swiper-slide zoom-link"><img src="img/content/gallery-9.jpg" alt="" class="w-100"></div>
+              </div>
+            </div>
+        </div>
+      </div>
+  </div>
+  <!-- /gallery-modal -->
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiIonNI8Lg81sQ_2zkvMTcIUmQn5KikzA&callback=initMap" async defer></script>
+    <script src="js/classie.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
