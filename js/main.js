@@ -867,3 +867,5 @@ new Swiper(".messenger-slider", {
     prevEl: ".messenger-prev",
   },
 });
+
+Fancybox.bind('[data-fancybox="gallery"]', {});
